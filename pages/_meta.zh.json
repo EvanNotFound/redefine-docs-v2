@@ -1,0 +1,30 @@
+{
+  "index": "主题介绍",
+  "getting-started": "快速开始",
+  
+  "-- Guides": {
+    "type": "separator",
+    "title": "配置"
+  },
+  "basic": "基本",
+
+  "-- Advanced": {
+    "type": "separator",
+    "title": "使用"
+  },
+
+  "-- More": {
+    "type": "separator",
+    "title": "更多"
+  },
+  "about": {
+    "title": "About",
+    "type": "page"
+  },
+  "contact": {
+    "title": "Contact ↗",
+    "type": "page",
+    "href": "https://twitter.com/shuding_",
+    "newWindow": true
+  }
+}

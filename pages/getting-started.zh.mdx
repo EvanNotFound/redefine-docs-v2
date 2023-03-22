@@ -1,0 +1,53 @@
+import { Callout, Tab, Tabs, Steps } from 'nextra-theme-docs'
+
+
+# 快速开始
+
+开始使用 Redefine 主题。
+
+<Callout type="info">
+  Hexo 版本需要大于 5.0.0
+</Callout>
+
+<Steps>
+
+### 安装
+
+在 Hexo 根目录执行以下命令安装主题：
+
+
+<Tabs items={['npm', 'git']}>
+    <Tab>
+        ```bash filename="终端"
+        npm install hexo-theme-redefine@latest
+        ```
+    </Tab>
+    <Tab>
+        ```bash filename="终端"
+        git clone https://github.com/EvanNotFound/hexo-theme-redefine.git themes/redefine
+        ```
+    </Tab>
+</Tabs>
+
+### 启用主题
+
+在 Hexo 根目录的 `_config.yml` 文件中，将 `theme` 值修改为 `redefine`。
+
+```yaml filename="_config.yml"
+theme: redefine
+```
+
+### 创建主题配置文件
+
+在 Hexo 根目录下创建 `_config.redefine.yml` 文件。
+
+并将[此处](https://github.com/EvanNotFound/hexo-theme-redefine/blob/main/_config.yml)的所有内容复制进去。
+
+本文件会自动覆盖主题的配置项，创建本文件的目的是为了方便你在升级主题时，不会丢失你的配置。
+
+### VOILA!
+
+现在你可以启动 Hexo，看看效果了。接下来请继续配置主题，所有改动都请在 `_config.redefine.yml` 文件中进行。
+
+</Steps>
+
