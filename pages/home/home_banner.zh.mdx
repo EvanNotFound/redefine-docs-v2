@@ -1,0 +1,142 @@
+# 第一屏 `home_banner`
+
+## 开关 
+
+**配置项名称：`home_banner.enable`**
+
+| 类型 | 可选值 | 默认值 |
+| :---: | :---: | :---: |
+| 布尔值 | `true \| false` | `true` |
+
+## 背景图片
+
+### 亮色模式
+
+**配置项名称：`home_banner.image.light`**
+
+| 类型 | 备注 | 示例 |
+| :---: | :---: | :---: |
+| 字符串 | 本地相对链接/图片外链 | `/images/wallhaven-wqery6-light.webp` |
+
+### 暗色模式    
+
+**配置项名称：`home_banner.image.dark`**
+
+| 类型 | 备注 | 示例 |
+| :---: | :---: | :---: |
+| 字符串 | 本地相对链接/图片外链 | `/images/wallhaven-wqery6-dark.webp` |
+
+## 主标题
+
+**配置项名称：`home_banner.title`**
+
+| 类型 | 备注 | 示例 |
+| :---: | :---: | :---: |
+| 字符串 | 无 | `Theme Redefine` |
+
+## 副标题
+
+**配置项名称：`home_banner.subtitle`**
+
+有打字机动画效果，可以配置多个字符串，每个字符串会在打字机动画中循环显示。
+
+| 类型 | 备注 | 示例 |
+| :---: | :---: | :---: |
+| 数组 | 请用英文逗号分隔 | `["This is the first message", "This is the seconf message", "etc"]` |
+
+## 文字颜色
+
+设定标题和副标题的文字颜色。
+
+### 亮色模式
+
+**配置项名称：`home_banner.text_color.light`**
+
+| 类型 | 备注 | 示例 |
+| :---: | :---: | :---: |
+| 字符串 | 请填写 Hex 色值 | `#fff` |
+
+### 暗色模式
+
+**配置项名称：`home_banner.text_color.dark`**
+
+| 类型 | 备注 | 示例 |
+| :---: | :---: | :---: |
+| 字符串 | 请填写 Hex 色值 | `#d1d1b6` |
+
+## 文字样式
+
+### 标题字体大小
+
+**配置项名称：`home_banner.text_style.title_size`**
+
+| 类型 | 备注 | 示例 |
+| :---: | :---: | :---: |
+| 字符串 | 请填写 CSS 支持的字体大小 | `2.8rem` |
+
+### 副标题字体大小
+
+**配置项名称：`home_banner.text_style.subtitle_size`**
+
+| 类型 | 备注 | 示例 |
+| :---: | :---: | :---: |
+| 字符串 | 请填写 CSS 支持的字体大小 | `1.5rem` |
+
+### 标题与副标题行高
+
+**配置项名称：`home_banner.text_style.line_height`**
+
+| 类型 | 备注 | 示例 |
+| :---: | :---: | :---: |
+| 字符串 | 请填写 CSS 支持的行高 | `1.2` |
+
+## 自定义字体
+
+### 开关
+
+**配置项名称：`home_banner.custom_font.enable`**
+
+| 类型 | 可选值 | 默认值 |
+| :---: | :---: | :---: |
+| 布尔值 | `true \| false` | `false` |
+
+### 字体名称
+
+**配置项名称：`home_banner.custom_font.family`**
+
+| 类型 | 备注 | 示例 |
+| :---: | :---: | :---: |
+| 字符串 | 会作用在主标题和副标题上 | `Noto Sans SC` |
+
+### 字体 CSS 文件链接
+
+**配置项名称：`home_banner.custom_font.url`**
+
+| 类型 | 备注 | 示例 |
+| :---: | :---: | :---: |
+| 字符串 | 字体样式文件地址（CSS） | `https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap` |
+
+## 社交链接
+
+### 开关
+
+**配置项名称：`home_banner.social_links.enable`**
+
+| 类型 | 可选值 | 默认值 |
+| :---: | :---: | :---: |
+| 布尔值 | `true \| false` | `false` |
+
+### 链接
+
+**配置项名称：`home_banner.social_links.links`**
+
+请添加你的社交链接，格式如下，请填写 Brands 图标名称，比如 `github`。
+
+```yaml
+links:
+    [fontawesome 图标名称(不是 HTML 代码)]: [你的社交链接地址]
+```
+
+可以前往 [Font Awesome](https://fontawesome.com/search?o=r&f=brands) 查看图标名称。
+
+

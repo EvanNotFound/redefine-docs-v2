@@ -47,7 +47,34 @@ theme: redefine
 
 ### VOILA!
 
-现在你可以启动 Hexo，看看效果了。接下来请继续配置主题，所有改动都请在 `_config.redefine.yml` 文件中进行。
+现在你可以启动 Hexo，看看效果了。
+
+接下来请先阅读配置注意事项，然后继续配置主题。
+
 
 </Steps>
 
+### 注意事项
+
+#### 1. 文档阅读说明
+
+在接下来的配置中，`xxx.yyy` 表示你需要在 `_config.redefine.yml` 文件中的 `xxx` 下的 `yyy` 配置项中进行配置。
+
+例如，`info.title` 指的是 `info` 下的 `title` 配置项。
+
+```yaml filename="_config.redefine.yml"
+info:
+    title: Redefine
+```
+
+#### 2. YAML 语法
+
+配置文件 `_config.redefine.yml` 使用 YAML 语法，如果你不熟悉 YAML 语法，请先阅读[此处](https://learnxinyminutes.com/docs/yaml/)。
+
+YAML 语法是按照缩进来区分层级的，所以请注意缩进。
+
+请保持原本的缩进，注意在配置项之前不要乱加空格。
+
+#### 3. 配置主题
+
+所有改动都请在 `_config.redefine.yml` 文件中进行，不建议直接修改主题文件，因为更新主题时会覆盖你的改动。

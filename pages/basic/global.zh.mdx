@@ -2,82 +2,136 @@
 
 设置全站的一些功能。
 
-## 自定义字体 `fonts`
+## 自定义字体
 
-可以自定义全局字体
+### 中文字体开关
 
-### 中文字体 `chinese`
 
-#### 开关 `enable`
+**配置项名称：`global.chinese.enable`**
 
-请填写 `true` 或 `false`
+| 类型 | 可选值 | 默认值 |
+| :---: | :---: | :---: |
+| 布尔值 | `true \| false` | `false` |
 
-#### 名称 `family`
+### 中文字体名称
 
-请填写字体名称，例如 `Noto Sans SC`
+**配置项名称：`global.chinese.family`**
 
-#### 链接 `url`
+| 类型 | 示例 |
+| :---: | :---: |
+| 字符串 | `Noto Sans SC` |
 
-请填写字体样式文件地址（CSS），比如 Google Font 中的 `https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap`
+### 中文字体链接
 
-### 英文字体 `english`
+**配置项名称：`global.chinese.url`**
 
-#### 开关 `enable`
 
-请填写 `true` 或 `false`
 
-#### 名称 `family`
+| 类型 | 备注 | 示例 |
+| :---: | :---: | :---: |
+| 字符串 | 字体样式文件地址（CSS） | `https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap` |
 
-请填写字体名称，例如 `Farsan`
+### 英文字体开关
 
-#### 链接 `url`
+**配置项名称：`global.english.enable`**
 
-请填写字体样式文件地址（CSS），比如 Google Font 中的 `https://fonts.googleapis.com/css2?family=Farsan&display=swap`
+| 类型 | 可选值 | 默认值 |
+| :---: | :---: | :---: |
+| 布尔值 | `true \| false` | `false` |
 
-## 文章最大宽度 `content_max_width`
+### 英文字体名称
 
-单位为 `px`，默认为 `1000px`。如无特别需要请不要修改。
+**配置项名称：`global.english.family`**
 
-## 边栏宽度 `sidebar_width`
+| 类型 | 示例 |
+| :---: | :---: |
+| 字符串 | `Farsan` |
 
-单位为 `px`，默认为 `210px`。如无特别需要请不要修改。
+### 英文字体链接
 
-## 悬停效果 `hover`
+**配置项名称：`global.english.url`**
+
+| 类型 | 备注 | 示例 |
+| :---: | :---: | :---: |
+| 字符串 | 字体样式文件地址（CSS） | `https://fonts.googleapis.com/css2?family=Farsan&display=swap` |
+
+## 文章最大宽度
+
+**配置项名称：`global.content_max_width`**
+
+| 类型 | 备注 |可选值 | 默认值 | 
+| :---: | :---: | :---: |
+| 字符串 | 如无特别需要请不要更改 | `*px` | `1000px` |
+
+## 边栏宽度
+
+**配置项名称：`global.sidebar_width`**
+
+
+| 类型 | 备注 | 可选值 | 默认值 |
+| :---: | :---: | :---: | :---: |
+| 字符串 | 如无特别需要请不要更改 | `*px` | `210px` |
+
+## 悬停效果
 
 鼠标悬停在各种模块（文章卡片，文章列表，功能卡片等）时的效果。
 
-### 阴影效果 `shadow`
+### 阴影
 
-请填写 `true` 或 `false`，默认为 `true`。
+**配置项名称：`global.hover.shadow`**
 
-### 缩放效果 `scale`
+| 类型 | 可选值 | 默认值 |
+| :---: | :---: | :---: |
+| 布尔值 | `true \| false` | `true` |
 
-请填写 `true` 或 `false`，默认为 `false`。
+### 缩放
 
-## 阅读进度 `scroll_progress`
+**配置项名称：`global.hover.scale`**
 
-### 顶部进度条 `bar`
+| 类型 | 可选值 | 默认值 |
+| :---: | :---: | :---: |
+| 布尔值 | `true \| false` | `false` |
 
-请填写 `true` 或 `false`，默认为 `false`。
+## 阅读进度
+
+### 顶部进度条
+
+**配置项名称：`global.scroll_progress.bar`**
+
+| 类型 | 可选值 | 默认值 |
+| :---: | :---: | :---: |
+| 布尔值 | `true \| false` | `false` |
 
 ![image-20230321215758624](https://evan.beee.top/img/2023/03/21/5363ff8c63f69f61cbf2ce595147a760.png)
 
-### 工具栏百分比 `percentage`
+### 工具栏百分比
 
-请填写 `true` 或 `false`，默认为 `true`。
+**配置项名称：`global.scroll_progress.percentage`**
+
+
+| 类型 | 可选值 | 默认值 |
+| :---: | :---: | :---: |
+| 布尔值 | `true \| false` | `true` |
 
 ![image-20230321220020055](https://evan.beee.top/img/2023/03/21/14879ceb5870b3329265df4c65c3bb27.png)
 
-## 网站统计 `busuanzi_counter`
+## 网站统计
+
+**配置项名称：`global.busuanzi_counter`**
 
 - `enable` 是否启用，填写 `true` 或 `false`，默认为 `true`。
 - `site_pv` 是否显示网站总访问量，填写 `true` 或 `false`，默认为 `true`。
 - `site_uv` 是否显示网站总访客数，填写 `true` 或 `false`，默认为 `true`。
 - `post_pv` 是否显示文章总访问量，填写 `true` 或 `false`，默认为 `true`。
 
-## PJAX 加载 `pjax` 
+## PJAX 加载
 
-请填写 `true` 或 `false`，默认为 `true`。
+**配置项名称：`global.pjax`**
 
-PJAX 能够使网页加载更快，有更好的用户体验。
+PJAX 能够使网页有单页应用的体验，不需要刷新页面就能加载新的内容。推荐开启。
+
+| 类型 | 可选值 | 默认值 |
+| :---: | :---: | :---: |
+| 布尔值 | `true \| false` | `true` |
+
 

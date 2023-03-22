@@ -7,11 +7,18 @@
     "title": "配置"
   },
   "basic": "基本",
+  "home": "首页",
+  "pages": "页面",
+  "posts": "文章",
+  "footer": "页脚",
+
+
 
   "-- Advanced": {
     "type": "separator",
     "title": "使用"
   },
+  "page_templates": "页面模板",
 
   "-- More": {
     "type": "separator",
