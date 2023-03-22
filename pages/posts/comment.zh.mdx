@@ -1,0 +1,300 @@
+For github copilot to learn the basic formats:
+
+```
+# 第一屏 `home_banner`
+
+## 开关 
+
+**配置项名称：`home_banner.enable`**
+
+| 类型 | 可选值 | 默认值 |
+| :---: | :---: | :---: |
+| 布尔值 | `true \| false` | `true` |
+
+## 背景图片
+
+### 亮色模式
+
+**配置项名称：`home_banner.image.light`**
+
+| 类型 | 备注 | 示例 |
+| :---: | :---: | :---: |
+| 字符串 | 本地相对链接/图片外链 | `/images/wallhaven-wqery6-light.webp` |
+
+### 暗色模式    
+
+**配置项名称：`home_banner.image.dark`**
+
+| 类型 | 备注 | 示例 |
+| :---: | :---: | :---: |
+| 字符串 | 本地相对链接/图片外链 | `/images/wallhaven-wqery6-dark.webp` |
+
+## 主标题
+
+**配置项名称：`home_banner.title`**
+
+| 类型 | 备注 | 示例 |
+| :---: | :---: | :---: |
+| 字符串 | 无 | `Theme Redefine` |
+
+## 副标题
+
+**配置项名称：`home_banner.subtitle`**
+
+有打字机动画效果，可以配置多个字符串，每个字符串会在打字机动画中循环显示。
+
+| 类型 | 备注 | 示例 |
+| :---: | :---: | :---: |
+| 数组 | 请用英文逗号分隔 | `["This is the first message", "This is the seconf message", "etc"]` |
+
+## 文字颜色
+
+设定标题和副标题的文字颜色。
+
+### 亮色模式
+
+**配置项名称：`home_banner.text_color.light`**
+
+| 类型 | 备注 | 示例 |
+| :---: | :---: | :---: |
+| 字符串 | 请填写 Hex 色值 | `#fff` |
+
+### 暗色模式
+
+**配置项名称：`home_banner.text_color.dark`**
+
+| 类型 | 备注 | 示例 |
+| :---: | :---: | :---: |
+| 字符串 | 请填写 Hex 色值 | `#d1d1b6` |
+
+## 文字样式
+
+### 标题字体大小
+
+**配置项名称：`home_banner.text_style.title_size`**
+
+| 类型 | 备注 | 示例 |
+| :---: | :---: | :---: |
+| 字符串 | 请填写 CSS 支持的字体大小 | `2.8rem` |
+
+### 副标题字体大小
+
+**配置项名称：`home_banner.text_style.subtitle_size`**
+
+| 类型 | 备注 | 示例 |
+| :---: | :---: | :---: |
+| 字符串 | 请填写 CSS 支持的字体大小 | `1.5rem` |
+
+### 标题与副标题行高
+
+**配置项名称：`home_banner.text_style.line_height`**
+
+| 类型 | 备注 | 示例 |
+| :---: | :---: | :---: |
+| 字符串 | 请填写 CSS 支持的行高 | `1.2` |
+
+## 自定义字体
+
+### 开关
+
+**配置项名称：`home_banner.custom_font.enable`**
+
+| 类型 | 可选值 | 默认值 |
+| :---: | :---: | :---: |
+| 布尔值 | `true \| false` | `false` |
+
+### 字体名称
+
+**配置项名称：`home_banner.custom_font.family`**
+
+| 类型 | 备注 | 示例 |
+| :---: | :---: | :---: |
+| 字符串 | 会作用在主标题和副标题上 | `Noto Sans SC` |
+
+### 字体 CSS 文件链接
+
+**配置项名称：`home_banner.custom_font.url`**
+
+| 类型 | 备注 | 示例 |
+| :---: | :---: | :---: |
+| 字符串 | 字体样式文件地址（CSS） | `https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap` |
+
+## 社交链接
+
+### 开关
+
+**配置项名称：`home_banner.social_links.enable`**
+
+| 类型 | 可选值 | 默认值 |
+| :---: | :---: | :---: |
+| 布尔值 | `true \| false` | `false` |
+
+### 链接
+
+**配置项名称：`home_banner.social_links.links`**
+
+请添加你的社交链接，格式如下，请填写 Brands 图标名称，比如 `github`。
+
+```yaml filename="_config.redefine.yml"
+links:
+    [fontawesome 图标名称(不是 HTML 代码)]: [你的社交链接地址]
+```
+
+可以前往 [Font Awesome](https://fontawesome.com/search?o=r&f=brands) 查看图标名称。
+```
+
+
+
+
+# 评论系统 `comment`
+
+```yaml
+# COMMENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
+comment:
+  # Whether to enable comment
+  enable: true
+  # Comment system
+  system: waline # waline, gitalk, twikoo
+  # System configuration
+  config:
+    # Waline comment system. See https://waline.js.org/
+    waline:
+      serverUrl: https://example.example.com # Waline server URL. e.g. https://example.example.com
+      lang: zh-CN # Waline language. e.g. zh-CN, en-US. See https://waline.js.org/guide/client/i18n.html
+    # Gitalk comment system. See https://github.com/gitalk/gitalk
+    gitalk:
+      clientID: # GitHub Application Client ID
+      clientSecret: # GitHub Application Client Secret
+      repo: # GitHub repository
+      owner: # GitHub repository owner
+    # Twikoo comment system. See https://twikoo.js.org/
+    twikoo:
+      version: 1.6.10 # Twikoo version, do not modify if you dont know what it is
+      server_url: # Twikoo server URL. e.g. https://example.example.com
+      region: # Twikoo region. can be empty
+# COMMENT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+```
+
+## 开关
+
+**配置项名称：`comment.enable`**
+
+是否启用评论。
+
+| 类型 | 可选值 | 默认值 |
+| :---: | :---: | :---: |
+| 布尔值 | `true \| false` | `true` |
+
+## 评论系统选择
+
+**配置项名称：`comment.system`**
+
+| 类型 | 可选值 | 默认值 |
+| :---: | :---: | :---: |
+| 字符串 | `waline \| gitalk \| twikoo` | `waline` |
+
+## Waline 配置
+
+更多关于 Waline 评论系统的信息，请访问 [Waline 官网](https://waline.js.org/)。
+
+**配置项名称：`comment.config.waline`**
+
+import { Steps } from 'nextra-theme-docs';
+
+<Steps>
+
+### 服务端
+
+请访问 [Waline 官网 #快速开始](https://waline.js.org/guide/get-started/)，按照官网的指引配置好 Waline 服务端。
+
+### 客户端
+
+拿到你需要的 `serverUrl` 后，填写到 `_config.redefine.yml` 中。
+
+```yaml filename="_config.redefine.yml"
+comment:
+  config:
+    waline:
+      serverUrl: https://example.example.com #你拿到的 serverUrl
+```
+
+</Steps>
+
+## Gitalk 配置
+
+更多关于 Gitalk 评论系统的信息，请访问 [Gitalk 官网](https://github.com/gitalk/gitalk/blob/master/readme-cn.md)
+
+**配置项名称：`comment.config.gitalk`**
+
+<Steps>
+
+### 获取 GitHub OAuth App
+
+注册或登录 [GitHub](https://github.com/)，[创建一个新的 OAuth App](https://github.com/settings/applications/new)，其中 `Homepage URL` 和 `Authorization callback URL` 均填写自己的域名即可。
+
+OAuth App 创建成功后，把 `Client ID` 和 `Client Secret` 保存起来，下面要用到。
+
+![Screen Shot 2022-10-02 at 10.24.53 AM](https://evan.beee.top/img/Screen%20Shot%202022-10-02%20at%2010.24.53%20AM.png)
+
+### 新建 GitHub 仓库
+
+回到 [GitHub](https://github.com/)，[创建一个新的仓库（repository）](https://github.com/new) 用来存放 Gitalk 评论，并打开 Issues，手动增加一个 Issue，内容随便填写即可
+
+### 填写配置
+
+把自己的 `GitHub 用户名`、`仓库名` 、OAuth App 的 `Client ID` 、`Client Secret` 分别填写在主题配置文件里。
+
+```yaml
+comment:
+  config:
+    gitalk:
+      clientID: 你的 Client ID
+      clientSecret: 你的 Client Secret
+      repo: 你的仓库名
+      owner: 你的 GitHub 用户名
+```
+
+示例：
+
+```yaml
+comment:
+  config:
+    gitalk:
+      clientID: 1234567890abcdef1234
+      clientSecret: 1234567890abcdef1234567890abcdef12345678
+      repo: gitalk
+      owner: EvanNotFound
+```
+
+### 效果
+
+![Screenshot 2023-03-22 at 7.42.52 PM](https://evan.beee.top/img/2023/03/22/c1b47887f3629035c3831b50f9393d30.png)
+</Steps>
+
+## Twikoo 配置
+
+更多关于 Twikoo 评论系统的信息，请访问 [Twikoo 官网](https://twikoo.js.org/)。
+
+**配置项名称：`comment.config.twikoo`**
+
+<Steps>
+
+### 服务端
+
+请访问 [Twikoo 官网 #快速上手](https://twikoo.js.org/quick-start.html)，按照官网的指引配置好 Twikoo 服务端。（推荐使用 Vercel 部署方式）
+
+### 客户端
+
+拿到你需要的 `server_url` 后，填写到 `_config.redefine.yml` 中。
+
+其中，`region` 仅在使用腾讯云函数时需要填写，其他情况下可以不填。
+
+```yaml filename="_config.redefine.yml"
+comment:
+  config:
+    twikoo:
+      server_url: https://example.example.com #你的 server_url
+      region: #你的 region（可选）
+```
+
+</Steps>
