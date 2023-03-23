@@ -32,5 +32,11 @@
     "type": "page",
     "href": "https://twitter.com/shuding_",
     "newWindow": true
+  },
+  "demo": {
+    "title": "Demo ↗",
+    "type": "page",
+    "href": "https://redefine.ohevan.com/",
+    "newWindow": true
   }
 }
