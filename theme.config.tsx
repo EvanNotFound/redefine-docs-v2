@@ -25,7 +25,7 @@ const config: DocsThemeConfig = {
   project: {
     link: 'https://github.com/EvanNotFound/hexo-theme-redefine',
   },
-  docsRepositoryBase: 'https://github.com/EvanNotFound/hexo-theme-redefine/tree/main/',
+  docsRepositoryBase: 'https://github.com/EvanNotFound/redefine-docs-v2/tree/main',
   footer: {
     text: '2023 © EvanNotFound',
   },
