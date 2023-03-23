@@ -23,14 +23,16 @@
     "type": "separator",
     "title": "更多"
   },
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
   "contact": {
-    "title": "Contact ↗",
+    "title": "Contact",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "mailto:contact@ohevan.com",
+    "newWindow": true
+  },
+  "about": {
+    "title": "Blog ↗",
+    "href": "https://ohevan.com",
+    "type": "page",
     "newWindow": true
   },
   "demo": {
