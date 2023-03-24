@@ -8,44 +8,44 @@
       "layout": "raw"
     }
   },
-  "introduction": "主题介绍",
-  "getting-started": "快速开始",
+  "introduction": "Introduction",
+  "getting-started": "Getting Started",
   
   "-- Guides": {
     "type": "separator",
-    "title": "配置"
+    "title": "Guides"
   },
-  "basic": "基本",
-  "home": "首页",
-  "posts": "文章",
-  "footer": "页脚",
+  "basic": "Basic",
+  "home": "Home",
+  "posts": "Posts",
+  "footer": "Footer",
 
 
 
   "-- Advanced": {
     "type": "separator",
-    "title": "使用"
+    "title": "Advanced"
   },
-  "page_templates": "页面模板",
+  "page_templates": "Page Templates",
 
   "-- More": {
     "type": "separator",
-    "title": "更多"
+    "title": "More"
   },
   "contact": {
-    "title": "联系作者 ↗",
+    "title": "Contact",
     "type": "page",
     "href": "mailto:contact@ohevan.com",
     "newWindow": true
   },
   "about": {
-    "title": "博客 ↗",
+    "title": "Blog ↗",
     "href": "https://ohevan.com",
     "type": "page",
     "newWindow": true
   },
   "demo": {
-    "title": "演示站点 ↗",
+    "title": "Demo ↗",
     "type": "page",
     "href": "https://redefine.ohevan.com/",
     "newWindow": true

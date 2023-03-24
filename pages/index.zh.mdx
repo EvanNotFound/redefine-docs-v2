@@ -1,54 +1,376 @@
-# 项目介绍
+---
+title: Theme Redefine Docs
+---
 
+import Link from 'next/link'
+import cn from 'clsx'
+import { useState } from 'react'
+import Image from 'next/image'
 
+import { Features, Feature } from '@components/features'
 
-![Slogan](https://evan.beee.top/img/2023/03/18/610599507c8078e7279966455688c66c.webp)
+import styles from './index.module.css'
 
-"Redefine" 是一个简洁，快速的 hexo 主题。简洁，但不简单。本主题包含很多广泛使用的功能。
+export function File({ name, className, ...props }) {
+  return <span className={cn(styles.file, className)} {...props}>
+    {name}
+  </span>
+}
 
-本主题基于 [hexo-theme-keep](https://github.com/XPoet/hexo-theme-keep) 开发，感谢 XPoet 的开源。本主题主要优化了样式，增加了写作模块，以及各种插件的支持。同时加大自定义程度，让你可以更加方便的使用本主题。
+export function Comparison({ a, b, invert, ...props }) {
+  return <div className={cn(styles.comparison, invert && styles.invert)} {...props}>
+    <div>{a}</div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" viewBox="0 0 20 20" fill="currentColor">
+      <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+    </svg>
+    <div>{b}</div>
+  </div>
+}
 
+import docsCard from '../public/assets/card-1.png'
+import docsCardDark from '../public/assets/card-1.dark.png'
 
-## 主题效果
+<div className="home-content">
+  <div className="content-container">
+    <h1 className="headline">Create beautiful blogs <br className='sm:block hidden'/>with Hexo & R<span style={{color:"#A31F34"}}>e</span>define</h1>
+    <p className="subtitle">一款<strong>简洁</strong>，<strong>快速</strong>，<strong>纯净</strong>的 Hexo 主题<br className='sm:block hidden'/>简洁，但<strong>不简单</strong>。</p>
+    <p className="subtitle">
+      <Link className={styles.cta} href="/introduction">快速开始 <span>→</span></Link>
+    </p>
+  </div>
 
-![redefine-1-final](https://evan.beee.top/img/2023/01/21/5966cf4d2f2c05aecad54e233d9562ff.png)
+  <style jsx>{`
+    .content-container {
+      max-width: 90rem;
+      padding-left: max(env(safe-area-inset-left),1.5rem);
+      padding-right: max(env(safe-area-inset-right),1.5rem);
+      margin: 0 auto;
+    }
+    .features-container {
+      margin: 8rem 0 0;
+      padding: 4rem 0;
+      background-color: #f3f4f6;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .features-container .content-container {
+      margin-top: -8rem;
+    }
+    :global(.dark) .features-container {
+      background-color: #000;
+      border-bottom: 1px solid rgb(38,38,38);
+    }
+    .headline {
+      display: inline-block;
+      font-size: 3.125rem;
+      font-size: min(4.375rem, max(8vw, 2.5rem));
+      font-weight: 700;
+      font-feature-settings: initial;
+      letter-spacing: -.12rem;
+      margin-left: -0.2rem;
+      margin-top: 3.4rem;
+      line-height: 1.1;
+      background-image: linear-gradient(146deg,#000,#757a7d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    :global(.dark) .headline {
+      background-image: linear-gradient(146deg,#fff,#757a7d);
+    }
+    .subtitle {
+      font-size: 1.3rem;
+      font-size: min(1.3rem, max(3.5vw, 1.2rem));
+      font-feature-settings: initial;
+      line-height: 1.7;
+      margin-top: 1.5rem;
+    }
+    .nextjs-link {
+      color: currentColor;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    :global(#docs-card) {
+      color: #fff;
+      text-shadow: 0 0 1rem rgba(0,0,0,0.1);
+    }
+    :global(#docs-card img) {
+      object-fit: cover;
+      object-position: left;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      z-index: 0;
+      user-select: none;
+      pointer-events: none;
+    }
+    :global(#docs-card img:nth-child(2)) {
+      display: none;
+    }
+    :global(.dark #docs-card img:nth-child(2)) {
+      display: initial;
+    }
+    :global(.dark #docs-card img:nth-child(1)) {
+      display: none;
+    }
+    :global(#highlighting-card) {
+      min-height: 300px;
+      background-image: linear-gradient(to top, transparent, #fff 50%), url(/assets/syntax-highlighting.svg);
+      background-size: 634px;
+      background-position: -6px calc(100% + 4px);
+      background-repeat: no-repeat;
+    }
+    :global(.dark #highlighting-card) {
+      background-image: linear-gradient(to top, transparent, #202020 50%), url(/assets/syntax-highlighting.svg);
+    }
+    :global(.feat-darkmode) {
+      min-height: 300px;
+    }
+    :global(.feat-darkmode h3) {
+      font-size: 48px;
+    }
+    :global(#search-card) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    :global(#search-card p) {
+      max-width: 320px;
+    }
+    :global(#search-card video) {
+      position: absolute;
+      right: 0;
+      top: 24px;
+      height: 430px;
+      pointer-events: none;
+      max-width: 60%;
+    }
+    :global(#fs-card) {
+      min-height: 240px;
+    }
+    :global(#fs-card h3) {
+      text-align: left;
+      width: min(300px, 41%);
+      min-width: 155px;
+    }
+    :global(#a11y-card) {
+      background-image: url(/assets/high-contrast.png);
+      background-position: -160px 160px;
+    }
+    @media screen and (max-width: 1300px) {
+      :global(#a11y-card) {
+        background-image: linear-gradient(to bottom, white, transparent), url(/assets/high-contrast.png);
+      }
+    }
+    @media screen and (max-width: 1200px) {
+      :global(#highlighting-card) {
+        aspect-ratio: auto;
+      }
+      :global(.feat-darkmode h3) {
+        font-size: 4vw;
+        font-size: min(48px, max(4vw, 30px));
+      }
+      :global(#search-card video) {
+        aspect-ratio: 787/623;
+        height: auto;
+      }
+      .headline {
+        letter-spacing: -.08rem;
+      }
+    }
+    @media screen and (max-width: 1024px) {
+      :global(#docs-card) {
+        aspect-ratio: 135/86;
+      }
+      :global(#search-card) {
+        aspect-ratio: 8/3;
+      }
+      :global(#search-card h3) {
+        text-align: left;
+      }
+      :global(#highlighting-card) {
+        background-size: 136%;
+      }
+      :global(#a11y-card) {
+        background-image: url(/assets/high-contrast.png);
+        background-position: center 160px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      :global(#docs-card) {
+        min-height: 348px;
+        width: 100%;
+        aspect-ratio: auto;
+      }
+      :global(#docs-card img) {
+        object-position: -26px 0;
+        width: 250%;
+        max-width: initial;
+      }
+    }
+    @media screen and (max-width: 640px) {
+      :global(#search-card) {
+        aspect-ratio: 2.5/2;
+        justify-content: flex-start;
+        align-items: stretch;
+        min-height: 350px;
+      }
+      :global(#search-card h3) {
+        text-align: center;
+      }
+      :global(#search-card p) {
+        max-width: 100%;
+      }
+      :global(#search-card video) {
+        position: relative;
+        margin: .75em -1.75em 0;
+        max-width: calc(100% + 3.5em);
+      }
+      :global(.dark #search-card video) {
+        mix-blend-mode: lighten;
+      }
+    }
+    .rotate-90 {
+      transform: rotate(90deg);
+      margin: 0 auto;
+    }
+    .my-6 {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .mb-8 {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    .leading-8 {
+        padding: 1.5rem;
+    }
+    #highlighting-card p {
+        margin-top: 1.5rem;
+    }
+  `}</style>
 
-![redefine-2-final](https://evan.beee.top/img/2023/01/21/6f3cad025693262f4ead2df7ac5e0883.png)
+  <div className="features-container">
+    <div className="content-container">
+      <Features>
+        <Feature index={0} large centered id="docs-card" href="/introduction">
+          <Image src={docsCard} alt="Background" loading="eager" />
+          <Image src={docsCardDark} alt="Background (Dark)" loading="eager" />
+          <h3>轻松搭建博客<br className="show-on-mobile"/>，配置毫不繁琐。</h3>
+        </Feature>
+        <Feature index={1} centered className="card-with-border" href="/docs/guide/image">
+          <div className="h-full flex flex-col justify-between">
+            <h3>资源压缩 <br className="show-on-mobile"/><span style={{ fontWeight: 300 }}>支持</span></h3>
+            <p className='text-left mb-8'>在安装 [`hexo-all-minifier`](https://www.npmjs.com/package/hexo-all-minifier) 插件后，有效加快页面访问速度，<br className="show-on-mobile"/>优化 SEO 以及访问体验。</p>
+            <div>
+              <div className={styles.optimization}>
+                <div style={{ fontSize: '.9rem' }} className="leading-8">
+                  <code>{`10.24mb`}</code>
+                  <br/>
+                  <code>{`loading time 5s`}</code>
+                </div>
+              </div>
+              <div className="flex justify-center text-neutral-400 my-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" viewBox="0 0 20 20" fill="currentColor" className="rotate-90">
+                  <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <div className={styles.optimization}>
+                <div style={{ fontSize: '.9rem' }} className="leading-8">
+                  <code>{`- 4.17mb`}</code>
+                  <br/>
+                  <code>{`loading time 2s`}</code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Feature>
+        <Feature index={2} id="highlighting-card" href="/docs/guide/syntax-highlighting">
+          <h3>Mermaid JS <br />完美支持</h3>
+          <p>安装 `hexo-filter-mermaid-diagrams` 插件后，能完美支持 Mermaid JS 流程图显示。</p>
+        </Feature>
+        <Feature index={3} href="/docs/guide/i18n">
+          <h3>内置 SEO 优化，<br className="show-on-mobile"/>请坐和放宽。</h3>
+          <p className='mb-4'>Redefine 主题经过许多 SEO 优化，让你的网站更快被搜索引擎收录。无需繁琐配置。</p>
 
-![redefine-3-final](https://evan.beee.top/img/2023/01/21/ddbb6406646f3f96acbc4764c5ac2ac1.png)
+        </Feature>
+        <Feature index={4} centered style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          backgroundImage: 'url(/assets/gradient-bg.jpeg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          color: '#fff'
+        }} href="/docs/guide/markdown">
+          <svg xmlns="http://www.w3.org/2000/svg" width="208" height="128" viewBox="0 0 208 128"><rect width="198" height="118" x="5" y="5" ry="10" stroke="none" stroke-width="10" fill="none"/><path fill="white" d="M30 98V30h20l20 25 20-25h20v68H90V59L70 84 50 59v39zm125 0l-30-33h20V30h20v35h20z"/></svg>
+          <p style={{
+            textShadow: '0 2px 4px rgb(0 0 0 / 20%)'
+          }}>经过特别设计的 Markdown 文章内容样式， <br className="hide-medium"/>让阅读变得，简单明了。</p>
+        </Feature>
+        <Feature index={5} centered className="feat-darkmode" style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}>
+          <div
+            animate={{
+              backgroundPosition: ['0% 0%', '50% 40%', '50% 40%', '100% 100%'],
+              backgroundImage: [`radial-gradient(farthest-corner, #e2e5ea, #e2e5ea)`, 'radial-gradient(farthest-corner, #06080a, #e2e5ea)', 'radial-gradient(farthest-corner, #06080a, #e2e5ea)', 'radial-gradient(farthest-corner, #e2e5ea, #e2e5ea)'],
+            }}
+            transition={{
+              backgroundPosition: {
+                times: [0, .5, .5, 1],
+                type: 'spring',
+                repeat: Infinity,
+                duration: 10,
+                delay: 1
+              },
+              backgroundImage: {
+                times: [0, .2, .8, 1],
+                repeat: Infinity,
+                duration: 10,
+                delay: 1
+              },
+            }}
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              backgroundImage: `radial-gradient(farthest-corner, #06080a, #e2e5ea)`,
+              backgroundSize: '400% 400%',
+              backgroundRepeat: 'no-repeat',
+            }}
+          />
+          <h3><strong>暗黑模式</strong> <br/>切换 <br/>支持</h3>
+        </Feature>
 
-
-
-
-
-
-## 在线演示站
-
-- [Anonymous Land](https://ohevan.com/)
-- [Theme Redefine Demo](https://redefine.evanluo.top/)
-
-## ⛰ 部分功能
-
-- [笔记模块](https://redefine-docs.ohevan.com/docs/advanced/writing-modules/note-module)
-- [友链样式](https://redefine-docs.ohevan.com/docs/advanced/friend-link)
-- [数学公式](https://redefine-docs.ohevan.com/docs/advanced/writing-modules/mathjax)
-- 代码块语言显示
-- Light/Dark 模式切换
-- [Font Awesome 6.1.0 Pro](https://redefine-docs.ohevan.com/docs/configuration-guide/fontawesome)（包含 Duotone/Regular/Thin 等不同样式）
-- [下拉菜单](https://redefine-docs.ohevan.com/docs/configuration-guide/menu)
-- [可自定义页脚](https://redefine-docs.ohevan.com/docs/configuration-guide/footer)
-- [网站运行时间显示](https://redefine-docs.ohevan.com/docs/configuration-guide/footer)
-- [文章头图](https://redefine-docs.ohevan.com/docs/advanced/home-contents/thumbnail)
-- [Mermaid JS 支持](https://redefine-docs.ohevan.com/docs/advanced/theme-plugins/mermaid)
-- SEO 友好
-- [Aplayer 音乐播放器支持](https://redefine-docs.ohevan.com/docs/advanced/theme-plugins/aplayer)
-- [说说模块](https://redefine-docs.ohevan.com/docs/advanced/shuoshuo/essays)
-- [自定义字体](https://redefine-docs.ohevan.com/docs/configuration-guide/custom)
-
-## ☕ 支持
-
-欢迎 **pull request** 或者 提交 **issues**.
-
-如有问题，请发邮件到 [contact@ohevan.com](mailto:contact@ohevan.com). 我会及时回复
-
-如果你觉得主题还不错的话，欢迎给我 Github 点个 Star，谢谢
+        <Feature index={7} large id="fs-card" style={{
+          color: 'white',
+          backgroundImage: 'url(/assets/routing.png), url(/assets/gradient-bg.jpeg)',
+          backgroundSize: '140%, 180%',
+          backgroundPosition: '130px -8px, top',
+          backgroundRepeat: 'no-repeat',
+          textShadow: '0 1px 6px rgb(38 59 82 / 18%)',
+          aspectRatio: '1.765',
+        }} href="/docs/docs-theme/page-configuration">
+          <h3>多种写作模块，<br/>让你的文章更加，<br/>丰富多样。</h3>
+        </Feature>
+        <Feature index={9} large>
+          <h3>以及更多</h3>
+          <p>SEO / RSS Feed / Aplayer 播放器 / PJAX / 文章头图 / Font Awesome 6.2.1 Pro...<br/>更多功能有待探索。</p>
+          <p className="subtitle"><Link className="!no-underline" href="/docs">开始使用 Redefine →</Link></p>
+        </Feature>
+        <Feature index={10} href="/docs/guide/ssg">
+          <h3>掌握<strong>文章推荐</strong><br/>的魔法。</h3>
+          <p className='mr-6'>在安装 `nodejieba` 以后，文章底部会出现推荐文章，自动根据每个文章关键词进行推荐。迁移自 `hexo-theme-volantis`。</p>
+        </Feature>
+      </Features>
+    </div>
+  </div>
+</div>
