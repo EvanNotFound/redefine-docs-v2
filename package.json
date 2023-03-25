@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/shuding/nextra-docs-template#readme",
   "dependencies": {
+    "clsx": "^1.2.1",
     "framer-motion": "^10.8.5",
     "next": "^13.0.6",
     "nextra": "latest",
