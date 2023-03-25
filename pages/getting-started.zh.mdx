@@ -9,11 +9,12 @@ import { Callout, Tab, Tabs, Steps } from 'nextra-theme-docs'
   Hexo 版本需要大于 5.0.0
 </Callout>
 
+## 安装
 <Steps>
 
-### 安装
+### 安装主题
 
-在 Hexo 根目录执行以下命令安装主题：
+在 Hexo 根目录执行以下命令安装主题，有两种方式：
 
 
 <Tabs items={['npm', 'git']}>
@@ -51,9 +52,6 @@ theme: redefine
 
 接下来请先阅读配置注意事项，然后继续配置主题。
 
-
-</Steps>
-
 ### 注意事项
 
 #### 1. 文档阅读说明
@@ -78,3 +76,59 @@ YAML 语法是按照缩进来区分层级的，所以请注意缩进。
 #### 3. 配置主题
 
 所有改动都请在 `_config.redefine.yml` 文件中进行，不建议直接修改主题文件，因为更新主题时会覆盖你的改动。
+</Steps>
+
+## 更新
+
+<Steps>
+
+### 更新主题
+
+在 Hexo 根目录执行和安装时同样的命令更新主题：
+
+<Tabs items={['npm', 'git']}>
+    <Tab>
+        ```bash filename="终端"
+        npm install hexo-theme-redefine@latest
+        ```
+    </Tab>
+    <Tab>
+        ```bash filename="终端"
+        git clone https://github.com/EvanNotFound/hexo-theme-redefine.git themes/redefine
+        ```
+    </Tab>
+</Tabs>
+
+### 迁移配置
+
+有时候，更新完主题后，你的配置文件会有一些新的配置项，或者删除了一些配置项，或者对配置项名称进行了改动，这时候你需要将这些配置同步到你的配置文件中。
+
+可以使用 VS Code 等编辑器的 `文件比对` 功能，将新旧配置文件进行对比，然后将新的配置项添加到你的配置文件中。
+
+例如，以下分别是两个不同安装方法的 VS Code 文件对比教程：
+
+<Tabs items={['npm', 'git']}>
+    <Tab>
+        在 VS Code 中，按住 `Ctrl`(windows) 或者 `Command`(macos) 键，
+        
+        选中旧配置文件(`_config.redefine.yml`)，
+        
+        再选中新配置文件(`node_modules/hexo-theme-redefine/_config.yml`)。
+        
+        然后点击 `比较选中的文件` 或者 `Compare Selected` 按钮，即可看到两个文件的对比结果，然后再进行迁移，缩进请严格按照旧配置文件的缩进来进行迁移。
+    </Tab>
+    <Tab>
+        在 VS Code 中，按住 `Ctrl`(windows) 或者 `Command`(macos) 键，
+        
+        选中旧配置文件(`_config.redefine.yml`)，
+        
+        再选中新配置文件(`themes/redefine/_config.yml`)。
+        
+        然后点击 `比较选中的文件` 或者 `Compare Selected` 按钮，即可看到两个文件的对比结果，然后再进行迁移，缩进请严格按照旧配置文件的缩进来进行迁移。
+    </Tab>
+</Tabs>
+
+</Steps>
+
+
+

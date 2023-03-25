@@ -1,0 +1,47 @@
+# Folding 折叠模块
+
+可以在这个模块下面嵌套其他模块或者文字，段落等
+
+本模块部分迁移自 `hexo-theme-volantis`
+
+## 效果
+
+![Screenshot 2023-01-26 at 9.34.14 PM](https://evan.beee.top/img/2023/01/26/ade3c1205a969a2f69f1327225166288.png)
+
+## 写法
+
+```markdown
+{% folding [颜色]::[标题] %}
+
+需要写的内容
+
+{% endfolding %}
+```
+
+比如上图例子
+
+```markdown
+{% folding blue::Folding 测试： 点击查看更多 %}
+
+啊啊啊啊啊
+
+{% note danger  %}
+danger 提示块标签
+{% endnote %}
+
+{% note tip  %}
+tip 提示块标签
+{% endnote %}
+
+{% endfolding %}
+```
+
+## 颜色列表
+
+```markdown
+yellow, blue, green, red, orange, pink, cyan, white, black, gray
+```
+
+## 更多
+
+实际体验欢迎前往 [Redefine 演示站点](https://redefine.ohevan.com/2022/10/02/theme-demo/)

@@ -1,0 +1,20 @@
+# CDN 加速
+
+内容分发网络 (CDN) 是一种分布式系统，它将内容存储在离用户最近的服务器上，从而提高用户访问网站的速度和性能。CDN 会将用户的请求转发到最近的服务器上，而不是将请求转发到网站的源服务器上。这样可以减少源服务器的负载，同时也可以提高用户访问网站的速度。
+
+本主题支持 CDN 加速，你可以在主题设置中开启 CDN 加速功能。站点本身就很快的话，不建议开启 CDN 加速功能。
+
+支持的服务分别为：`unpkg`, `jsdelivr`, `aliyun`
+
+## 配置
+
+打开主题配置文件 `_config.redefine.yml`，找到 `cdn` 配置项，将 `enable` 设置为 `true`，并将 `provider` 设置为你想使用的 CDN 服务商。
+
+```yaml filename="_config.redefine.yml"
+cdn:
+  enable: true
+  provider: unpkg # unpkg, jsdelivr, aliyun
+```
+## 特别说明
+
+`aliyun` 是阿里云OSS，由本人自费，如使用此源，有能力的话，麻烦[捐助](https://donate.ohevan.com)一些，阿里云OSS很烧钱，就算是一块两块的捐助也能维持得更久一些。感谢！

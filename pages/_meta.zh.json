@@ -27,13 +27,26 @@
     "title": "使用"
   },
   "page_templates": "页面模板",
+  "modules": "写作模块",
+  "plugins": "插件",
+  "shuoshuo": "说说",
+  "article_customize": "文章自定义",
+  "inject": "插入自定义代码",
+  "cdn": "CDN 加速",
+  "tips": "写作指南",
+  "language": "语言设置",
 
   "-- More": {
     "type": "separator",
     "title": "更多"
   },
+  "migrate": "从 v1 迁移",
+  "thanks": "致谢",
+
+
+
   "contact": {
-    "title": "联系作者 ↗",
+    "title": "联系作者",
     "type": "page",
     "href": "mailto:contact@ohevan.com",
     "newWindow": true

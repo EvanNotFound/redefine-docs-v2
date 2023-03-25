@@ -35,7 +35,7 @@ import docsCardDark from '../public/assets/card-1.dark.png'
     <h1 className="headline">Create beautiful blogs <br className='sm:block hidden'/>with Hexo & R<span style={{color:"#A31F34"}}>e</span>define</h1>
     <p className="subtitle">一款<strong>简洁</strong>，<strong>快速</strong>，<strong>纯净</strong>的 Hexo 主题<br className='sm:block hidden'/>简洁，但<strong>不简单</strong>。</p>
     <p className="subtitle">
-      <Link className={styles.cta} href="/introduction">快速开始 <span>→</span></Link>
+      <Link className={styles.cta} href="/getting-started">快速开始 <span>→</span></Link>
     </p>
   </div>
 
@@ -250,6 +250,9 @@ import docsCardDark from '../public/assets/card-1.dark.png'
     #highlighting-card p {
         margin-top: 1.5rem;
     }
+    .mr-6 {
+        margin-top: 1.5rem;
+    }
   `}</style>
 
   <div className="features-container">
@@ -289,11 +292,11 @@ import docsCardDark from '../public/assets/card-1.dark.png'
         </Feature>
         <Feature index={2} id="highlighting-card" href="/docs/guide/syntax-highlighting">
           <h3>Mermaid JS <br />完美支持</h3>
-          <p>安装 `hexo-filter-mermaid-diagrams` 插件后，能完美支持 Mermaid JS 流程图显示。</p>
+          <p className='mr-6'>安装 `hexo-filter-mermaid-diagrams` 插件后，能完美支持 Mermaid JS 流程图显示。</p>
         </Feature>
         <Feature index={3} href="/docs/guide/i18n">
           <h3>内置 SEO 优化，<br className="show-on-mobile"/>请坐和放宽。</h3>
-          <p className='mb-4'>Redefine 主题经过许多 SEO 优化，让你的网站更快被搜索引擎收录。无需繁琐配置。</p>
+          <p className='mb-4 mr-6'>Redefine 主题经过许多 SEO 优化，让你的网站更快被搜索引擎收录。无需繁琐配置。</p>
 
         </Feature>
         <Feature index={4} centered style={{
@@ -307,7 +310,7 @@ import docsCardDark from '../public/assets/card-1.dark.png'
           color: '#fff'
         }} href="/docs/guide/markdown">
           <svg xmlns="http://www.w3.org/2000/svg" width="208" height="128" viewBox="0 0 208 128"><rect width="198" height="118" x="5" y="5" ry="10" stroke="none" stroke-width="10" fill="none"/><path fill="white" d="M30 98V30h20l20 25 20-25h20v68H90V59L70 84 50 59v39zm125 0l-30-33h20V30h20v35h20z"/></svg>
-          <p style={{
+          <p  className='mr-6' style={{
             textShadow: '0 2px 4px rgb(0 0 0 / 20%)'
           }}>经过特别设计的 Markdown 文章内容样式， <br className="hide-medium"/>让阅读变得，简单明了。</p>
         </Feature>
@@ -363,7 +366,7 @@ import docsCardDark from '../public/assets/card-1.dark.png'
         </Feature>
         <Feature index={9} large>
           <h3>以及更多</h3>
-          <p>SEO / RSS Feed / Aplayer 播放器 / PJAX / 文章头图 / Font Awesome 6.2.1 Pro...<br/>更多功能有待探索。</p>
+          <p className='mr-6'>SEO / RSS Feed / Aplayer 播放器 / PJAX / 文章头图 / Font Awesome 6.2.1 Pro...<br/>更多功能有待探索。</p>
           <p className="subtitle"><Link className="!no-underline" href="/docs">开始使用 Redefine →</Link></p>
         </Feature>
         <Feature index={10} href="/docs/guide/ssg">

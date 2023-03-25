@@ -24,9 +24,6 @@ const config: DocsThemeConfig = {
       <meta name="msapplication-TileColor" content="#2b5797" />
       <meta name="msapplication-config" content="https://evan.beee.top/projects/hexo-theme-redefine/statics/favicon/browserconfig.xml" />
       <meta name="theme-color" content="#ffffff" />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet"></link>
     </>
   ),
   project: {
@@ -56,8 +53,8 @@ const config: DocsThemeConfig = {
   },
   banner: {
     key: '2.0-release',
-    text: <a href="https://redefine-docs-v1.ohevan.com" target="_blank">
-      🎉 你正在阅读 Redefine v2 文档，从 v1 迁移请查看 →
+    text: <a href="/migrate" target="_blank">
+      🎉 你正在阅读 Redefine v2 文档，从 v1 迁移 →
     </a>,
   },
 }
