@@ -1,0 +1,48 @@
+# Folding
+
+You can nest other modules or text, paragraphs, etc. under this module
+
+This module is partially migrated from `hexo-theme-volantis`
+
+## Effect
+
+![Screenshot 2023-01-26 at 9.34.14 PM](https://evan.beee.top/img/2023/01/26/ade3c1205a969a2f69f1327225166288.png)
+
+## Writing
+
+```markdown
+{% folding [color]::[title] %}
+
+Content to be written
+
+{% endfolding %}
+```
+
+For example, the example in the figure
+
+```markdown
+{% folding blue::Folding test: click to view more %}
+
+Ah ah ah ah ah
+
+{% note danger  %}
+
+{% endnote %}
+
+{% note tip  %}
+
+{% endnote %}
+
+{% endfolding %}
+```
+
+## Color list
+
+```markdown
+
+yellow, blue, green, red, orange, pink, cyan, white, black, gray
+```
+
+## More
+
+For actual experience, please go to [Redefine Demo Site](https://redefine.ohevan.com/2022/10/02/theme-demo/)

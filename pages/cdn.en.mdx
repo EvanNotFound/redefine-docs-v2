@@ -1,0 +1,20 @@
+# CDN acceleration
+
+A content delivery network (CDN) is a distributed system that stores content on servers closest to the user, thereby improving the speed and performance of users' access to websites. A CDN forwards a user's request to the closest server instead of forwarding the request to the website's origin server. This reduces the load on the origin server and also improves the speed at which users can access the website.
+
+This theme supports CDN acceleration, you can enable CDN acceleration in theme settings. If the site itself is very fast, it is not recommended to enable the CDN acceleration function.
+
+The supported services are: `unpkg`, `jsdelivr`, `aliyun`
+
+## configuration
+
+Open the theme configuration file `_config.redefine.yml`, find the `cdn` configuration item, set `enable` to `true`, and set `provider` to the CDN service provider you want to use.
+
+```yaml filename="_config.redefine.yml"
+cdn:
+  enable: true
+  provider: unpkg # unpkg, jsdelivr, aliyun
+```
+## Special Note
+
+`aliyun` is Alibaba Cloud OSS, which is at my own expense. If you can use this source, please [donate](https://donate.ohevan.com) if you have the ability. Alibaba Cloud OSS is very expensive, even if it is one or two dollars Donations can also last longer. grateful!

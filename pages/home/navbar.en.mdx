@@ -1,0 +1,113 @@
+# Navigation bar `navbar`
+
+## background color
+
+color gradient effect
+
+### Left
+
+**Configuration item name: `navbar.color.left`**
+
+| Type | Remarks | Example |
+| :---: | :---: | :---: |
+| String | Fill in the Hex color value | `#f78736` |
+
+### Right
+
+**Configuration item name: `navbar.color.right`**
+
+| Type | Remarks | Example |
+| :---: | :---: | :---: |
+| String | Fill in the Hex color value | `#367df7` |
+
+### Transparency
+
+**Configuration item name: `navbar.color.transparency`**
+
+| type | optional value | default value |
+| :---: | :---: | :---: |
+| number | `10-99` | `35` |
+
+## linked list
+
+**Configuration item name: `navbar.links`**
+
+### General Menu
+
+Effect:
+
+![image-20230322181757906](https://evan.beee.top/img/2023/03/22/04a83f6c05b00f40c1e1085cf17dd04b.png)
+
+Writing:
+
+```yaml filename="_config.redefine.yml"
+navbar:
+   links:
+     Home: # The first level menu bar name
+       path: / # URL, can be a relative path or an absolute path
+       icon: fa-regular fa-house # Fontawesome icon name (optional)
+```
+If you want to jump to a third-party website when you click the menu in the navigation bar, you only need to fill in the value of `path` with the URL of the third-party website.
+
+For example: configure the menu that jumps to the Google website in the header navigation bar
+
+```yaml filename="_config.redefine.yml" {3-5}
+navbar:
+   links:
+     Google: # first level menu bar name
+       path: https://www.google.com/ # URL, can be relative path or absolute path
+       icon: fa-brands fa-google # Fontawesome icon name (optional)
+```
+
+### Drop-down menu writing
+
+Effect:
+
+![Screenshot 2023-03-22 at 6.18.29 PM](https://evan.beee.top/img/2023/03/22/9f2bd701f601ffa075c6dc2c5158866a.png)
+
+Writing:
+
+```yaml filename="_config.redefine.yml" {3-7}
+navbar:
+   links:
+     About: # First level menu bar name
+       icon: fa-regular fa-user # Fontawesome icon name (optional)
+       submenus: # secondary menu bar
+         Me: /about # Secondary menu bar name: URL
+         Github: https://github.com/EvanNotFound/hexo-theme-redefine
+```
+
+### Icon configuration
+
+Please go to [Font Awesome](https://fontawesome.com/search) to search for icons, and copy the icon name.
+
+![image-20230322182114718](https://evan.beee.top/img/2023/03/22/0b7c26aeee2f1cb9bc6b3e475bfdfccc.png)
+
+Finally, write it in `icon`.
+
+
+## search
+
+The `hexo-generator-searchdb` plugin needs to be installed.
+
+Please execute the following command to install:
+
+```bash
+npm install hexo-generator-searchdb --save
+```
+
+### switch
+
+**Configuration item name: `search.enable`**
+
+| type | optional value | default value |
+| :---: | :---: | :---: |
+| Boolean | `true \| false` | `true` |
+
+### Preloading
+
+**Configuration item name: `search.preload`**
+
+| type | optional value | default value |
+| :---: | :---: | :---: |
+| Boolean | `true \| false` | `true` |

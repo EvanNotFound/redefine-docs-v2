@@ -1,0 +1,49 @@
+# Buttons
+
+This module can add buttons
+
+## Effect
+
+![Screenshot 2023-01-26 at 10.17.27 PM](https://evan.beee.top/img/2023/01/26/ff18cf0630939a7212dcf926384e0626.png)
+
+More effects, please go to [Redefine Demo](https://redefine.ohevan.com/2022/10/02/theme-demo/) to view
+
+## Writing
+
+```
+{% btn [optional size]::[name]::[url]::[optional icon] %}
+```
+
+For example:
+
+```markdown
+{% btn button without any parameters:: / %} is suitable for integrating into paragraphs.
+
+The regular button is suitable for being independent of paragraphs:
+
+{% btn regular::Example blog::https://www.ohevan.com::fa-solid fa-play-circle %}
+
+{% btn regular::Example blog::https://www.ohevan.com::fa-solid fa-play-circle %}
+
+The large button has a stronger emphasis and is recommended to be used with center:
+
+{% btn center large::Get started::https://redefine-docs.ohevan.com::fa-solid fa-download %}
+```
+
+## Variable optional value
+
+`[optional size]` :
+
+```markdown
+center, regular, large, center large, center regular
+```
+
+`[optional icon]` :
+
+[Fontawesome](https://fontawesome.com/search) icon name, such as `fa-solid fa-house`
+
+
+## More
+
+For actual experience, please go to [Redefine Demo](https://redefine.ohevan.com/2022/10/02/theme-demo/)
+

@@ -1,0 +1,140 @@
+# Home Banner `home_banner`
+
+## switch 
+
+**Configuration item name: `home_banner.enable`**
+
+| type | optional value | default value |
+| :---: | :---: | :---: |
+| Boolean | `true \| false` | `true` |
+
+## Background picture
+
+### Bright color mode
+
+**Configuration item name: `home_banner.image.light`**
+
+| Type | Remarks | Example |
+| :---: | :---: | :---: |
+| string | local relative link/image external link | `/images/wallhaven-wqery6-light.webp` |
+
+### Dark Mode
+
+**Configuration item name: `home_banner.image.dark`**
+
+| Type | Remarks | Example |
+| :---: | :---: | :---: |
+| string | local relative link/image external link | `/images/wallhaven-wqery6-dark.webp` |
+
+## Main title
+
+**Configuration item name: `home_banner.title`**
+
+| Type | Remarks | Example |
+| :---: | :---: | :---: |
+| string | None | `Theme Redefine` |
+
+## Subtitle
+
+**Configuration item name: `home_banner.subtitle`**
+
+There is a typewriter animation effect, and multiple strings can be configured, and each string will be displayed cyclically in the typewriter animation.
+
+| Type | Remarks | Example |
+| :---: | :---: | :---: |
+| array | separated by commas | `["This is the first message", "This is the second message", "etc"]` |
+
+## text color
+
+Sets the text color for titles and subtitles.
+
+### Bright color mode
+
+**Configuration item name: `home_banner.text_color.light`**
+
+| Type | Remarks | Example |
+| :---: | :---: | :---: |
+| String | Please fill in the Hex color value | `#fff` |
+
+### Dark Mode
+
+**Configuration item name: `home_banner.text_color.dark`**
+
+| Type | Remarks | Example |
+| :---: | :---: | :---: |
+| String | Please fill in the Hex color value | `#d1d1b6` |
+
+## text style
+
+### Title font size
+
+**Configuration item name: `home_banner.text_style.title_size`**
+
+| Type | Remarks | Example |
+| :---: | :---: | :---: |
+| String | Please fill in CSS supported font size | `2.8rem` |
+
+### subtitle font size
+
+**Configuration item name: `home_banner.text_style.subtitle_size`**
+
+| Type | Remarks | Example |
+| :---: | :---: | :---: |
+| String | Please fill in CSS supported font size | `1.5rem` |
+
+### Title and subtitle row height
+
+**Configuration item name: `home_banner.text_style.line_height`**
+
+| Type | Remarks | Example |
+| :---: | :---: | :---: |
+| String | Please fill in the line height supported by CSS | `1.2` |
+
+## custom font
+
+### switch
+
+**Configuration item name: `home_banner.custom_font.enable`**
+
+| type | optional value | default value |
+| :---: | :---: | :---: |
+| Boolean | `true \| false` | `false` |
+
+### Font name
+
+**Configuration item name: `home_banner.custom_font.family`**
+
+| Type | Remarks | Example |
+| :---: | :---: | :---: |
+| string | will be applied to the main title and subtitle | `Noto Sans SC` |
+
+### Font CSS file link
+
+**Configuration item name: `home_banner.custom_font.url`**
+
+| Type | Remarks | Example |
+| :---: | :---: | :---: |
+| string | address of font style file (CSS) | `https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap` |
+
+## Social Links
+
+### switch
+
+**Configuration item name: `home_banner.social_links.enable`**
+
+| type | optional value | default value |
+| :---: | :---: | :---: |
+| Boolean | `true \| false` | `false` |
+
+### Link
+
+**Configuration item name: `home_banner.social_links.links`**
+
+Please add your social link, the format is as follows, please fill in the Brands icon name, such as `github`.
+
+```yaml filename="_config.redefine.yml"
+links:
+     [fontawesome icon name (not HTML code)]: [your social link address]
+```
+
+You can go to [Font Awesome](https://fontawesome.com/search?o=r&f=brands) to check the icon name.

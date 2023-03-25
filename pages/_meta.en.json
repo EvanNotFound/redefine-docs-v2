@@ -10,28 +10,41 @@
   },
   "introduction": "Introduction",
   "getting-started": "Getting Started",
-  
+ 
   "-- Guides": {
     "type": "separator",
-    "title": "Guides"
+    "title": "Configuration"
   },
   "basic": "Basic",
   "home": "Home",
-  "posts": "Posts",
+  "posts": "Articles",
   "footer": "Footer",
 
 
 
   "-- Advanced": {
     "type": "separator",
-    "title": "Advanced"
+    "title": "Use"
   },
   "page_templates": "Page Templates",
+  "modules": "Writing Modules",
+  "plugins": "Plugins",
+  "shuoshuo": "Shuoshuo",
+  "article_customize": "Article Customization",
+  "inject": "Inject custom code",
+  "cdn": "CDN",
+  "tips": "Writing Guide",
+  "language": "Language Settings",
 
   "-- More": {
     "type": "separator",
     "title": "More"
   },
+  "migrate": "Migrate from v1",
+  "thanks": "Thanks",
+
+
+
   "contact": {
     "title": "Contact",
     "type": "page",
@@ -45,7 +58,7 @@
     "newWindow": true
   },
   "demo": {
-    "title": "Demo ↗",
+    "title": "Demo Site ↗",
     "type": "page",
     "href": "https://redefine.ohevan.com/",
     "newWindow": true

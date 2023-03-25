@@ -1,0 +1,33 @@
+# migrate from v1
+
+If you are using the v1.x.x version of the Redefine theme, it is recommended to upgrade to the v2.x.x version as soon as possible.
+
+The v1 version is no longer maintained, and the v2 version has refactored the code and is no longer compatible with the configuration files of the v1 version.
+
+So you need to follow the steps below to migrate the v1 version of the configuration file to the v2 version.
+
+If you still need to read the v1 version of the document, you can visit [v1 version of the document](https://redefine-docs-v1.ohevan.com/).
+
+## Migration steps
+
+import {Steps} from 'nextra-theme-docs'
+
+<Steps>
+
+### Backup v1 config file
+
+After **updating the theme**, rename your v1 configuration file `_config.redefine.yml` to `_config.redefine.v1.yml`
+
+### Create v2 configuration file
+
+**Create** `_config.redefine.yml` file in the root directory of the site, and then [here](https://github.com/EvanNotFound/hexo-theme-redefine/blob/main/_config.yml) configuration File **Copy in**.
+
+### Migrate configuration items
+
+In the configuration file of the v2 version, the configuration items are reconstructed, so please refer to the configuration file of the v1 version to migrate the configuration items.
+
+If the migration is difficult, please re-read the [v2 document](/getting-started) and reconfigure the configuration items again.
+
+</Steps>
+
+I apologize for the trouble the migration caused. If you have any questions, please submit an issue on [GitHub](https://github.com/EvanNotFound/hexo-theme-redefine), or contact me by email [contact@ohevan.com](mailto:contact@ohevan.com )

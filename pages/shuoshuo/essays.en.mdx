@@ -1,0 +1,80 @@
+# Local deployment method
+
+This method is written with reference to [Static Deployment Version of Immediate Short Article](https://blog.zhheo.com/p/557c9e72.html), and is adapted by Evan Luo to the Redefine theme.
+
+The implementation logic is to write the content of talk in the local `yml` file, and then generate talk when generating a blog.
+
+## Effect
+
+![Screenshot 2023-03-09 at 3.20.35 PM](https://evan.beee.top/img/2023/03/09/75b146ba614c9cbc81c1ecf1b7e19ef3.png)
+
+Demo link: https://redefine.ohevan.com/essays
+
+## configuration
+
+import {Steps} from 'nextra-theme-docs'
+
+<Steps>
+
+### Create talk page
+
+The page name can choose `shuoshuo` or `essays` or `essay`
+
+Execute the command in the root directory of the Hexo blog
+
+```shell
+$ hexo new page essays
+```
+
+At this point a page called `essays` is created
+
+### Edit page name
+
+Open the `/source/esssays/index.md` file (choose according to the name of the page you created), and change the `title` attribute in `front-matter` to the Chinese `Talking` or `Essays`.
+
+Since the page template is matched according to the page name by default, if you want to change the page name to another name, please add `type: shuoshuo` in `front-matter`
+
+for example
+
+```markdown
+---
+title: test page
+type: shuoshuo
+date: 2023-03-08 10:38:34
+---
+```
+
+### Create a talk about storage file
+
+Create a folder `_data` under the `source` directory in the blog root directory (if it has not been created before)
+
+Then create the file `essays.yml` under the `_data` directory
+
+Write your content in this format
+
+```yaml
+- content: The first article talks about the content
+   date: 2019-01-01 10:00:00 #Talk about the date
+
+- content: The second article talks about the content
+   date: 2019-01-02 10:00:00
+```
+
+Then visit this page to see what you said.
+
+</Steps>
+
+## Writing Prompts
+
+Talk about supporting Markdown writing.
+
+If you need a line break, please write as follows
+
+```yaml
+- content: |
+     Talk about the test, this is the fourth, newline test
+     Talk about the test, this is the fourth, newline test
+     Talk about the test, this is the fourth, newline test
+     Talk about the test, this is the fourth, newline test
+   date: 2019-01-04 10:00:00
+```

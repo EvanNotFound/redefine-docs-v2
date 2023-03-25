@@ -1,0 +1,83 @@
+# Artitalk way
+
+This method is to use [Artitalk](https://artitalk.js.org/) to deploy
+
+## Effect
+
+![](https://evan.beee.top/img/2023/03/09/cfe187fd37e1c5e45ee219b54692161b.png)
+
+Actual link: https://ncwzdlsd.top/shuoshuo/
+
+## configuration
+
+First, enter the official website of Artitalk, and throw the data storage of Artitalk on LeanCloud according to the process in "[Quick Start](https://artitalk.js.org/doc.html#🚀-Get Started)".
+
+It should be noted that the international version of LeanCloud is basically unavailable in mainland China, so domestic users should use the domestic version of LeanCloud, but the overall process is the same, only need to add `serverURL` information when configuring the page .
+
+After the LeanCloud configuration is complete, you can add Artitalk to your blog.
+
+Use the `hexo new page` command to create a new page, for example, if the name is `shuoshuo`, then enter
+
+```shell
+hexo new page shuoshuo
+```
+
+A `shuoshuo` folder will be created automatically in the `source` folder in the root directory of the blog
+
+Open the `index.md` file inside and configure as follows:
+
+1. Modify `front-matter`
+
+    :::caution
+
+    If you have created `essays.yml` under the `/source/_data/` directory before using local deployment, please delete this file or rename it to another name, otherwise `Artitalk` will not take effect
+
+    :::
+
+    ```markdown
+    ---
+    title: tell me
+    ---
+    ```
+
+2. Then there are some configuration items, you can refer to [official document](https://artitalk.js.org/doc.html#%F0%9F%8C%BC-%E5%BC%80%E5%A7%8B %E4%BD%BF%E7%94%A8).
+
+    Pay attention to the `serverURL` here, the normal `serverURL` of LeanCloud needs to be filed, but it is estimated that many bloggers do not use the filed domain name, so here is an alternative, which is to use `https://avoscloud.com` as the `serverURL `.
+
+    Here, in order to speed up the access speed, I throw the js file of talk about it on my own (ncwzdlsd) Tencent Cloud COS, or I can replace it with `unpkg` according to the configuration in the official document.
+
+    Sample code:
+
+    ```markdown
+    <!-- quote artitalk -->
+    <script async data-pjax type="text/javascript" src="https://photo-1314795557.cos.ap-beijing.myqcloud.com/artitalk.js"></script>
+    <!-- Container for storing talk -->
+    <div id="artitalk_main"></div>
+    <script async data-pjax>
+    new Artitalk({
+        appId: '', // Your LeanCloud appId
+        appKey: '', // Your LeanCloud appKey
+        serverURL: 'https://avoscloud.com',
+        pageSize: 50, //Number of comments per page
+        shuoPla: '', //Displayed in the comment box, you can leave it blank
+        motion: 0, //Load animation switch 0 (off), 1 (on)
+        atComment: 0, // switch of the comment function 0 (off), 1 (on)
+        bgImg: '', //The background in the comment box, you can leave it blank
+        color1: '#ffffff', //custom color, there are several ways
+        color2: '#ffffff',
+        color3: '#3b9a9c',
+    })
+    </script>
+    ```
+
+    After this setting, a talk page that can be dynamically edited will be fine. If the above configuration is followed, the effect is as follows:
+
+    ![](https://evan.beee.top/img/2023/03/09/cfe187fd37e1c5e45ee219b54692161b.png)
+
+You can search for more settings by yourself, or check the official documentation.
+
+It should be noted that the access speed of the talk page may be slower after deploying it with Artitalk. If you need access speed, please use the local deployment method
+
+Written by: [ncwzdlsd](https://ncwzdlsd.top/)
+
+Modified by: Evan Luo

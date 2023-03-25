@@ -1,0 +1,60 @@
+# Home Article `home`
+
+## Date format
+
+![image-20230322184235442](https://evan.beee.top/img/2023/03/22/6e5dd768ca4967820c295ed4819eae2c.png)
+
+**Configuration item name: `home.article_date_format`**
+
+| Type | Optional values | Default value |
+| :---: | :---: | :---: |
+| String | `auto`, `relative`, `YYYY-MM-DD`, `YYYY-MM-DD HH:mm:ss`, `momentjs date format` | `auto` |
+
+  * `auto`: Automatically select date format based on article date
+  * `relative`: Relative time, such as `1 hour ago`
+  * `YYYY-MM-DD`: Year-month-day, such as `2023-03-22`
+  * `YYYY-MM-DD HH:mm:ss`: Year-month-day hour-minute-second, such as `2023-03-22 12:00:00`
+  * `MMM D, YYYY`: Month day year, such as `Mar 22, 2023`
+  * For more formats, please refer to [Moment.js](momentjs.com/docs/#/displaying/format/)
+
+## Category
+
+![image-20230322184434686](https://evan.beee.top/img/2023/03/22/1374fdcb46ddfa5a5aa1fc172d8ba40f.png)
+
+### Switch
+
+**Configuration item name: `home.categories.enable`**
+
+| Type | Optional values | Default value |
+| :---: | :---: | :---: |
+| Boolean | true, false | true |
+
+### Display quantity
+
+**Configuration item name: `home.categories.limit`**
+
+| Type | Optional values | Default value |
+| :---: | :---: | :---: |
+| Number | 1, 2, 3, ... | 3 |
+
+## Tag
+
+![image-20230322184320720](https://evan.beee.top/img/2023/03/22/28e485beefdc3b843832d435b61848b0.png)
+
+### Switch
+
+**Configuration item name: `home.tags.enable`**
+
+| Type | Optional values | Default value |
+| :---: | :---: | :---: |
+| Boolean | true, false | true |
+
+### Display quantity
+
+**Configuration item name: `home.tags.limit`**
+
+| Type | Optional values | Default value |
+| :---: | :---: | :---: |
+| Number | 1, 2, 3, ... | 3 |
+
+```
