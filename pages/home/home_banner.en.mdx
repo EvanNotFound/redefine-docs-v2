@@ -36,13 +36,24 @@
 
 ## Subtitle
 
-**Configuration item name: `home_banner.subtitle`**
+### text content
+
+**Configuration item name: `home_banner.subtitle.text`**
 
 There is a typewriter animation effect, and multiple strings can be configured, and each string will be displayed cyclically in the typewriter animation.
 
 | Type | Remarks | Example |
 | :---: | :---: | :---: |
 | array | separated by commas | `["This is the first message", "This is the second message", "etc"]` |
+
+### Advanced: Typing animation settings
+
+- `typing_speed`: typing speed (number of letters printed per millisecond)
+- `backing_speed`: Backspace speed (number of letters backspaced per millisecond)
+- `starting_delay`: start delay (milliseconds)
+- `backing_delay`: backspace delay (milliseconds)
+- `loop`: Whether to loop
+- `smart_backspace`: whether to backspace intelligently
 
 ## text color
 

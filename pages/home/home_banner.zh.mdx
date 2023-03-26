@@ -36,13 +36,24 @@
 
 ## 副标题
 
-**配置项名称：`home_banner.subtitle`**
+### 文字内容
+
+**配置项名称：`home_banner.subtitle.text`**
 
 有打字机动画效果，可以配置多个字符串，每个字符串会在打字机动画中循环显示。
 
 | 类型 | 备注 | 示例 |
 | :---: | :---: | :---: |
 | 数组 | 请用英文逗号分隔 | `["This is the first message", "This is the seconf message", "etc"]` |
+
+### 高级：打字动画设置
+
+- `typing_speed`：打字速度（每毫秒打印的字母数）
+- `backing_speed`：退格速度（每毫秒退格的字母数）
+- `starting_delay`：开始延迟（毫秒）
+- `backing_delay`：退格延迟（毫秒）
+- `loop`：是否循环
+- `smart_backspace`：是否智能退格
 
 ## 文字颜色
 
