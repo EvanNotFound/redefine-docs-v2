@@ -10,13 +10,32 @@ v1 版本已经不再维护，而且 v2 版本对代码进行了重构，不再�
 
 ## 迁移步骤
 
-import {Steps} from 'nextra-theme-docs'
+import { Callout, Tab, Tabs, Steps } from 'nextra-theme-docs'
 
 <Steps>
 
+### 更新主题
+
+<Tabs items={['npm', 'git']}>
+    <Tab>
+        执行以下命令更新主题：
+
+        ```bash filename="终端"
+        npm install hexo-theme-redefine@latest
+        ```
+    </Tab>
+    <Tab>
+        首先删除 `themes/redefine` 文件夹，然后执行以下命令更新主题：
+
+        ```bash filename="终端"
+        git clone https://github.com/EvanNotFound/hexo-theme-redefine.git themes/redefine
+        ```
+    </Tab>
+</Tabs>
+
 ### 备份 v1 配置文件
 
-在[更新主题之后](/getting-started#%E6%9B%B4%E6%96%B0)，把你的 v1 版本的配置文件 `_config.redefine.yml` 重命名为 `_config.redefine.v1.yml`
+在更新主题之后，把你的原先 v1 版本的配置文件 `_config.redefine.yml` 重命名为 `_config.redefine.v1.yml`
 
 ### 创建 v2 配置文件
 
