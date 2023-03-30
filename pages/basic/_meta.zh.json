@@ -3,6 +3,5 @@
   "defaults": "默认图片",
   "colors": "主题配色",
   "global": "全局功能",
-  "open_graph": "Open Graph",
-  "fontawesome": "Font Awesome"
+  "fontawesome": "Font Awesome 图标"
 }
