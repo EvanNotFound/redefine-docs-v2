@@ -57,6 +57,10 @@ const config: DocsThemeConfig = {
       🎉 你正在阅读 Redefine v2 文档，从 v1 迁移 →
     </a>,
   },
+  primaryHue: {
+    light: 10,
+    dark: 16
+  }
 }
 
 export default config
