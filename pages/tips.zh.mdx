@@ -25,3 +25,25 @@ sticky: 999
 **否则**，会出现这种情况
 
 ![Screenshot 2023-02-19 at 9.27.01 AM](https://evan.beee.top/img/2023/02/19/2084ddb92a9e9f6b5d8f08d3f6b5f8f5.png)
+
+## 图片文件
+
+请**不要把你的图片放在主题的 `source` 文件夹中**，更新主题的时候会被覆盖掉
+
+请把你的图片放在你的 Hexo 博客根目录下面的的 `source/images` 文件夹中（或者 `source/img` 文件夹中，可以自定义文件夹名）
+
+然后在文章中引用图片的时候，使用相对路径
+
+```markdown
+
+比如你放在 `source/images` 文件夹中的 `test.png` 图片，你可以这样引用
+
+![Test](/images/test.png)
+
+或者放在 `source/img` 文件夹中的 `test.png` 图片，你可以这样引用
+
+![Test](/img/test.png)
+
+以此类推
+
+```
