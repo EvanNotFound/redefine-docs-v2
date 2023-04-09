@@ -7,7 +7,7 @@ plugins:
   aplayer: # APlayer (fixed version)
     enable: false
     type: fixed # fixed, mini
-    audio:
+    audios:
       - name: # audio name
         artist: # audio artist
         url: # audio url
@@ -30,7 +30,7 @@ plugins:
 
 - `enable` 是否启用
 - `type` 播放器类型，`fixed` 固定，`mini` 迷你
-- `audio` 是音乐源
+- `audios` 是音乐源
   - `name` 音乐名字
   - `artist` 歌手
   - `url` 音乐源的 `url`。可以是相对链接，也可以是 web 链接
@@ -42,7 +42,7 @@ plugins:
 plugins:
   aplayer: # APlayer
     enable: true
-    audio:
+    audios:
       - name: Imagine # audio name
         artist: John Lennon # audio artist
         url: https://evan.beee.top/music/Imagine%20-%20John%20Lennon.mp3 # audio url
