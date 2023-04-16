@@ -42,9 +42,23 @@
 
 有打字机动画效果，可以配置多个字符串，每个字符串会在打字机动画中循环显示。
 
+**如果开启一言则此项无效。**
+
 | 类型 | 备注 | 示例 |
 | :---: | :---: | :---: |
 | 数组 | 请用英文逗号分隔 | `["This is the first message", "This is the seconf message", "etc"]` |
+
+### 一言
+
+副标题自动获取一言，详见[一言](https://hitokoto.cn/)。
+
+**如果本项开启则 `home_banner.subtitle.text` 无效。**
+
+- `home_banner.subtitle.hitokoto.enable`：开关
+- `home_banner.subtitle.hitokoto.api`：一言 API 地址
+
+API 地址可以指定句子类型，详见[一言 API](https://developer.hitokoto.cn/sentence/#%E5%8F%A5%E5%AD%90%E7%B1%BB%E5%9E%8B-%E5%8F%82%E6%95%B0)。
+
 
 ### 高级：打字动画设置
 
