@@ -155,13 +155,29 @@ API 地址可以指定句子类型，详见[一言 API](https://developer.hitoko
 
 **配置项名称：`home_banner.social_links.links`**
 
-请添加你的社交链接，格式如下，请填写 Brands 图标名称，比如 `github`。
+请添加你的社交链接，格式如下，
+
+如果是 `fa-brands` 图标，可以直接填写 Brands 图标名称，比如 `github`。
+
+但是如果用的不是 fa-brands 图标，比如 `fa-solid`，则需要填写全名，比如 `fa-solid fa-wand-magic-sparkles`。
 
 ```yaml filename="_config.redefine.yml"
 links:
     [fontawesome 图标名称(不是 HTML 代码)]: [你的社交链接地址]
 ```
 
-可以前往 [Font Awesome](https://fontawesome.com/search?o=r&f=brands) 查看图标名称。
+可以前往 [Font Awesome](https://fontawesome.com/search) 查看图标名称。
+
+示例配置：
+
+```yaml filename="_config.redefine.yml"
+links:
+    github: https://github.com
+    twitter: https://twitter.com
+    facebook: https://facebook.com
+    instagram: https://instagram.com
+    fa-solid fa-wand-magic-sparkles: https://example.com
+    fa-regular fa-music: https://example.com
+```
 
 
