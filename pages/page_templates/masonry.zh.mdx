@@ -42,6 +42,20 @@ date: 2023/5/14 11:45:14
 ---
 ```
 
+### 修改配置文件
+
+在 Redefine 主题配置文件 `_config.redefine.yml` 的 `navbar` 配置项里面启用 `links`。
+
+```yaml filename="_config.redefine.yml" {3-5}
+navbar:
+  links:
+    相册: #取名随意
+      icon: fa-solid fa-image #图标
+      path: /masonry/
+```
+
+（放在二级菜单也可以）
+
 ### 创建相册存放文件
 
 在你的 Hexo 项目的 `source` 文件夹里增加 `_data` 文件夹（如果已有则跳过）
