@@ -4,7 +4,7 @@ A content delivery network (CDN) is a distributed system that stores content on 
 
 This theme supports CDN acceleration, you can enable CDN acceleration in theme settings. If the site itself is very fast, it is not recommended to enable the CDN acceleration function.
 
-The supported services are: `unpkg`, `jsdelivr`, `aliyun`
+The supported services are: `elemecdn`, `aliyun`, `jsdelivr`, `personal`. It is recommended to use `elemecdn`, which has fast access speed and high stability.
 
 ## configuration
 
@@ -12,9 +12,21 @@ Open the theme configuration file `_config.redefine.yml`, find the `cdn` configu
 
 ```yaml filename="_config.redefine.yml"
 cdn:
-  enable: true
-  provider: unpkg # unpkg, jsdelivr, aliyun
+   # Whether to enable CDN
+   enable: false
+   # CDN Provider
+   provider: elemecdn # elemecdn, jsdelivr, unpkg, aliyun, custom
+   custom_url:
 ```
+
+### Custom provider
+
+If you want to use a custom CDN service provider, you can set `provider` to `custom` and set `custom_url` to your CDN address.
+
+The format of `custom_url` is: `https://cdn.custom.com/hexo-theme-redefine/${version}/source/${path}`, where `${version}` will be replaced by the theme The version number, `${path}` will be replaced with the path of the theme resource.
+
+Please note that `${path}` must be specified in the `source` directory of the theme file, otherwise it cannot be replaced correctly.
+
 ## Special Note
 
-`aliyun` is Alibaba Cloud OSS, which is at my own expense. If you can use this source, please [donate](https://donate.ohevan.com) if you have the ability. Alibaba Cloud OSS is very expensive, even if it is one or two dollars Donations can also last longer. grateful!
+`aliyun` is Alibaba Cloud OSS at my own expense, and the monthly expenditure is about 20 yuan. If you are able to use this source, please [donate](https://donate.ohevan.com), Alibaba Cloud OSS is very Burning money, even a donation of one or two yuan can last longer. grateful!

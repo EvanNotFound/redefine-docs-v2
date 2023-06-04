@@ -4,7 +4,7 @@
 
 本主题支持 CDN 加速，你可以在主题设置中开启 CDN 加速功能。站点本身就很快的话，不建议开启 CDN 加速功能。
 
-支持的服务分别为：`aliyun`, `unpkg`, `jsdelivr`, `personal`，推荐使用 `aliyun`。
+支持的服务分别为：`elemecdn`,`aliyun`, `jsdelivr`, `personal`，推荐使用 `elemecdn`，访问速度快，稳定性高。
 
 ## 配置
 
@@ -12,9 +12,21 @@
 
 ```yaml filename="_config.redefine.yml"
 cdn:
-  enable: true
-  provider: aliyun # unpkg, jsdelivr, aliyun, personal
+  # Whether to enable CDN
+  enable: false
+  # CDN Provider
+  provider: elemecdn # elemecdn, jsdelivr, unpkg, aliyun, custom
+  custom_url: 
 ```
+
+### 自定义提供商
+
+如果你想使用自定义的 CDN 服务商，可以将 `provider` 设置为 `custom`，并将 `custom_url` 设置为你的 CDN 地址。
+
+`custom_url` 的格式为：`https://cdn.custom.com/hexo-theme-redefine/${version}/source/${path}`，其中 `${version}` 会被替换为主题的版本号，`${path}` 会被替换为主题资源的路径。
+
+请注意，请把 `${path}` 指定在主题文件的 `source` 目录下，否则无法被正确替换。
+
 ## 特别说明
 
-`personal` 是由本人自费的阿里云OSS，如使用此源，有能力的话，麻烦[捐助](https://donate.ohevan.com)一些，阿里云OSS很烧钱，就算是一块两块的捐助也能维持得更久一些。感谢！
+`aliyun` 是由本人自费的阿里云OSS，每个月支出20多元左右，如使用此源，有能力的话，麻烦[捐助](https://donate.ohevan.com)一些，阿里云OSS很烧钱，就算是一块两块的捐助也能维持得更久一些。感谢！

@@ -7,16 +7,21 @@
 格式：（`notel` 意思是 `note large` ，方便记，也可以写成 `note-large` ）
 
 ```markdown
-{% notel [颜色] [标题] %}
+{% notel [颜色] [可选: 自定义图标] [标题] %}
 内容
 支持换行
 {% endnotel %}
 ```
 
+| 参数 | 说明 | 可选值 |
+| :---: | :---: | :---: |
+| 颜色 | 提示块的样式或颜色 | `blue` `red` `cyan` `purple` `orange` `yellow` `green`等颜色 |
+| 自定义图标 | 自定义图标，选填 | [Fontawsome](https://fontawesome.com/search) 的图标名称后半部分，比如 `fa-image` |
+
 例如
 
 ```markdown
-{% notel default 信息 %}
+{% notel default fa-info 信息 %}
 换行测试
 换行测试
 换行测试
