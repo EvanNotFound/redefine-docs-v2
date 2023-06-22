@@ -4,6 +4,8 @@
 
 ![image-20230323231031179](https://evan.beee.top/img/2023/03/23/7ee1f7e490a7602f5ceb533cfd6f57e4.png)
 
+![](https://evan.beee.top/img/2023/06/20/72af17df1d556cfc2fc55ba6494fbf4b.png)
+
 ## 配置教程
 
 import {Steps} from 'nextra-theme-docs'
@@ -66,16 +68,47 @@ navbar:
 
 在 `links.yml` 文件里按如下格式增加你的友链。
 
-```yaml filename="source/_data/links.yml"
-- name: EvanNotFound's Blog
-  link: https://ohevan.com
-  description: 用香港记者的速度更新文章
-  avatar: https://evan.beee.top/avatar.png
+格式：
 
-- name: Example Site
-  link: https://example.com
-  description: Example Site Description
-  avatar: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+```yaml filename="source/_data/links.yml"
+
+- links_category: 分类名
+  has_thumbnail: 是否有预览图（true/false)
+  list: 
+  - name: 名字
+    link: 链接
+    description: 描述
+    avatar: 头像
+    thumbnail: 预览图（has_thumbnail 为 true 时才需要）
+
+- ......  
+
+```
+
+示例：
+
+```yaml filename="source/_data/links.yml"
+
+- links_category: Elites
+  has_thumbnail: true
+  list: 
+  - name: EvanNotFound's Blog
+    link: https://ohevan.com
+    description: 用香港记者的速度更新文章
+    avatar: https://evan.beee.top/avatar.png
+    thumbnail: https://img1.imgtp.com/2023/06/19/Jegvz84P.png
+
+- links_category: Normal
+  has_thumbnail: false
+  list: 
+  - name: Example Site
+    link: https://example.com
+    description: Example Site Description
+    avatar: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+  - name: Example Site 2
+    link: https://example.com
+    description: Example Site Description
+    avatar: https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
 - ......  
 
