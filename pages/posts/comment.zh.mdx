@@ -1,5 +1,7 @@
 # 评论系统 `comment`
 
+Redefine 主题支持 `waline` `twikoo` `gitalk` `giscus` 四种评论系统，你可以根据自己的喜好选择一种。
+
 ## 开关
 
 **配置项名称：`comment.enable`**
@@ -16,7 +18,7 @@
 
 | 类型 | 可选值 | 默认值 |
 | :---: | :---: | :---: |
-| 字符串 | `waline \| gitalk \| twikoo` | `waline` |
+| 字符串 | `waline \| gitalk \| twikoo \| giscus` | `waline` |
 
 ## Waline 配置
 
@@ -127,3 +129,32 @@ comment:
 ```
 
 </Steps>
+
+## Giscus 配置
+
+更多关于 Giscus 评论系统的信息，请访问 [Giscus 官网](https://giscus.app/)。
+
+**配置项名称：`comment.config.giscus`**
+
+请根据 [Giscus 官网](https://giscus.app/)中进行配置，并在主题配置文件中填写。
+
+示例配置：
+
+```yaml filename="_config.redefine.yml"
+comment:
+  system: giscus
+  config:
+    ...
+    giscus:
+      repo: Ching367436/ching367436.github.io # Github repository name
+      repo_id: R_kgDOJAMXOw # Github repository id
+      category: Announcements # Github discussion category
+      category_id: DIC_kwDOJNMYO84CVdDe # Github discussion category id
+      mapping: title
+      strict: 0
+      reactions_enabled: 1
+      emit_metadata: 0
+      lang: en
+      input_position: bottom
+      loading: not-lazy
+```
