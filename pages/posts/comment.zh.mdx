@@ -1,8 +1,16 @@
+import { Callout, Tab, Tabs, Steps } from 'nextra-theme-docs'
+
 # 评论系统 `comment`
 
 Redefine 主题支持 `waline` `twikoo` `gitalk` `giscus` 四种评论系统，你可以根据自己的喜好选择一种。
 
-## 开关
+<Callout type="info">
+  如果你想对**文章**单独关闭评论，请在文章的 `front-matter` 中加入 `comment: false`。
+  
+  如果你想对**页面**单独开启评论，请在页面的 `front-matter` 中加入 `comment: true`。
+</Callout>
+
+## 全局开关
 
 **配置项名称：`comment.enable`**
 
