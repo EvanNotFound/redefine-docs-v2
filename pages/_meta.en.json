@@ -1,5 +1,4 @@
 {
-
   "index": {
     "type": "page",
     "title": "Redefine",
@@ -8,45 +7,45 @@
       "layout": "raw"
     }
   },
-  "introduction": "Introduction",
+  "introduction": "Theme Introduction",
   "getting-started": "Getting Started",
- 
+  
   "-- Guides": {
     "type": "separator",
     "title": "Configuration"
   },
   "basic": "Basic",
   "home": "Home",
-  "posts": "Articles",
+  "posts": "Posts",
   "footer": "Footer",
 
 
 
   "-- Advanced": {
     "type": "separator",
-    "title": "Use"
+    "title": "Usage"
   },
   "page_templates": "Page Templates",
   "modules": "Writing Modules",
   "plugins": "Plugins",
   "shuoshuo": "Shuoshuo",
   "article_customize": "Article Customization",
-  "inject": "Inject custom code",
-  "cdn": "CDN",
-  "tips": "Writing Guide",
+  "inject": "Insert Custom Code",
+  "cdn": "CDN Acceleration",
+  "tips": "Writing Guidelines",
   "language": "Language Settings",
 
   "-- More": {
     "type": "separator",
     "title": "More"
   },
-  "migrate": "Migrate from v1",
-  "thanks": "Thanks",
+  "migrate": "Migration from v1",
+  "thanks": "Acknowledgements",
 
 
 
   "contact": {
-    "title": "Contact",
+    "title": "Contact the Author",
     "type": "page",
     "href": "mailto:contact@ohevan.com",
     "newWindow": true

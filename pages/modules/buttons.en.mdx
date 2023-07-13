@@ -1,49 +1,47 @@
-# Buttons
+# Buttons Module
 
-This module can add buttons
+This module allows you to add buttons.
 
-## Effect
+## Demo
 
 ![Screenshot 2023-01-26 at 10.17.27 PM](https://evan.beee.top/img/2023/01/26/ff18cf0630939a7212dcf926384e0626.png)
 
-More effects, please go to [Redefine Demo](https://redefine.ohevan.com/2022/10/02/theme-demo/) to view
+For more demos, please visit the [Redefine Demo Site](https://redefine.ohevan.com/2022/10/02/theme-demo/).
 
-## Writing
+## Syntax
 
 ```
 {% btn [optional size]::[name]::[url]::[optional icon] %}
 ```
 
-For example:
+For example, in the above example:
 
 ```markdown
-{% btn button without any parameters:: / %} is suitable for integrating into paragraphs.
+Buttons with no arguments {% btn Button:: / %} fits well in the paragraph.
 
-The regular button is suitable for being independent of paragraphs:
+regular button fits better when outside of the paragraph
 
-{% btn regular::Example blog::https://www.ohevan.com::fa-solid fa-play-circle %}
+{% btn regular::Example::https://www.ohevan.com::fa-solid fa-play-circle %}
 
-{% btn regular::Example blog::https://www.ohevan.com::fa-solid fa-play-circle %}
+{% btn regular::Example::https://www.ohevan.com::fa-solid fa-play-circle %}
 
-The large button has a stronger emphasis and is recommended to be used with center:
+please use large with center:
 
 {% btn center large::Get started::https://redefine-docs.ohevan.com::fa-solid fa-download %}
 ```
 
-## Variable optional value
+## Optional Values
 
-`[optional size]` :
+`[optional size]`:
 
 ```markdown
 center, regular, large, center large, center regular
 ```
 
-`[optional icon]` :
+`[optional icon]`:
 
-[Fontawesome](https://fontawesome.com/search) icon name, such as `fa-solid fa-house`
-
+[Fontawesome](https://fontawesome.com/search) icon names, such as `fa-solid fa-house`.
 
 ## More
 
-For actual experience, please go to [Redefine Demo](https://redefine.ohevan.com/2022/10/02/theme-demo/)
-
+For a live experience, please visit the [Redefine Demo Site](https://redefine.ohevan.com/2022/10/02/theme-demo/).

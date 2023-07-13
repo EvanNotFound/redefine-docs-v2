@@ -1,102 +1,103 @@
-# Navigation bar `navbar`
+# Navigation Bar `navbar`
 
-## Auto hide
+## Auto Hide
 
-**Configuration item name: `navbar.auto_hide`**
+**Configuration Option: `navbar.auto_hide`**
 
-| type | optional value | default value |
+Whether to automatically hide the navigation bar when scrolling the page.
+
+| Type | Possible Values | Default Value |
 | :---: | :---: | :---: |
-| Boolean | `true \| false` | `true` |
+| Boolean | `true \| false` | `false` |
 
-## background color
+## Background Color
 
-color gradient effect
+Color gradient effect
 
-### Left
+### Left Side
 
-**Configuration item name: `navbar.color.left`**
+**Configuration Option: `navbar.color.left`**
 
-| Type | Remarks | Example |
+| Type | Note | Example |
 | :---: | :---: | :---: |
-| String | Fill in the Hex color value | `#f78736` |
+| String | Enter Hex color value | `#f78736` |
 
-### Right
+### Right Side
 
-**Configuration item name: `navbar.color.right`**
+**Configuration Option: `navbar.color.right`**
 
-| Type | Remarks | Example |
+| Type | Note | Example |
 | :---: | :---: | :---: |
-| String | Fill in the Hex color value | `#367df7` |
+| String | Enter Hex color value | `#367df7` |
 
 ### Transparency
 
-**Configuration item name: `navbar.color.transparency`**
+**Configuration Option: `navbar.color.transparency`**
 
-| type | optional value | default value |
+| Type | Possible Values | Default Value |
 | :---: | :---: | :---: |
-| number | `10-99` | `35` |
+| Number | `10-99` | `35` |
 
-## linked list
+## Link List
 
-**Configuration item name: `navbar.links`**
+**Configuration Option: `navbar.links`**
 
-### General Menu
+### Normal Menu
 
 Effect:
 
 ![image-20230322181757906](https://evan.beee.top/img/2023/03/22/04a83f6c05b00f40c1e1085cf17dd04b.png)
 
-Writing:
+Syntax:
 
 ```yaml filename="_config.redefine.yml"
 navbar:
-   links:
-     Home: # The first level menu bar name
-       path: / # URL, can be a relative path or an absolute path
-       icon: fa-regular fa-house # Fontawesome icon name (optional)
+  links:
+    Home: # 一级菜单栏名称
+      path: / # 网址，可以为相对路径或者绝对路径
+      icon: fa-regular fa-house # Fontawesome图标名称（可选）
 ```
-If you want to jump to a third-party website when you click the menu in the navigation bar, you only need to fill in the value of `path` with the URL of the third-party website.
+To implement a menu that redirects to a third-party website when clicked on the navigation bar, simply fill in the value of `path` with the URL of the third-party website.
 
-For example: configure the menu that jumps to the Google website in the header navigation bar
+For example, configure a menu in the header navigation bar to redirect to the Google website:
 
 ```yaml filename="_config.redefine.yml" {3-5}
 navbar:
-   links:
-     Google: # first level menu bar name
-       path: https://www.google.com/ # URL, can be relative path or absolute path
-       icon: fa-brands fa-google # Fontawesome icon name (optional)
+  links:
+    Google: # 一级菜单栏名称
+      path: https://www.google.com/ # 网址，可以为相对路径或者绝对路径
+      icon: fa-brands fa-google # Fontawesome图标名称（可选）
 ```
 
-### Drop-down menu writing
+### Dropdown Menu Syntax
 
 Effect:
 
 ![Screenshot 2023-03-22 at 6.18.29 PM](https://evan.beee.top/img/2023/03/22/9f2bd701f601ffa075c6dc2c5158866a.png)
 
-Writing:
+Syntax:
 
 ```yaml filename="_config.redefine.yml" {3-7}
 navbar:
-   links:
-     About: # First level menu bar name
-       icon: fa-regular fa-user # Fontawesome icon name (optional)
-       submenus: # secondary menu bar
-         Me: /about # Secondary menu bar name: URL
-         Github: https://github.com/EvanNotFound/hexo-theme-redefine
+  links:
+    About: # 一级菜单栏名称
+      icon: fa-regular fa-user # Fontawesome图标名称（可选）
+      submenus: # 二级菜单栏
+        Me: /about # 二级菜单栏名称：网址
+        Github: https://github.com/EvanNotFound/hexo-theme-redefine
 ```
 
-### Icon configuration
+### Icon Configuration
 
-Please go to [Font Awesome](https://fontawesome.com/search) to search for icons, and copy the icon name.
+Please visit [Font Awesome](https://fontawesome.com/search) to search for icons and then copy the icon name.
 
 ![image-20230322182114718](https://evan.beee.top/img/2023/03/22/0b7c26aeee2f1cb9bc6b3e475bfdfccc.png)
 
-Finally, write it in `icon`.
+Finally, write it inside the `icon` field.
 
+## Search
 
-## search
-
-The `hexo-generator-searchdb` plugin needs to be installed.
+You need to install the `hexo-generator-searchdb` plugin.
 
 Please execute the following command to install:
 
@@ -104,18 +105,18 @@ Please execute the following command to install:
 npm install hexo-generator-searchdb --save
 ```
 
-### switch
+### Switch
 
-**Configuration item name: `search.enable`**
+**Configuration Option: `search.enable`**
 
-| type | optional value | default value |
+| Type | Possible Values | Default Value |
 | :---: | :---: | :---: |
 | Boolean | `true \| false` | `true` |
 
-### Preloading
+### Preload
 
-**Configuration item name: `search.preload`**
+**Configuration Option: `search.preload`**
 
-| type | optional value | default value |
+| Type | Possible Values | Default Value |
 | :---: | :---: | :---: |
 | Boolean | `true \| false` | `true` |

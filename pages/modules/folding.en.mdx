@@ -1,48 +1,47 @@
-# Folding
+# Folding Module
 
-You can nest other modules or text, paragraphs, etc. under this module
+You can nest other modules, text, or paragraphs under this module.
 
-This module is partially migrated from `hexo-theme-volantis`
+This module is partially migrated from `hexo-theme-volantis`.
 
 ## Effect
 
 ![Screenshot 2023-01-26 at 9.34.14 PM](https://evan.beee.top/img/2023/01/26/ade3c1205a969a2f69f1327225166288.png)
 
-## Writing
+## Syntax
 
 ```markdown
-{% folding [color]::[title] %}
+{% folding [颜色]::[标题] %}
 
-Content to be written
+Content
 
 {% endfolding %}
 ```
 
-For example, the example in the figure
+For example, in the above image:
 
 ```markdown
-{% folding blue::Folding test: click to view more %}
+{% folding blue::Folding 测试： 点击查看更多 %}
 
-Ah ah ah ah ah
+啊啊啊啊啊
 
 {% note danger  %}
-
+danger 提示块标签
 {% endnote %}
 
 {% note tip  %}
-
+tip 提示块标签
 {% endnote %}
 
 {% endfolding %}
 ```
 
-## Color list
+## Color List
 
 ```markdown
-
 yellow, blue, green, red, orange, pink, cyan, white, black, gray
 ```
 
 ## More
 
-For actual experience, please go to [Redefine Demo Site](https://redefine.ohevan.com/2022/10/02/theme-demo/)
+For a real experience, please visit the [Redefine Demo Site](https://redefine.ohevan.com/2022/10/02/theme-demo/)

@@ -1,151 +1,202 @@
 # Home Banner `home_banner`
 
-## switch 
+## Switch
 
-**Configuration item name: `home_banner.enable`**
+**Configuration Item: `home_banner.enable`**
 
-| type | optional value | default value |
+| Type | Optional Values | Default Value |
 | :---: | :---: | :---: |
 | Boolean | `true \| false` | `true` |
 
-## Background picture
+## Background Image Style
 
-### Bright color mode
+**Configuration Item: `home_banner.style`**
 
-**Configuration item name: `home_banner.image.light`**
+This configuration item is used to set the background image style of the first screen, which can be either `static` or `fixed`.
 
-| Type | Remarks | Example |
+| Type | Optional Values | Default Value |
 | :---: | :---: | :---: |
-| string | local relative link/image external link | `/images/wallhaven-wqery6-light.webp` |
+| String | `static \| fixed` | `static` |
+
+### `static` Style
+
+The `static` style is a static style, which means that the background image of the first screen will scroll with the homepage.
+
+<video src="https://evan.beee.top/img/2023/04/29/1160247fd24068c84c7706e44d6457fa.mp4" controls></video>
+
+### `fixed` Style
+
+The `fixed` style is a fixed style, which means that the background image of the first screen will be fixed on the homepage and will not scroll with the homepage. This style also automatically blurs the background image when scrolling down, which is recommended.
+
+<video src="https://evan.beee.top/img/2023/04/29/8e5f8359cbe980eb6b3e0a5e0a21a561.mp4" controls></video>
+
+## Background Image
+
+### Light Mode
+
+**Configuration Item: `home_banner.image.light`**
+
+| Type | Note | Example |
+| :---: | :---: | :---: |
+| String | Local relative link / external image link | `/images/wallhaven-wqery6-light.webp` |
 
 ### Dark Mode
 
-**Configuration item name: `home_banner.image.dark`**
+**Configuration Item: `home_banner.image.dark`**
 
-| Type | Remarks | Example |
+| Type | Note | Example |
 | :---: | :---: | :---: |
-| string | local relative link/image external link | `/images/wallhaven-wqery6-dark.webp` |
+| String | Local relative link / external image link | `/images/wallhaven-wqery6-dark.webp` |
 
-## Main title
+## Main Title
 
-**Configuration item name: `home_banner.title`**
+**Configuration Item: `home_banner.title`**
 
-| Type | Remarks | Example |
+| Type | Note | Example |
 | :---: | :---: | :---: |
-| string | None | `Theme Redefine` |
+| String | None | `Theme Redefine` |
 
 ## Subtitle
 
-### text content
+### Text Content
 
-**Configuration item name: `home_banner.subtitle.text`**
+**Configuration Item: `home_banner.subtitle.text`**
 
-There is a typewriter animation effect, and multiple strings can be configured, and each string will be displayed cyclically in the typewriter animation.
+There is a typewriter animation effect, and you can configure multiple strings. Each string will be displayed in a loop in the typewriter animation.
 
-| Type | Remarks | Example |
+**If you need to enable hitokoto, please first enter some content in this item.**
+
+| Type | Note | Example |
 | :---: | :---: | :---: |
-| array | separated by commas | `["This is the first message", "This is the second message", "etc"]` |
+| Array | Please use comma to separate | `["This is the first message", "This is the second message", "etc"]` |
 
-### Advanced: Typing animation settings
+### Hitokoto
 
-- `typing_speed`: typing speed (number of letters printed per millisecond)
-- `backing_speed`: Backspace speed (number of letters backspaced per millisecond)
-- `starting_delay`: start delay (milliseconds)
-- `backing_delay`: backspace delay (milliseconds)
+The subtitle automatically fetches a hitokoto, see [Hitokoto](https://hitokoto.cn/) for details.
+
+**If you need to enable this item, please first enter some content in `home_banner.subtitle.text` to prevent display issues due to network problems.** For example, you can enter `['Loading...']` in `home_banner.subtitle.text`.
+
+- `home_banner.subtitle.hitokoto.enable`: Switch
+- `home_banner.subtitle.hitokoto.api`: Hitokoto API URL
+
+The API URL can specify the sentence type, see [Hitokoto API](https://developer.hitokoto.cn/sentence/#%E5%8F%A5%E5%AD%90%E7%B1%BB%E5%9E%8B-%E5%8F%82%E6%95%B0).
+
+### Advanced: Typewriter Animation Settings
+
+- `typing_speed`: Typing speed (number of letters printed per millisecond)
+- `backing_speed`: Backspace speed (number of letters erased per millisecond)
+- `starting_delay`: Starting delay (milliseconds)
+- `backing_delay`: Backspace delay (milliseconds)
 - `loop`: Whether to loop
-- `smart_backspace`: whether to backspace intelligently
+- `smart_backspace`: Whether to use smart backspace
 
-## text color
+## Text Color
 
-Sets the text color for titles and subtitles.
+Set the text color of the title and subtitle.
 
-### Bright color mode
+### Light Mode
 
-**Configuration item name: `home_banner.text_color.light`**
+**Configuration Item: `home_banner.text_color.light`**
 
-| Type | Remarks | Example |
+| Type | Note | Example |
 | :---: | :---: | :---: |
-| String | Please fill in the Hex color value | `#fff` |
+| String | Please enter Hex color value | `#fff` |
 
 ### Dark Mode
 
-**Configuration item name: `home_banner.text_color.dark`**
+**Configuration Key: `home_banner.text_color.dark`**
 
-| Type | Remarks | Example |
+| Type | Description | Example |
 | :---: | :---: | :---: |
-| String | Please fill in the Hex color value | `#d1d1b6` |
+| String | Please enter a Hex color value | `#d1d1b6` |
 
-## text style
+## Text Styles
 
-### Title font size
+### Title Font Size
 
-**Configuration item name: `home_banner.text_style.title_size`**
+**Configuration Key: `home_banner.text_style.title_size`**
 
-| Type | Remarks | Example |
+| Type | Description | Example |
 | :---: | :---: | :---: |
-| String | Please fill in CSS supported font size | `2.8rem` |
+| String | Please enter a font size supported by CSS | `2.8rem` |
 
-### subtitle font size
+### Subtitle Font Size
 
-**Configuration item name: `home_banner.text_style.subtitle_size`**
+**Configuration Key: `home_banner.text_style.subtitle_size`**
 
-| Type | Remarks | Example |
+| Type | Description | Example |
 | :---: | :---: | :---: |
-| String | Please fill in CSS supported font size | `1.5rem` |
+| String | Please enter a font size supported by CSS | `1.5rem` |
 
-### Title and subtitle row height
+### Title and Subtitle Line Height
 
-**Configuration item name: `home_banner.text_style.line_height`**
+**Configuration Key: `home_banner.text_style.line_height`**
 
-| Type | Remarks | Example |
+| Type | Description | Example |
 | :---: | :---: | :---: |
-| String | Please fill in the line height supported by CSS | `1.2` |
+| String | Please enter a line height supported by CSS | `1.2` |
 
-## custom font
+## Custom Fonts
 
-### switch
+### Enable
 
-**Configuration item name: `home_banner.custom_font.enable`**
+**Configuration Key: `home_banner.custom_font.enable`**
 
-| type | optional value | default value |
+| Type | Possible Values | Default |
 | :---: | :---: | :---: |
 | Boolean | `true \| false` | `false` |
 
-### Font name
+### Font Family
 
-**Configuration item name: `home_banner.custom_font.family`**
+**Configuration Key: `home_banner.custom_font.family`**
 
-| Type | Remarks | Example |
+| Type | Description | Example |
 | :---: | :---: | :---: |
-| string | will be applied to the main title and subtitle | `Noto Sans SC` |
+| String | Will be applied to the main title and subtitle | `Noto Sans SC` |
 
-### Font CSS file link
+### Font CSS File URL
 
-**Configuration item name: `home_banner.custom_font.url`**
+**Configuration Key: `home_banner.custom_font.url`**
 
-| Type | Remarks | Example |
+| Type | Description | Example |
 | :---: | :---: | :---: |
-| string | address of font style file (CSS) | `https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap` |
+| String | Font style file address (CSS) | `https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap` |
 
 ## Social Links
 
-### switch
+### Enable
 
-**Configuration item name: `home_banner.social_links.enable`**
+**Configuration Key: `home_banner.social_links.enable`**
 
-| type | optional value | default value |
+| Type | Possible Values | Default |
 | :---: | :---: | :---: |
 | Boolean | `true \| false` | `false` |
 
-### Link
+### Links
 
-**Configuration item name: `home_banner.social_links.links`**
+**Configuration Key: `home_banner.social_links.links`**
 
-Please add your social link, the format is as follows, please fill in the Brands icon name, such as `github`.
+Please add your social links in the following format,
+
+If it is a `fa-brands` icon, you can directly enter the Brands icon name, such as `github`.
+
+But if you are using a non `fa-brands` icon, such as `fa-solid`, you need to enter the full name, such as `fa-solid fa-wand-magic-sparkles`.
 
 ```yaml filename="_config.redefine.yml"
 links:
-     [fontawesome icon name (not HTML code)]: [your social link address]
+    [fontawesome icon name (not HTML code)]: [your social link address]
 ```
 
-You can go to [Font Awesome](https://fontawesome.com/search?o=r&f=brands) to check the icon name.
+You can visit [Font Awesome](https://fontawesome.com/search) to find icon names.
+
+Example configuration:
+
+```yaml filename="_config.redefine.yml"
+links:
+    github: https://github.com
+    twitter: https://twitter.com
+    facebook: https://facebook.com
+    instagram: https://instagram.com
+    fa-solid fa-wand-magic-sparkles: https://example.com
+    fa-regular fa-music: https://example.com
+```

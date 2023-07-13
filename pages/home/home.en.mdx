@@ -1,6 +1,74 @@
-# Home Article `home`
+# Home Articles `home`
 
-## Date format
+## Sidebar
+
+![image-20230402185019862](https://evan.beee.top/img/2023/04/02/981d9ca505c33f6f647ee73b9f266ae9.png)
+
+### Switch
+
+**Configuration item name: `home.sidebar.enable`**
+
+| Type | Optional values | Default value |
+| :---: | :---: | :---: |
+| Boolean | true, false | true |
+
+### Sidebar Position
+
+**Configuration item name: `home.sidebar.position`**
+
+| Type | Optional values | Default value |
+| :---: | :---: | :---: |
+| String | `left`, `right` | `left` |
+
+### Sidebar Display Order
+
+Customize whether to display the navigation bar or the announcement first.
+
+**Configuration item name: `home.sidebar.first_item`**
+
+| Type | Optional values | Default value |
+| :---: | :---: | :---: |
+| String | `menu`, `info` | `menu` |
+
+### Announcement
+
+![image-20230402185131227](https://evan.beee.top/img/2023/04/02/1c214b39f2ce3a4d26a00890838390c7.png)
+
+**Configuration item name: `home.sidebar.announcement`**
+
+Leave it blank to hide.
+
+| Type | Optional values | Default value |
+| :---: | :---: | :---: |
+| String | Any string | `` |
+
+### Sidebar Navigation
+
+![image-20230402185255246](https://evan.beee.top/img/2023/04/02/95015c73351b63aa647da7ffebd4b32d.png)
+
+**Configuration item name: `home.sidebar.links`**
+
+Refer to the [Navigation Bar](/home/navbar) for the writing format.
+
+Leave it blank to hide.
+
+Example configuration:
+  
+```yaml
+home:
+  sidebar:
+    links:
+      Archives: # Display name
+        path: /archives # Path
+        icon: fa-regular fa-archive # Icon, can be empty
+      Tags: # Display name
+        path: /tags # Path
+        icon: fa-regular fa-tags # Icon, can be empty
+      Test1: 
+        path: /test1 
+        icon: fa-regular fa-folder #
+```
+## Article Date Format
 
 ![image-20230322184235442](https://evan.beee.top/img/2023/03/22/6e5dd768ca4967820c295ed4819eae2c.png)
 
@@ -10,14 +78,14 @@
 | :---: | :---: | :---: |
 | String | `auto`, `relative`, `YYYY-MM-DD`, `YYYY-MM-DD HH:mm:ss`, `momentjs date format` | `auto` |
 
-  * `auto`: Automatically select date format based on article date
-  * `relative`: Relative time, such as `1 hour ago`
-  * `YYYY-MM-DD`: Year-month-day, such as `2023-03-22`
-  * `YYYY-MM-DD HH:mm:ss`: Year-month-day hour-minute-second, such as `2023-03-22 12:00:00`
-  * `MMM D, YYYY`: Month day year, such as `Mar 22, 2023`
+  * `auto`: Automatic, select the date format based on the article date
+  * `relative`: Relative time, e.g., `1 hour ago`
+  * `YYYY-MM-DD`: Year-month-day, e.g., `2023-03-22`
+  * `YYYY-MM-DD HH:mm:ss`: Year-month-day hour:minute:second, e.g., `2023-03-22 12:00:00`
+  * `MMM D, YYYY`: Month day, year, e.g., `Mar 22, 2023`
   * For more formats, please refer to [Moment.js](momentjs.com/docs/#/displaying/format/)
 
-## Category
+## Categories
 
 ![image-20230322184434686](https://evan.beee.top/img/2023/03/22/1374fdcb46ddfa5a5aa1fc172d8ba40f.png)
 
@@ -29,7 +97,7 @@
 | :---: | :---: | :---: |
 | Boolean | true, false | true |
 
-### Display quantity
+### Display Quantity
 
 **Configuration item name: `home.categories.limit`**
 
@@ -37,7 +105,7 @@
 | :---: | :---: | :---: |
 | Number | 1, 2, 3, ... | 3 |
 
-## Tag
+## Tags
 
 ![image-20230322184320720](https://evan.beee.top/img/2023/03/22/28e485beefdc3b843832d435b61848b0.png)
 
@@ -49,12 +117,10 @@
 | :---: | :---: | :---: |
 | Boolean | true, false | true |
 
-### Display quantity
+### Display Quantity
 
-**Configuration item name: `home.tags.limit`**
+**Configuration Item: `home.tags.limit`**
 
-| Type | Optional values | Default value |
+| Type | Possible Values | Default Value |
 | :---: | :---: | :---: |
 | Number | 1, 2, 3, ... | 3 |
-
-```
