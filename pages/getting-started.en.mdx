@@ -1,6 +1,5 @@
 import { Callout, Tab, Tabs, Steps } from 'nextra-theme-docs'
 
-
 # Quick Start
 
 Get started with the Redefine theme.
@@ -19,46 +18,46 @@ Execute the following command in the Hexo root directory to install the theme. T
 
 <Tabs items={['npm', 'git']}>
     <Tab>
-        ```bash filename="终端"
+        ```bash filename="Terminal"
         npm install hexo-theme-redefine@latest
         ```
     </Tab>
     <Tab>
-        ```bash filename="终端"
+        ```bash filename="Terminal"
         git clone https://github.com/EvanNotFound/hexo-theme-redefine.git themes/redefine
         ```
     </Tab>
 </Tabs>
 
-### 启用主题
+### Enable the theme
 
-在 Hexo 根目录的 `_config.yml` 文件中，将 `theme` 值修改为 `redefine`。
+In the `_config.yml` file located in the Hexo root directory, modify the value of the `theme` field to `redefine`.
 
 ```yaml filename="_config.yml"
 theme: redefine
 ```
 
-### 创建主题配置文件
+### Create a theme configuration file
 
-在 Hexo 根目录下创建 `_config.redefine.yml` 文件。
+Create a file named `_config.redefine.yml` in the Hexo root directory.
 
-并将[此处](https://github.com/EvanNotFound/hexo-theme-redefine/blob/main/_config.yml)的所有内容复制进去。
+Copy all the content from [here](https://github.com/EvanNotFound/hexo-theme-redefine/blob/main/_config.yml) into the file.
 
-本文件会自动覆盖主题的配置项，创建本文件的目的是为了方便你在升级主题时，不会丢失你的配置。
+This file will automatically override the theme's configuration options. The purpose of creating this file is to ensure that your configuration is not lost when you update the theme.
 
 ### VOILA!
 
-现在你可以启动 Hexo，看看效果了。
+Now you can start Hexo and see the results.
 
-接下来请先阅读配置注意事项，然后继续配置主题。
+Next, please read the configuration notes first and continue configuring the theme.
 
-### 注意事项
+### Configuration Notes
 
-#### 1. 文档阅读说明
+#### 1. Reading the documentation
 
-在接下来的配置中，`xxx.yyy` 表示你需要在 `_config.redefine.yml` 文件中的 `xxx` 下的 `yyy` 配置项中进行配置。
+In the following configurations, `xxx.yyy` represents the configuration item `yyy` under `xxx` in the `_config.redefine.yml` file.
 
-例如，`info.title` 指的是 `info` 下的 `title` 配置项。
+For example, `info.title` refers to the `title` configuration item under `info`.
 
 ```yaml filename="_config.redefine.yml"
 info:
@@ -67,9 +66,9 @@ info:
 
 #### 2. YAML Syntax
 
-The configuration file `_config.redefine.yml` uses YAML syntax. If you are not familiar with YAML syntax, please read [here](https://learnxinyminutes.com/docs/yaml/) first.
+The configuration file `_config.redefine.yml` uses YAML syntax. If you are not familiar with YAML syntax, please read about it [here](https://learnxinyminutes.com/docs/yaml/) first.
 
-YAML syntax is based on indentation to distinguish levels, so please pay attention to indentation.
+YAML syntax is based on indentation to denote levels, so please pay attention to indentation.
 
 Please maintain the original indentation and avoid adding extra spaces before configuration items.
 
