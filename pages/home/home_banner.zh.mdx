@@ -206,3 +206,24 @@ links:
     fa-regular fa-music: https://example.com
 ```
 
+### 二维码
+
+**配置项名称：`home_banner.social_links.qrs`**
+
+可选，可添加你的二维码，格式如下，
+
+如果是 `fa-brands` 图标，可以直接填写 Brands 图标名称，比如 `weixin`。
+
+但是如果用的不是 fa-brands 图标，比如 `fa-solid`，则需要填写全名，比如 `fa-solid fa-wand-magic-sparkles`。
+
+```yaml filename="_config.redefine.yml"
+qrs:
+    [fontawesome 图标名称(不是 HTML 代码)]: [二维码图片地址]
+```
+
+示例配置：
+
+```yaml filename="_config.redefine.yml"
+qrs:
+    weixin: https://example.com/weixin.png
+```

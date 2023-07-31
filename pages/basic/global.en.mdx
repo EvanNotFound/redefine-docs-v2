@@ -121,16 +121,23 @@ Effects when hovering over various modules such as article cards, article lists,
 - `site_uv` Whether to display the total website visitors, fill in `true` or `false`, default is `true`.
 - `post_pv` Whether to display the total post visits, fill in `true` or `false`, default is `true`.
 
-## PJAX Loading
+## Single Page Experience
 
-**Configuration Item: `global.pjax`**
+**Configuration Item: `global.single_page`**
 
-PJAX allows the website to have a single-page application experience, loading new content without refreshing the page. Recommended to enable.
+Using swup.js library to bring SPA experience to the website, it is recommended to enable it.
 
 | Type | Available Values | Default Value |
 | :---: | :---: | :---: |
 | Boolean | `true \| false` | `true` |
 
+Due to the browser not refreshing, if you want the custom script in the article to load, please add the `data-swup-reload-script` attribute to your `script` tag, for example:
+
+```html
+<script data-swup-reload-script type="text/javascript">
+  // Your script
+</script>
+```
 
 ## Open Graph
 

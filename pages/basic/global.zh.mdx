@@ -125,16 +125,23 @@
 - `site_uv` 是否显示网站总访客数，填写 `true` 或 `false`，默认为 `true`。
 - `post_pv` 是否显示文章总访问量，填写 `true` 或 `false`，默认为 `true`。
 
-## PJAX 加载
+## 单页应用体验
 
-**配置项名称：`global.pjax`**
+**配置项名称：`global.single_page`**
 
-PJAX 能够使网页有单页应用的体验，不需要刷新页面就能加载新的内容。推荐开启。
+使用 Swup 库实现单页应用体验，类似 Pjax 但是比 Pjax 使用更方便，推荐开启。其他详细信息请参考 [Swup](https://swup.js.org/)。
 
 | 类型 | 可选值 | 默认值 |
 | :---: | :---: | :---: |
 | 布尔值 | `true \| false` | `true` |
 
+由于浏览器不会刷新，所以在 markdown 文件里面加入了自定义 javascript 的话，请在你的 `script` 标签中加入 `data-swup-reload-script` 属性，例如：
+
+```html
+<script data-swup-reload-script type="text/javascript">
+  // 你的脚本
+</script>
+```
 
 ## Open Graph
 

@@ -200,3 +200,25 @@ links:
     fa-solid fa-wand-magic-sparkles: https://example.com
     fa-regular fa-music: https://example.com
 ```
+
+### QR code
+
+**Configuration Key: `home_banner.social_links.qrs`**
+
+Optional, you can add your QR code in the following format,
+
+If it is a `fa-brands` icon, you can directly fill in the Brands icon name, such as `weixin`.
+
+But if you are using a non-fa-brands icon, such as `fa-solid`, then you need to fill in the full name, such as `fa-solid fa-wand-magic-sparkles`.
+
+```yaml filename="_config.redefine.yml"
+qrs:
+    [fontawesome icon name (not HTML code)]: [QR code image URL]
+```
+
+Example configuration:
+
+```yaml filename="_config.redefine.yml"
+qrs:
+    weixin: https://example.com/weixin.png
+```
