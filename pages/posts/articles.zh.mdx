@@ -1,3 +1,5 @@
+import { Callout } from 'nextra/components'
+
 # 文章样式 `articles`
 
 ## 样式
@@ -233,6 +235,40 @@ npm install hexo-wordcount
 | 布尔值 | `true \| false` | `true` |
 
 ![image-20230322191845381](https://evan.beee.top/img/2023/03/22/753366109373f0481d5228d3442e7d80.png)
+
+如需自定义文章使用的版权信息，请在文章的 Front-matter 中添加 `license` 字段，比如：
+
+```yaml
+---
+title: Hello World
+date: 2021-03-22 19:20:00
+license: all_rights_reserved
+---
+```
+
+可选值：
+
+- `all_rights_reserved`：保留所有权利。
+- `cc_by_nc_sa`：署名-非商业性使用-相同方式共享，详情请见 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)。
+- `cc_by_nc`：署名-非商业性使用，详情请见 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.zh)。
+- `cc_by_nd`：署名-禁止演绎，详情请见 [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/deed.zh)。
+- `cc_by_sa`：署名-相同方式共享，详情请见 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.zh)。
+- `cc_by`：署名，详情请见 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh)。
+- `public_domain`：公有领域，详情请见 [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.zh)。
+
+如果以上选项不能满足你的需求，你可以在主题配置文件中使用 `copyright` 自定义说明信息，比如：
+
+```yaml
+---
+title: Hello World
+date: 2021-03-22 19:20:00
+copyright: 本文是瞎写的，你如果要用的话，后果自负。
+---
+```
+
+<Callout type={"warning"} emoji={"⚠️"}>
+    请注意，`copyright` 项比 `license` 优先级更高。所以如果你两个都写了，只有 `copyright` 会生效
+</Callout>
 
 ## 懒加载
 

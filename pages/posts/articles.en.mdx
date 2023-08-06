@@ -234,6 +234,40 @@ Whether to display the article copyright information at the end of the article.
 
 ![image-20230322191845381](https://evan.beee.top/img/2023/03/22/753366109373f0481d5228d3442e7d80.png)
 
+To customize the copyright information for an article, please add the `license` field in the Front-matter of the article, like this:
+
+```yaml
+---
+title: Hello World
+date: 2021-03-22 19:20:00
+license: all_rights_reserved
+---
+```
+
+The available values for the `license` field are:
+
+- `all_rights_reserved`: All rights reserved.
+- `cc_by_nc_sa`: Attribution-NonCommercial-ShareAlike, see details at [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- `cc_by_nc`: Attribution-NonCommercial, see details at [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+- `cc_by_nd`: Attribution-NoDerivatives, see details at [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/).
+- `cc_by_sa`: Attribution-ShareAlike, see details at [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+- `cc_by`: Attribution, see details at [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+- `public_domain`: Public Domain, see details at [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
+
+If none of the above options meet your requirements, you can use the `copyright` field in the theme configuration file to provide custom information, like this:
+
+```yaml
+---
+title: Hello World
+date: 2021-03-22 19:20:00
+copyright: This article is a work of fiction. If you use it, you do so at your own risk.
+---
+```
+
+<Callout type={"warning"} emoji={"⚠️"}>
+    Please note that the `copyright` field takes precedence over the `license` field. So if you include both, only the `copyright` field will be effective.
+</Callout>
+
 ## Lazy Load
 
 **Configuration Item: `articles.lazyload`**
