@@ -2,5 +2,6 @@
     "sticky": "Sticky Post",
     "thumbnail": "Thumbnail",
     "excerpt": "Excerpt",
-    "banner": "Banner"
+    "banner": "Banner",
+    "expiration": "Expiration",
 }
