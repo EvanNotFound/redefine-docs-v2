@@ -5,11 +5,11 @@ const config: DocsThemeConfig = {
   logo: (
   <>
     <img src="https://evan.beee.top/projects/hexo-theme-redefine/statics/logos/logo.webp" style={{width: "40px"}} alt="logo" />
-    <span style={{ fontFamily:"Bebas Neue", marginLeft:"0.4rem", fontWeight: 700 , fontSize: "2rem", color: "#545759", transform: "translateY(2px)"}}>
+    <span style={{letterSpacing:"-1px", marginLeft:"0.4rem", fontWeight: 700 , fontSize: "1.8rem", color: "#545759"}}>
       Redefine
     </span>
-    <span style={{ fontFamily:"Bebas Neue", marginLeft:"0.1rem", fontWeight: 700 , fontSize: "1rem", color: "#8A8B8C",transform: "translateY(7px)"}}>
-      &nbsp;Docs
+    <span style={{letterSpacing:"-1px",  marginLeft:"0.4rem", fontWeight: 700 , fontSize: "1.8rem", color: "#8A8B8C"}}>
+      docs
     </span>
   </>
   ),
@@ -31,9 +31,13 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: 'https://github.com/EvanNotFound/redefine-docs-v2/tree/main',
   footer: {
-    text: <span>
-      MIT {new Date().getFullYear()} © <a href="https://ohevan.com" target="_blank">EvanNotFound</a>
-    </span>,
+    component: (
+        <footer className={"w-full px-12 py-8 bg-gray-50 border-t border-gray-200 flex justify-center"}>
+          <div className={"text-gray-800"}>
+            2023 &copy; EvanNotFound. All rights reserved.
+          </div>
+        </footer>
+    )
   },
   i18n: [
     { locale: 'zh', text: '中文' },
@@ -50,12 +54,6 @@ const config: DocsThemeConfig = {
     return {
       titleTemplate: '%s - Redefine Docs',
     }
-  },
-  banner: {
-    key: '2.0-release',
-    text: <a href="/migrate" target="_blank">
-      🎉 你正在阅读 Redefine v2 文档，从 v1 迁移 →
-    </a>,
   },
   primaryHue: {
     light: 10,

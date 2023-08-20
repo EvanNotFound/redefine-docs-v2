@@ -40,8 +40,9 @@
     "type": "separator",
     "title": "更多"
   },
-  "migrate": "从 v1 迁移",
   "thanks": "致谢",
+  "developer": "主题开发指南",
+  "migrate": "从 v1 迁移",
 
 
 

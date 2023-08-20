@@ -6,6 +6,7 @@ import Link from 'next/link'
 import cn from 'clsx'
 import { useState } from 'react'
 import Image from 'next/image'
+import motion from 'framer-motion'
 
 import { Features, Feature } from '@components/features'
 
@@ -320,25 +321,6 @@ import docsCardDark from '../public/assets/card-1.dark.png'
           justifyContent: 'center',
         }}>
           <div
-            animate={{
-              backgroundPosition: ['0% 0%', '50% 40%', '50% 40%', '100% 100%'],
-              backgroundImage: [`radial-gradient(farthest-corner, #e2e5ea, #e2e5ea)`, 'radial-gradient(farthest-corner, #06080a, #e2e5ea)', 'radial-gradient(farthest-corner, #06080a, #e2e5ea)', 'radial-gradient(farthest-corner, #e2e5ea, #e2e5ea)'],
-            }}
-            transition={{
-              backgroundPosition: {
-                times: [0, .5, .5, 1],
-                type: 'spring',
-                repeat: Infinity,
-                duration: 10,
-                delay: 1
-              },
-              backgroundImage: {
-                times: [0, .2, .8, 1],
-                repeat: Infinity,
-                duration: 10,
-                delay: 1
-              },
-            }}
             style={{
               position: 'absolute',
               top: 0,

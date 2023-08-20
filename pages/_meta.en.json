@@ -39,8 +39,9 @@
     "type": "separator",
     "title": "More"
   },
-  "migrate": "Migration from v1",
   "thanks": "Acknowledgements",
+  "developer": "Developer",
+  "migrate": "Migration from v1",
 
 
 
