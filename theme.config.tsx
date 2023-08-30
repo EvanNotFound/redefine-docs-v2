@@ -32,7 +32,7 @@ const config: DocsThemeConfig = {
   docsRepositoryBase: 'https://github.com/EvanNotFound/redefine-docs-v2/tree/main',
   footer: {
     component: (
-        <footer className={"w-full px-12 py-8 bg-gray-50 border-t border-gray-200 flex justify-center"}>
+        <footer className={"w-full px-12 py-8 bg-gray-50 dark:bg-gray-900 border-t border-gray-200 flex justify-center"}>
           <div className={"text-gray-800"}>
             2023 &copy; EvanNotFound. All rights reserved.
           </div>
