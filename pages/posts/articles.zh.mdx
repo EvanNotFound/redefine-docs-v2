@@ -226,7 +226,9 @@ npm install hexo-wordcount
 
 ## 文章版权
 
-**配置项名称：`articles.copyright`**
+### 开关
+
+**配置项名称：`articles.copyright.enable`**
 
 是否在文章末尾展示文章版权信息。
 
@@ -234,17 +236,11 @@ npm install hexo-wordcount
 | :---: | :---: | :---: |
 | 布尔值 | `true \| false` | `true` |
 
-![image-20230322191845381](https://evan.beee.top/img/2023/03/22/753366109373f0481d5228d3442e7d80.png)
+![](https://evan.beee.top/img/ec8db53b9bb72e8889dd9773ed19f22b-fb3d5.png)
 
-如需自定义文章使用的版权信息，请在文章的 Front-matter 中添加 `license` 字段，比如：
+### 默认版权信息
 
-```yaml
----
-title: Hello World
-date: 2021-03-22 19:20:00
-license: all_rights_reserved
----
-```
+**配置项名称：`articles.copyright.default`**
 
 可选值：
 
@@ -256,15 +252,33 @@ license: all_rights_reserved
 - `cc_by`：署名，详情请见 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh)。
 - `public_domain`：公有领域，详情请见 [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.zh)。
 
-如果以上选项不能满足你的需求，你可以在主题配置文件中使用 `copyright` 自定义说明信息，比如：
+<Callout type={"info"} >
+    **自定义版权信息**
 
-```yaml
----
-title: Hello World
-date: 2021-03-22 19:20:00
-copyright: 本文是瞎写的，你如果要用的话，后果自负。
----
-```
+    如需自定义文章使用的版权信息，请在文章的 Front-matter 中添加 `license` 字段，比如：
+
+    ```yaml
+    ---
+    title: Hello World
+    date: 2021-03-22 19:20:00
+    license: all_rights_reserved
+    ---
+    ```
+
+    可选值请参考上面的说明。
+
+    请注意，如果你的文章 Front-matter 中有 `license` 字段，那么这个字段的值会覆盖 `default` 的值。
+
+    如果以上选项不能满足你的需求，你可以在主题配置文件中使用 `copyright` 自定义说明信息，比如：
+
+    ```yaml
+    ---
+    title: Hello World
+    date: 2021-03-22 19:20:00
+    copyright: 本文是瞎写的，你如果要用的话，后果自负。
+    ---
+    ```
+</Callout>
 
 <Callout type={"warning"} emoji={"⚠️"}>
     请注意，`copyright` 项比 `license` 优先级更高。所以如果你两个都写了，只有 `copyright` 会生效
