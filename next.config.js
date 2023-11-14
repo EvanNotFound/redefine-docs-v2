@@ -1,4 +1,7 @@
 const withNextra = require('nextra')({
+  images: {
+    domains: ['cdn.jsdelivr.net', 'github.com'],
+  },
   theme: 'nextra-theme-docs',
   themeConfig: './theme.config.tsx',
   defaultShowCopyCode: true,
