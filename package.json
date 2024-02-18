@@ -11,9 +11,9 @@
     "@vercel/analytics": "^1.1.1",
     "clsx": "^2.0.0",
     "framer-motion": "^10.16.16",
-    "next": "^13.4.19",
-    "nextra": "^2.13.2",
-    "nextra-theme-docs": "^2.13.2",
+    "next": "^13.5.6",
+    "nextra": "^2.13.3",
+    "nextra-theme-docs": "^2.13.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "ts-node": "^10.9.2"
