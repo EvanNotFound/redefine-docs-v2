@@ -52,7 +52,10 @@ const config: DocsThemeConfig = {
   primaryHue: {
     light: 10,
     dark: 16
-  }
+  },
+    search: {
+    placeholder: 'Search Redefine Docs...',
+    }
 }
 
 export default config
