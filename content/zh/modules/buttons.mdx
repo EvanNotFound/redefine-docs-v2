@@ -1,0 +1,47 @@
+# Buttons 按钮模块
+
+本模块可以添加按钮
+
+## 效果
+
+![Screenshot 2023-01-26 at 10.17.27 PM](https://evan.beee.top/img/2023/01/26/ff18cf0630939a7212dcf926384e0626.png)
+
+更多效果欢迎前往 [Redefine 演示站点](https://redefine.ohevan.com/2022/10/02/theme-demo/) 查看
+
+## 写法
+
+```
+{% btn [可选大小]::[名称]::[url]::[可选图标] %}
+```
+
+比如上面的例子：
+
+```markdown
+不设置任何参数的 {% btn 按钮:: / %} 适合融入段落中。
+
+regular 按钮适合独立于段落之外：
+
+{% btn regular::示例博客::https://www.ohevan.com::fa-solid fa-play-circle %}
+
+{% btn regular::示例博客::https://www.ohevan.com::fa-solid fa-play-circle %}
+
+large 按钮更具有强调作用，建议搭配 center 使用：
+
+{% btn center large::开始使用::https://redefine-docs.ohevan.com::fa-solid fa-download %}
+```
+
+## 变量可选值
+
+`[可选大小]` :
+
+```markdown
+center, regular, large, center large, center regular
+```
+
+`[可选图标]` :
+
+[Fontawesome](https://fontawesome.com/search) 图标名称，比如 `fa-solid fa-house`
+
+## 更多
+
+实际体验欢迎前往 [Redefine 演示站点](https://redefine.ohevan.com/2022/10/02/theme-demo/)
