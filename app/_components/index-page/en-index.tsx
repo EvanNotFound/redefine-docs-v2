@@ -58,17 +58,10 @@ export default function EhIndex() {
             .features-container {
               margin: 8rem 0 0;
               padding: 4rem 0;
-              background-color: #f3f4f6;
-              border-bottom: 1px solid #e5e7eb;
             }
 
             .features-container .content-container {
               margin-top: -8rem;
-            }
-
-            :global(.dark) .features-container {
-              background-color: #000;
-              border-bottom: 1px solid rgb(38, 38, 38);
             }
 
             .headline {
