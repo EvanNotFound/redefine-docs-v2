@@ -38,7 +38,7 @@ export function PromoCard() {
 				>
 					<button
 						onClick={hidePromo}
-						className="absolute -right-2 -top-2 text-xs px-1 py-1 rounded-full bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-700 transition-colors border border-zinc-200 dark:border-zinc-800"
+						className="absolute -right-2 -top-2 text-xs px-1 py-1 rounded-full bg-white dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-700 transition-colors border border-zinc-200 dark:border-zinc-800"
 					>
 						<X className="w-3 h-3" />
 					</button>

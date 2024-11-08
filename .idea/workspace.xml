@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aafa2410-0ded-4c10-aaa3-a3bcae56cc27" name="Changes" comment="feat: animation">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/[lang]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[lang]/layout.tsx" afterDir="false" />
+    <list default="true" id="aafa2410-0ded-4c10-aaa3-a3bcae56cc27" name="Changes" comment="style: Remove background and border styles from features container&#10;&#10;- Remove background color and border from features container in light mode&#10;- Remove background color and border from features container in dark mode&#10;- Adjust styles in both en-index.tsx and zh-index.tsx files">
+      <change beforePath="$PROJECT_DIR$/app/_components/index-page/en-index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/_components/index-page/en-index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/_components/index-page/zh-index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/_components/index-page/zh-index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +151,7 @@
       <workItem from="1730992091837" duration="4540000" />
       <workItem from="1730998098553" duration="117000" />
       <workItem from="1730998226753" duration="16391000" />
-      <workItem from="1731036736870" duration="4507000" />
+      <workItem from="1731036736870" duration="4862000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <option name="closed" value="true" />
@@ -305,7 +305,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731039007469</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="feat: enhance layout and footer design&#10;&#10;- Update footer with copyright and project information&#10;- Add PromoCard component to table of contents&#10;- Adjust navbar and layout configurations&#10;- Remove placeholder cat image from TOC extra content">
+      <option name="closed" value="true" />
+      <created>1731041342165</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1731041342165</updated>
+    </task>
+    <task id="LOCAL-00021" summary="style: Remove background and border styles from features container&#10;&#10;- Remove background color and border from features container in light mode&#10;- Remove background color and border from features container in dark mode&#10;- Adjust styles in both en-index.tsx and zh-index.tsx files">
+      <option name="closed" value="true" />
+      <created>1731041609112</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1731041609112</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,6 +345,8 @@
     <MESSAGE value="feat: migrate to nextra v4" />
     <MESSAGE value="dev.langchain4j.model.anthropic.internal.client.AnthropicHttpException: {&quot;type&quot;:&quot;error&quot;,&quot;error&quot;:{&quot;type&quot;:&quot;invalid_request_error&quot;,&quot;message&quot;:&quot;prompt is too long: 201700 tokens &gt; 200000 maximum&quot;}}" />
     <MESSAGE value="feat: animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: animation" />
+    <MESSAGE value="feat: enhance layout and footer design&#10;&#10;- Update footer with copyright and project information&#10;- Add PromoCard component to table of contents&#10;- Adjust navbar and layout configurations&#10;- Remove placeholder cat image from TOC extra content" />
+    <MESSAGE value="style: Remove background and border styles from features container&#10;&#10;- Remove background color and border from features container in light mode&#10;- Remove background color and border from features container in dark mode&#10;- Adjust styles in both en-index.tsx and zh-index.tsx files" />
+    <option name="LAST_COMMIT_MESSAGE" value="style: Remove background and border styles from features container&#10;&#10;- Remove background color and border from features container in light mode&#10;- Remove background color and border from features container in dark mode&#10;- Adjust styles in both en-index.tsx and zh-index.tsx files" />
   </component>
 </project>
