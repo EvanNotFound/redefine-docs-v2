@@ -4,35 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aafa2410-0ded-4c10-aaa3-a3bcae56cc27" name="Changes" comment="style: Update favicon and app icons&#10;&#10;- Replace safari-pinned-tab.svg with a simplified version&#10;- Update favicon.ico and apple-icon.png with new designs&#10;- Refresh Android Chrome icons for better visual consistency">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/_components/index-page/zh-index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/_components/index-page/zh-index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/en/basic.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/basic.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/en/home.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/home.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/en/home/home.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/home/home.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/en/home/navbar.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/home/navbar.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/en/introduction.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/introduction.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/en/modules.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/modules.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/en/page_templates.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/page_templates.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/en/plugins.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/plugins.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/en/posts/articles.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/posts/articles.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/en/shuoshuo.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/shuoshuo.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/zh/basic.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/basic.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/zh/home.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/home.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/zh/home/home.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/home/home.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/zh/home/navbar.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/home/navbar.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/zh/introduction.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/introduction.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/zh/modules.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/modules.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/zh/modules/buttons.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/modules/buttons.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/zh/modules/folding.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/modules/folding.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/zh/modules/notes.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/modules/notes.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/zh/modules/tabs.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/modules/tabs.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/zh/page_templates.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/page_templates.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/zh/page_templates/categories.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/page_templates/categories.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/zh/plugins.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/plugins.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/zh/posts/articles.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/posts/articles.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/zh/shuoshuo.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/shuoshuo.mdx" afterDir="false" />
-    </list>
+    <list default="true" id="aafa2410-0ded-4c10-aaa3-a3bcae56cc27" name="Changes" comment="feat: Enhance documentation with visual aids and navigation&#10;&#10;- Add images to various sections for better visual explanation&#10;- Implement Cards component for easier navigation between sections&#10;- Update content structure for improved readability&#10;- Add icons to Cards for better visual cues&#10;- Improve formatting and layout of code examples and tables" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -380,14 +352,21 @@
       <option name="project" value="LOCAL" />
       <updated>1731079154280</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="feat: Enhance documentation with visual aids and navigation&#10;&#10;- Add images to various sections for better visual explanation&#10;- Implement Cards component for easier navigation between sections&#10;- Update content structure for improved readability&#10;- Add icons to Cards for better visual cues&#10;- Improve formatting and layout of code examples and tables">
+      <option name="closed" value="true" />
+      <created>1731083008972</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1731083008972</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix build failed" />
     <MESSAGE value="fix" />
     <MESSAGE value="bg" />
     <MESSAGE value="language" />
@@ -412,6 +391,7 @@
     <MESSAGE value="feat: Add sitemap generation and configuration&#10;&#10;- Implement next-sitemap for automatic sitemap generation&#10;- Add next-sitemap configuration file with site URL and robots.txt settings&#10;- Update build script to include sitemap generation&#10;- Enable pre/post scripts in npm configuration" />
     <MESSAGE value="refactor: Improve middleware and locale handling&#10;&#10;- Enhance type safety in getLocale function&#10;- Adjust matcher to exclude sitemap from middleware processing&#10;- Format code for better readability" />
     <MESSAGE value="style: Update favicon and app icons&#10;&#10;- Replace safari-pinned-tab.svg with a simplified version&#10;- Update favicon.ico and apple-icon.png with new designs&#10;- Refresh Android Chrome icons for better visual consistency" />
-    <option name="LAST_COMMIT_MESSAGE" value="style: Update favicon and app icons&#10;&#10;- Replace safari-pinned-tab.svg with a simplified version&#10;- Update favicon.ico and apple-icon.png with new designs&#10;- Refresh Android Chrome icons for better visual consistency" />
+    <MESSAGE value="feat: Enhance documentation with visual aids and navigation&#10;&#10;- Add images to various sections for better visual explanation&#10;- Implement Cards component for easier navigation between sections&#10;- Update content structure for improved readability&#10;- Add icons to Cards for better visual cues&#10;- Improve formatting and layout of code examples and tables" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Enhance documentation with visual aids and navigation&#10;&#10;- Add images to various sections for better visual explanation&#10;- Implement Cards component for easier navigation between sections&#10;- Update content structure for improved readability&#10;- Add icons to Cards for better visual cues&#10;- Improve formatting and layout of code examples and tables" />
   </component>
 </project>
