@@ -1,0 +1,41 @@
+# Categories
+
+## Effects
+
+![Screenshot 2023-03-24 at 4.46.32 PM](https://evan.beee.top/img/2023/06/26/88475b8866d348a13b7816e14666dde2.png)
+
+## Configuration
+
+import {Steps} from 'nextra/components';
+
+<Steps>
+
+### Create a Categories Page
+
+Execute the following command in the Hexo root directory:
+
+```bash
+hexo new page categories
+```
+
+### Add Categories Page to the Navigation Bar
+
+Enable `categories` in the `navbar` configuration item of the Redefine theme configuration file `_config.redefine.yml`.
+
+```yaml filename="_config.redefine.yml" {3-5}
+navbar:
+  links:
+    Categories: #取名随意
+        icon: fa-solid fa-folder #图标
+        path: /categories/ #链接
+```
+
+(It can also be placed in a sub-menu)
+
+### Modify the Title (Optional)
+
+The Categories page is matched based on the `title: categories` by default.
+
+If you need to customize the page title, add `type: categories` in the Front Matter to customize the page title.
+
+</Steps>
