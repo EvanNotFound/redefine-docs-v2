@@ -7,10 +7,13 @@ import logger from "@utils/logger";
 
 function getLocale(request: NextRequest): string {
   // Check for NEXT_LOCALE cookie first
-  const nextLocale = request.cookies.get('NEXT_LOCALE')?.value;
-  if (nextLocale && i18n.locales.includes(nextLocale as typeof i18n.locales[number])) {
+  const nextLocale = request.cookies.get("NEXT_LOCALE")?.value;
+  if (
+    nextLocale &&
+    i18n.locales.includes(nextLocale as (typeof i18n.locales)[number])
+  ) {
     logger.debug("Using NEXT_LOCALE cookie value", nextLocale);
-    return nextLocale as typeof i18n.locales[number];
+    return nextLocale as (typeof i18n.locales)[number];
   }
 
   // Negotiator expects plain object so we need to transform headers
@@ -64,6 +67,6 @@ export const config = {
   matcher: [
     // Skip all internal paths (_next)
     // Skip all api routes
-    "/((?!api|_next/static|_next/image|favicon.ico|icon.svg|apple-icon.png|manifest|_pagefind).*)",
+    "/((?!api|_next/static|_next/image|favicon.ico|icon.svg|apple-icon.png|manifest|_pagefind|sitemap).*)",
   ],
 };
