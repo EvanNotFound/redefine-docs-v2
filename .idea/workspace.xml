@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aafa2410-0ded-4c10-aaa3-a3bcae56cc27" name="Changes" comment="feat: migrate to nextra v4">
+    <list default="true" id="aafa2410-0ded-4c10-aaa3-a3bcae56cc27" name="Changes" comment="feat: animation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/_components/index-page/en-index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/_components/index-page/en-index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/_components/index-page/zh-index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/_components/index-page/zh-index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/[lang]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/[lang]/layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +151,7 @@
       <workItem from="1730992091837" duration="4540000" />
       <workItem from="1730998098553" duration="117000" />
       <workItem from="1730998226753" duration="16391000" />
-      <workItem from="1731036736870" duration="2111000" />
+      <workItem from="1731036736870" duration="4507000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <option name="closed" value="true" />
@@ -298,7 +297,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731038229509</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="feat: animation">
+      <option name="closed" value="true" />
+      <created>1731039007469</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1731039007469</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,6 +327,8 @@
     <MESSAGE value="feat: integrate custom analytics script into _app.mdx" />
     <MESSAGE value="fix: Update navbar configuration in documentation&#10;&#10;- Replace 'categories' with 'links' in _config.redefine.yml examples&#10;- Update both Chinese and English versions of the categories page template" />
     <MESSAGE value="feat: migrate to nextra v4" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: migrate to nextra v4" />
+    <MESSAGE value="dev.langchain4j.model.anthropic.internal.client.AnthropicHttpException: {&quot;type&quot;:&quot;error&quot;,&quot;error&quot;:{&quot;type&quot;:&quot;invalid_request_error&quot;,&quot;message&quot;:&quot;prompt is too long: 201700 tokens &gt; 200000 maximum&quot;}}" />
+    <MESSAGE value="feat: animation" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: animation" />
   </component>
 </project>
