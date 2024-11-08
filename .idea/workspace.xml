@@ -4,12 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aafa2410-0ded-4c10-aaa3-a3bcae56cc27" name="Changes" comment="refactor: Improve middleware and locale handling&#10;&#10;- Enhance type safety in getLocale function&#10;- Adjust matcher to exclude sitemap from middleware processing&#10;- Format code for better readability">
+    <list default="true" id="aafa2410-0ded-4c10-aaa3-a3bcae56cc27" name="Changes" comment="style: Update favicon and app icons&#10;&#10;- Replace safari-pinned-tab.svg with a simplified version&#10;- Update favicon.ico and apple-icon.png with new designs&#10;- Refresh Android Chrome icons for better visual consistency">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/apple-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/apple-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/app/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon/android-chrome-192x192.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon/android-chrome-192x192.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon/android-chrome-512x512.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon/android-chrome-512x512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/_components/index-page/zh-index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/_components/index-page/zh-index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/en/basic.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/basic.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/en/home.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/home.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/en/home/home.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/home/home.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/en/home/navbar.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/home/navbar.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/en/introduction.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/introduction.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/en/modules.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/modules.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/en/page_templates.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/page_templates.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/en/plugins.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/plugins.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/en/posts/articles.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/posts/articles.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/en/shuoshuo.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/shuoshuo.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/zh/basic.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/basic.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/zh/home.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/home.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/zh/home/home.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/home/home.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/zh/home/navbar.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/home/navbar.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/zh/introduction.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/introduction.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/zh/modules.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/modules.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/zh/modules/buttons.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/modules/buttons.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/zh/modules/folding.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/modules/folding.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/zh/modules/notes.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/modules/notes.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/zh/modules/tabs.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/modules/tabs.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/zh/page_templates.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/page_templates.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/zh/page_templates/categories.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/page_templates/categories.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/zh/plugins.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/plugins.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/zh/posts/articles.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/posts/articles.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/zh/shuoshuo.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/shuoshuo.mdx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +106,8 @@
       <recent name="$PROJECT_DIR$/pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/favicon" />
+      <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/_components/index-page" />
       <recent name="$PROJECT_DIR$/public/assets" />
     </key>
@@ -348,7 +372,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731078773015</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="style: Update favicon and app icons&#10;&#10;- Replace safari-pinned-tab.svg with a simplified version&#10;- Update favicon.ico and apple-icon.png with new designs&#10;- Refresh Android Chrome icons for better visual consistency">
+      <option name="closed" value="true" />
+      <created>1731079154280</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1731079154280</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,6 +411,7 @@
     <MESSAGE value="feat: Add sitemap generation and configuration&#10;&#10;- Implement next-sitemap for automatic sitemap generation&#10;- Add next-sitemap configuration file with site URL and robots.txt settings&#10;- Update build script to include sitemap generation&#10;- Enable pre/post scripts in npm configuration&#10;# src/components/Navbar.jsx&#10;import React, { useState } from &quot;react&quot;;&#10;import { Link, useNavigate } from &quot;react-router-dom&quot;;&#10;import { BiCameraMovie, BiSearchAlt2 } from &quot;react-icons/bi&quot;;&#10;&#10;import &quot;./Navbar.css&quot;;&#10;&#10;const Navbar = () =&gt; {&#10;  const [search, setSearch] = useState(&quot;&quot;);&#10;  const navigate = useNavigate();&#10;&#10;  const handleSubmit = (e) =&gt; {&#10;    e.preventDefault();&#10;&#10;    if (!search) return;&#10;&#10;    navigate(`/search?q=${search}`);&#10;    setSearch(&quot;&quot;);&#10;  };&#10;&#10;  return (&#10;    &lt;nav id=&quot;navbar&quot;&gt;&#10;      &lt;h2&gt;&#10;        &lt;Link to=&quot;/&quot;&gt;&#10;          &lt;BiCameraMovie /&gt; MoviesLib&#10;        &lt;/Link&gt;&#10;      &lt;/h2&gt;&#10;      &lt;form onSubmit={handleSubmit}&gt;&#10;        &lt;input&#10;          type=&quot;text&quot;&#10;          placeholder=&quot;Busque um filme&quot;&#10;          onChange={(e) =&gt; setSearch(e.target.value)}&#10;          value={search}&#10;        /&gt;&#10;        &lt;button type=&quot;submit&quot;&gt;&#10;          &lt;BiSearchAlt2 /&gt;&#10;        &lt;/button&gt;&#10;      &lt;/form&gt;&#10;    &lt;/nav&gt;&#10;  );&#10;};&#10;&#10;export default Navbar;&#10;# Jcambareri6/Proyecto-Programacion&#10;# src/main/java/com/mycompany/proyectoprogramacion/Proyectoprogramacion.java&#10;/*&#10; * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license&#10; */&#10;&#10;package com.mycompany.proyectoprogramacion;&#10;&#10;/**&#10; *&#10; * @author Juanma&#10; */&#10;public class Proyectoprogramacion {&#10;&#10;    public static void main(String[] args) {&#10;        System.out.println(&quot;Hello World!&quot;);&#10;    }&#10;}&#10;# Sitecore.Support.95577&#10;Fixes the issue with the &amp;quot;Publish Item&amp;quot; dialog that doesn't show the &amp;quot;Publish subitems&amp;quot; checkbox&#10;&#10;## License  &#10;This patch is licensed under the [Sitecore Corporation A/S License for GitHub](https://github.com/sitecoresupport/Sitecore.Support.95577/blob/master/LICENSE).  &#10;&#10;## Download  &#10;Downloads are available via [GitHub Releases](https://github.com/sitecoresupport/Sitecore.Support.95577/releases).  &#10;# Akhil-Sharma30/Akhil-Sharma30&#10;# README.md&#10;&lt;h1 align=&quot;center&quot;&gt;Hi , I'm Akhil Sharma&lt;/h1&gt;&#10;&lt;h3 align=&quot;center&quot;&gt;A passionate Full Stack developer from India&lt;/h3&gt;&#10;&#10;&lt;p align=&quot;left&quot;&gt; &lt;img src=&quot;https://komarev.com/ghpvc/?username=akhil-sharma30&amp;label=Profile%20views&amp;color=0e75b6&amp;style=flat&quot; alt=&quot;akhil-sharma30&quot; /&gt; &lt;/p&gt;&#10;&#10;&lt;p align=&quot;left&quot;&gt; &lt;a href=&quot;https://github.com/ryo-ma/github-profile-trophy&quot;&gt;&lt;img src=&quot;https://github-profile-trophy.vercel.app/?username=akhil-sharma30&quot; alt=&quot;akhil-sharma30&quot; /&gt;&lt;/a&gt; &lt;/p&gt;&#10;&#10;-  I'm currently working on **Ai Powered Chatbot**&#10;&#10;-  I'm currently learning **React Native**&#10;&#10;-  Ask me about **React, Node, Express, MongoDB**&#10;&#10;-  How to reach me **akhilsharma30032002@gmail.com**&#10;&#10;- ⚡ Fun fact **I think I am funny**&#10;&#10;&lt;h3 align=&quot;left&quot;&gt;Connect with me:&lt;/h3&gt;&#10;&lt;p align=&quot;left&quot;&gt;&#10;&lt;a href=&quot;https://linkedin.com/in/akhil sharma&quot; target=&quot;blank&quot;&gt;&lt;img align=&quot;center&quot; src=&quot;https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt." />
     <MESSAGE value="feat: Add sitemap generation and configuration&#10;&#10;- Implement next-sitemap for automatic sitemap generation&#10;- Add next-sitemap configuration file with site URL and robots.txt settings&#10;- Update build script to include sitemap generation&#10;- Enable pre/post scripts in npm configuration" />
     <MESSAGE value="refactor: Improve middleware and locale handling&#10;&#10;- Enhance type safety in getLocale function&#10;- Adjust matcher to exclude sitemap from middleware processing&#10;- Format code for better readability" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: Improve middleware and locale handling&#10;&#10;- Enhance type safety in getLocale function&#10;- Adjust matcher to exclude sitemap from middleware processing&#10;- Format code for better readability" />
+    <MESSAGE value="style: Update favicon and app icons&#10;&#10;- Replace safari-pinned-tab.svg with a simplified version&#10;- Update favicon.ico and apple-icon.png with new designs&#10;- Refresh Android Chrome icons for better visual consistency" />
+    <option name="LAST_COMMIT_MESSAGE" value="style: Update favicon and app icons&#10;&#10;- Replace safari-pinned-tab.svg with a simplified version&#10;- Update favicon.ico and apple-icon.png with new designs&#10;- Refresh Android Chrome icons for better visual consistency" />
   </component>
 </project>

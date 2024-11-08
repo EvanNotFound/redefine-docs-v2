@@ -1,4 +1,4 @@
-import { Callout } from 'nextra/components'
+import { Callout } from "nextra/components";
 
 # Article Style `articles`
 
@@ -8,33 +8,33 @@ import { Callout } from 'nextra/components'
 
 **Configuration Option: `articles.style.font_size`**
 
-| Type | Note | Possible Values | Default Value |
-| :---: | :---: | :---: | :---: |
-| String | Not recommended to change unless necessary | "*px" | `"16px"` |
+|  Type  |                    Note                    | Possible Values | Default Value |
+| :----: | :----------------------------------------: | :-------------: | :-----------: |
+| String | Not recommended to change unless necessary |     "\*px"      |   `"16px"`    |
 
 ### Line Height
 
 **Configuration Option: `articles.style.line_height`**
 
-| Type | Note | Possible Values | Default Value |
-| :---: | :---: | :---: | :---: |
-| Number | Not recommended to change unless necessary | 1-5 | `1.5` |
+|  Type  |                    Note                    | Possible Values | Default Value |
+| :----: | :----------------------------------------: | :-------------: | :-----------: |
+| Number | Not recommended to change unless necessary |       1-5       |     `1.5`     |
 
 ### Image Border Radius
 
 **Configuration Option: `articles.style.image_border_radius`**
 
-| Type | Possible Values | Default Value |
-| :---: | :---: | :---: | 
-| String | "*px" | `"14px"` |
+|  Type  | Possible Values | Default Value |
+| :----: | :-------------: | :-----------: |
+| String |     "\*px"      |   `"14px"`    |
 
 ### Image Alignment
 
 **Configuration Option: `articles.style.image_alignment`**
 
-| Type | Possible Values | Default Value |
-| :---: | :---: | :---: |
-| String | `left \| center` | `center` |
+|  Type  | Possible Values  | Default Value |
+| :----: | :--------------: | :-----------: |
+| String | `left \| center` |   `center`    |
 
 ### Image Caption
 
@@ -42,9 +42,9 @@ When enabled, the image description will be displayed below the image based on t
 
 **Configuration Option: `articles.style.image_caption`**
 
-| Type | Possible Values | Default Value |
-| :---: | :---: | :---: |
-| Boolean | `true \| false` | `true` |
+|  Type   | Possible Values | Default Value |
+| :-----: | :-------------: | :-----------: |
+| Boolean | `true \| false` |    `true`     |
 
 ### Link Icon
 
@@ -54,10 +54,9 @@ Whether to display an icon after the links in the article.
 
 **Configuration Option: `articles.style.link_icon`**
 
-| Type | Possible Values | Default Value |
-| :---: | :---: | :---: |
-| Boolean | `true \| false` | `true` |
-
+|  Type   | Possible Values | Default Value |
+| :-----: | :-------------: | :-----------: |
+| Boolean | `true \| false` |    `true`     |
 
 ## Word Count
 
@@ -73,9 +72,9 @@ npm install hexo-wordcount
 
 **Configuration Option: `articles.word_count.enable`**
 
-| Type | Possible Values | Default Value |
-| :---: | :---: | :---: |
-| Boolean | `true \| false` | `true` |
+|  Type   | Possible Values | Default Value |
+| :-----: | :-------------: | :-----------: |
+| Boolean | `true \| false` |    `true`     |
 
 ### Count
 
@@ -85,9 +84,9 @@ npm install hexo-wordcount
 
 Whether to enable word count.
 
-| Type | Possible Values | Default Value |
-| :---: | :---: | :---: |
-| Boolean | `true \| false` | `true` |
+|  Type   | Possible Values | Default Value |
+| :-----: | :-------------: | :-----------: |
+| Boolean | `true \| false` |    `true`     |
 
 ### Reading Time
 
@@ -97,9 +96,9 @@ Whether to enable word count.
 
 Whether to enable reading time calculation.
 
-| Type | Possible Values | Default Value |
-| :---: | :---: | :---: |
-| Boolean | `true \| false` | `true` |
+|  Type   | Possible Values | Default Value |
+| :-----: | :-------------: | :-----------: |
+| Boolean | `true \| false` |    `true`     |
 
 ## Author Label
 
@@ -109,9 +108,9 @@ Whether to enable reading time calculation.
 
 **Configuration Option: `articles.author_label.enable`**
 
-| Type | Possible Values | Default Value |
-| :---: | :---: | :---: |
-| Boolean | `true \| false` | `true` |
+|  Type   | Possible Values | Default Value |
+| :-----: | :-------------: | :-----------: |
+| Boolean | `true \| false` |    `true`     |
 
 ### Automatic Label
 
@@ -119,9 +118,9 @@ Whether to enable reading time calculation.
 
 Automatically adds labels such as Lv1, Lv2, Lv3.
 
-| Type | Possible Values | Default Value |
-| :---: | :---: | :---: |
-| Boolean | `true \| false` | `false` |
+|  Type   | Possible Values | Default Value |
+| :-----: | :-------------: | :-----------: |
+| Boolean | `true \| false` |    `false`    |
 
 ### Custom Tags
 
@@ -129,8 +128,8 @@ Automatically adds labels such as Lv1, Lv2, Lv3.
 
 List of custom tags.
 
-| Type | Note | Example |
-| :---: | :---: | :---: |
+| Type  |            Note             |         Example         |
+| :---: | :-------------------------: | :---------------------: |
 | Array | Please separate with commas | `["Lv1", "Lv2", "Lv3"]` |
 
 ## Code Blocks
@@ -141,41 +140,40 @@ List of custom tags.
 
 Whether to enable the copy button for code blocks.
 
-| Type | Possible Values | Default Value |
-| :---: | :---: | :---: |
-| Boolean | `true \| false` | `true` |
+|  Type   | Possible Values | Default Value |
+| :-----: | :-------------: | :-----------: |
+| Boolean | `true \| false` |    `true`     |
 
 ### Custom Themes
 
-Customize the code highlighting theme. Preview can be accessed at [highlightjs official website demo](https://highlightjs.org/examples). Currently supported: 
+Customize the code highlighting theme. Preview can be accessed at [highlightjs official website demo](https://highlightjs.org/examples). Currently supported:
 
- - Light themes: github, atom-one-light, default
- - Dark themes: github-dark, monokai-sublime, vs2015, night-owl, atom-one-dark, nord, tokyo-night-dark, a11y-dark, agate
+-   Light themes: github, atom-one-light, default
+-   Dark themes: github-dark, monokai-sublime, vs2015, night-owl, atom-one-dark, nord, tokyo-night-dark, a11y-dark, agate
 
 ##### Light
 
 **Configuration item: `articles.code_blockhighlight_theme.light`**
 
-| Type | Optional values | Default value |
-| :---: | :---: | :---: |
-| String | `github \| atom-one-light \| default` | `github` |
+|  Type  |            Optional values            | Default value |
+| :----: | :-----------------------------------: | :-----------: |
+| String | `github \| atom-one-light \| default` |   `github`    |
 
-##### Dark 
+##### Dark
 
 **Configuration item: `articles.code_blockhighlight_theme.dark`**
 
-| Type | Optional values | Default value |
-| :---: | :---: | :---: |
-| String | `github-dark \| monokai-sublime \| vs2015 \| night-owl \| atom-one-dark \| nord \| tokyo-night-dark \| a11y-dark \| agate` | `vs2015` | 
+|  Type  |                                                      Optional values                                                       | Default value |
+| :----: | :------------------------------------------------------------------------------------------------------------------------: | :-----------: |
+| String | `github-dark \| monokai-sublime \| vs2015 \| night-owl \| atom-one-dark \| nord \| tokyo-night-dark \| a11y-dark \| agate` |   `vs2015`    |
 
 ### Style
 
 **Configuration Item: `articles.code_block.style`**
 
-
-| Type | Possible Values | Default Value |
-| :---: | :---: | :---: |
-| String | `mac \| simple` | `mac` |
+|  Type  | Possible Values | Default Value |
+| :----: | :-------------: | :-----------: |
+| String | `mac \| simple` |     `mac`     |
 
 `mac` style:
 
@@ -189,9 +187,9 @@ Customize the code highlighting theme. Preview can be accessed at [highlightjs o
 
 **Configuration Item: `articles.code_block.font`**
 
-- `enable`: Whether to enable custom font.
-- `family`: Font name.
-- `url`: URL to the font CSS style file, such as Google Fonts' `https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap`.
+-   `enable`: Whether to enable custom font.
+-   `family`: Font name.
+-   `url`: URL to the font CSS style file, such as Google Fonts' `https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap`.
 
 ## Table of Contents
 
@@ -201,12 +199,11 @@ Customize the code highlighting theme. Preview can be accessed at [highlightjs o
 
 Whether to enable the table of contents.
 
-| Type | Possible Values | Default Value |
-| :---: | :---: | :---: |
-| Boolean | `true \| false` | `true` |
+|  Type   | Possible Values | Default Value |
+| :-----: | :-------------: | :-----------: |
+| Boolean | `true \| false` |    `true`     |
 
 ![image-20230322190540233](https://evan.beee.top/img/2023/03/22/da4eabf904b77e84b3d1b4f71c79b882.png)
-
 
 ### Maximum Depth
 
@@ -214,9 +211,9 @@ Whether to enable the table of contents.
 
 Set the maximum depth of the table of contents.
 
-| Type | Possible Values | Default Value |
-| :---: | :---: | :---: |
-| Number | `1-6` | `3` |
+|  Type  | Possible Values | Default Value |
+| :----: | :-------------: | :-----------: |
+| Number |      `1-6`      |      `3`      |
 
 ### Numbering
 
@@ -232,10 +229,9 @@ Whether to enable numbering for the table of contents.
 
 Whether to expand all sections of the table of contents.
 
-| Type | Possible Values | Default Value |
-| :---: | :---: | :---: |
-| Boolean | `true \| false` | `true` |
-
+|  Type   | Possible Values | Default Value |
+| :-----: | :-------------: | :-----------: |
+| Boolean | `true \| false` |    `true`     |
 
 ### Default Open TOC
 
@@ -243,9 +239,9 @@ Whether to expand all sections of the table of contents.
 
 Whether to default open the table of contents.
 
-| Type | Possible Values | Default Value |
-| :---: | :---: | :---: |
-| Boolean | `true \| false` | `true` |
+|  Type   | Possible Values | Default Value |
+| :-----: | :-------------: | :-----------: |
+| Boolean | `true \| false` |    `true`     |
 
 ## Article Copyright
 
@@ -255,9 +251,9 @@ Whether to default open the table of contents.
 
 Whether to display copyright information at the end of the article.
 
-| Type | Options | Default |
-| :---: | :---: | :---: |
-| Boolean | `true | false` | `true` |
+|  Type   | Options | Default |
+| :-----: | :-----: | :-----: | ------ |
+| Boolean |  `true  | false`  | `true` |
 
 ![](https://evan.beee.top/img/ec8db53b9bb72e8889dd9773ed19f22b-fb3d5.png)
 
@@ -267,13 +263,13 @@ Whether to display copyright information at the end of the article.
 
 Options:
 
-- `all_rights_reserved`: All rights reserved.
-- `cc_by_nc_sa`: Attribution-NonCommercial-ShareAlike, see details at [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh).
-- `cc_by_nc`: Attribution-NonCommercial, see details at [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.zh).
-- `cc_by_nd`: Attribution-NoDerivatives, see details at [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/deed.zh).
-- `cc_by_sa`: Attribution-ShareAlike, see details at [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.zh).
-- `cc_by`: Attribution, see details at [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh).
-- `public_domain`: Public Domain, see details at [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.zh).
+-   `all_rights_reserved`: All rights reserved.
+-   `cc_by_nc_sa`: Attribution-NonCommercial-ShareAlike, see details at [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh).
+-   `cc_by_nc`: Attribution-NonCommercial, see details at [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.zh).
+-   `cc_by_nd`: Attribution-NoDerivatives, see details at [CC BY-ND 4.0](https://creativecommons.org/licenses/by-nd/4.0/deed.zh).
+-   `cc_by_sa`: Attribution-ShareAlike, see details at [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.zh).
+-   `cc_by`: Attribution, see details at [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh).
+-   `public_domain`: Public Domain, see details at [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.zh).
 
 <Callout type={"info"} >
     **Custom Copyright Information**
@@ -301,13 +297,13 @@ Options:
     copyright: This article is written nonsensically. If you choose to use it, you do so at your own risk.
     ---
     ```
+
 </Callout>
 
 <Callout type={"warning"} emoji={"⚠️"}>
-    Note that the copyright item has a higher priority than license. So if you write both, only copyright will be effective.
+	Note that the copyright item has a higher priority than license. So if you
+	write both, only copyright will be effective.
 </Callout>
-
-
 
 ## Lazy Load
 
@@ -315,9 +311,9 @@ Options:
 
 Whether to enable lazy loading for images. Especially effective for blogs with many images, it can speed up page loading.
 
-| Type | Possible Values | Default Value |
-| :---: | :---: | :---: |
-| Boolean | `true \| false` | `true` |
+|  Type   | Possible Values | Default Value |
+| :-----: | :-------------: | :-----------: |
+| Boolean | `true \| false` |    `true`     |
 
 ## Article Recommendation
 
@@ -328,7 +324,7 @@ You need to install the `nodejieba` module. Migrated from `hexo-theme-volantis`.
 Please execute the following command to install:
 
 ```bash
-npm install nodejieba@2.5.2
+npm install nodejieba@latest
 ```
 
 ### Switch
@@ -337,8 +333,8 @@ npm install nodejieba@2.5.2
 
 Enable or disable article recommendation.
 
-| Type | Possible Values | Default |
-| :---: | :---: | :---: |
+|  Type   | Possible Values | Default |
+| :-----: | :-------------: | :-----: |
 | Boolean | `true \| false` | `false` |
 
 ### Title
@@ -347,8 +343,8 @@ Enable or disable article recommendation.
 
 The title of the article recommendation section.
 
-| Type | Note | Default |
-| :---: | :---: | :---: |
+|  Type  | Note |        Default         |
+| :----: | :--: | :--------------------: |
 | String | None | `Recommended Articles` |
 
 ### Number of Recommendations
@@ -357,9 +353,9 @@ The title of the article recommendation section.
 
 `limit` refers to the number of recommended articles on desktop, while `mobile_limit` refers to the number of recommended articles on mobile.
 
-| Type | Possible Values | Default |
-| :---: | :---: | :---: |
-| Number | `1-10` | `3` |
+|  Type  | Possible Values | Default |
+| :----: | :-------------: | :-----: |
+| Number |     `1-10`      |   `3`   |
 
 ### Excluded Directories
 
@@ -367,6 +363,6 @@ The title of the article recommendation section.
 
 Directories to exclude when recommending articles.
 
-| Type | Note | Example |
-| :---: | :---: | :---: |
+| Type  |            Note             |          Example          |
+| :---: | :-------------------------: | :-----------------------: |
 | Array | Please separate with commas | `["/docs/", "/private/"]` |

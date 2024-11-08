@@ -342,7 +342,7 @@ export default function ZhIndex() {
                     height={2064}
                   />
                   <h3>
-                    轻松搭建博客
+                    轻松搭建博客 <span className={"hidden sm:inline"}>，</span>
                     <br className="show-on-mobile" />
                     配置毫不繁琐。
                   </h3>

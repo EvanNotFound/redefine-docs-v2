@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 # Navigation Bar `navbar`
 
 ## Auto Hide
@@ -6,9 +8,9 @@
 
 Whether to automatically hide the navigation bar when scrolling the page.
 
-| Type | Possible Values | Default Value |
-| :---: | :---: | :---: |
-| Boolean | `true \| false` | `false` |
+|  Type   | Possible Values | Default Value |
+| :-----: | :-------------: | :-----------: |
+| Boolean | `true \| false` |    `false`    |
 
 ## Background Color
 
@@ -18,25 +20,25 @@ Color gradient effect
 
 **Configuration Option: `navbar.color.left`**
 
-| Type | Note | Example |
-| :---: | :---: | :---: |
+|  Type  |         Note          |  Example  |
+| :----: | :-------------------: | :-------: |
 | String | Enter Hex color value | `#f78736` |
 
 ### Right Side
 
 **Configuration Option: `navbar.color.right`**
 
-| Type | Note | Example |
-| :---: | :---: | :---: |
+|  Type  |         Note          |  Example  |
+| :----: | :-------------------: | :-------: |
 | String | Enter Hex color value | `#367df7` |
 
 ### Transparency
 
 **Configuration Option: `navbar.color.transparency`**
 
-| Type | Possible Values | Default Value |
-| :---: | :---: | :---: |
-| Number | `10-99` | `35` |
+|  Type  | Possible Values | Default Value |
+| :----: | :-------------: | :-----------: |
+| Number |     `10-99`     |     `35`      |
 
 ## Link List
 
@@ -46,7 +48,17 @@ Color gradient effect
 
 Effect:
 
-![image-20230322181757906](https://evan.beee.top/img/2023/03/22/04a83f6c05b00f40c1e1085cf17dd04b.png)
+<Image
+  src="https://evan.beee.top/img/2023/03/22/04a83f6c05b00f40c1e1085cf17dd04b.png"
+  alt="image-20230322181757906"
+  width={2944}
+  height={152}
+  className="my-2"
+  style={{
+    maxHeight: "500px",
+    objectFit: "contain",
+  }}
+/>
 
 Syntax:
 
@@ -57,6 +69,7 @@ navbar:
       path: / # 网址，可以为相对路径或者绝对路径
       icon: fa-regular fa-house # Fontawesome图标名称（可选）
 ```
+
 To implement a menu that redirects to a third-party website when clicked on the navigation bar, simply fill in the value of `path` with the URL of the third-party website.
 
 For example, configure a menu in the header navigation bar to redirect to the Google website:
@@ -73,7 +86,17 @@ navbar:
 
 Effect:
 
-![Screenshot 2023-03-22 at 6.18.29 PM](https://evan.beee.top/img/2023/03/22/9f2bd701f601ffa075c6dc2c5158866a.png)
+<Image
+  src="https://evan.beee.top/img/2023/03/22/9f2bd701f601ffa075c6dc2c5158866a.png"
+  alt="Screenshot 2023-03-22 at 6.18.29 PM"
+  width={2380}
+  height={440}
+  className="my-2"
+  style={{
+    maxHeight: "500px",
+    objectFit: "contain",
+  }}
+/>
 
 Syntax:
 
@@ -91,7 +114,17 @@ navbar:
 
 Please visit [Font Awesome](https://fontawesome.com/search) to search for icons and then copy the icon name.
 
-![image-20230322182114718](https://evan.beee.top/img/2023/03/22/0b7c26aeee2f1cb9bc6b3e475bfdfccc.png)
+<Image
+  src="https://evan.beee.top/img/2023/03/22/0b7c26aeee2f1cb9bc6b3e475bfdfccc.png"
+  alt="image-20230322182114718"
+  width={2508}
+  height={1592}
+  className="my-2"
+  style={{
+    maxHeight: "500px",
+    objectFit: "contain",
+  }}
+/>
 
 Finally, write it inside the `icon` field.
 
@@ -109,14 +142,14 @@ npm install hexo-generator-searchdb --save
 
 **Configuration Option: `search.enable`**
 
-| Type | Possible Values | Default Value |
-| :---: | :---: | :---: |
-| Boolean | `true \| false` | `false` |
+|  Type   | Possible Values | Default Value |
+| :-----: | :-------------: | :-----------: |
+| Boolean | `true \| false` |    `false`    |
 
 ### Preload
 
 **Configuration Option: `search.preload`**
 
-| Type | Possible Values | Default Value |
-| :---: | :---: | :---: |
-| Boolean | `true \| false` | `true` |
+|  Type   | Possible Values | Default Value |
+| :-----: | :-------------: | :-----------: |
+| Boolean | `true \| false` |    `true`     |

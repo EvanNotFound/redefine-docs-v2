@@ -1,8 +1,20 @@
+import Image from "next/image";
+
 # 瀑布流相册页面
 
 ## 效果
 
-![Masonry](https://evan.beee.top/img/2023/05/14/d5328473c414a7dce7990f70e8b1ec41.png)
+<Image
+  src="https://evan.beee.top/img/2023/05/14/d5328473c414a7dce7990f70e8b1ec41.png"
+  alt="Masonry"
+  width={3248}
+  height={1958}
+  className="my-2"
+  style={{
+    maxHeight: "500px",
+    objectFit: "contain",
+  }}
+/>
 
 ## 配置教程
 
@@ -12,70 +24,70 @@ import { Steps } from "nextra/components";
 
 <Steps>
 
-### 创建相册页面
+    ### 创建相册页面
 
-在你的 Hexo 项目根目录下执行如下命令即可自动创建相册/照片墙页面。
+    在你的 Hexo 项目根目录下执行如下命令即可自动创建相册/照片墙页面。
 
-```shell
-$ hexo new page masonry
-```
+    ```shell
+    $ hexo new page masonry
+    ```
 
-注意：
-相册页面默认根据 `title: masonry` 或者 `title: gallery` 或者 `title: photos` 来匹配。
+    注意：
+    相册页面默认根据 `title: masonry` 或者 `title: gallery` 或者 `title: photos` 来匹配。
 
-如果需要自定义页面的标题，需要在页面 `index.md` 的 Front Matter 里面添加 `type: masonry` 或者 `type: gallery`，即可自定义页面标题。
+    如果需要自定义页面的标题，需要在页面 `index.md` 的 Front Matter 里面添加 `type: masonry` 或者 `type: gallery`，即可自定义页面标题。
 
-以下两个是正确的配置示例参考：
+    以下两个是正确的配置示例参考：
 
-```markdown filename="masonry/index.md"
----
-title: Gallery
-date: 2023/5/14 11:45:14
----
-```
+    ```markdown filename="masonry/index.md"
+    ---
+    title: Gallery
+    date: 2023/5/14 11:45:14
+    ---
+    ```
 
-```markdown filename="masonry/index.md"
----
-title: 自定义页面标题
-type: masonry
-date: 2023/5/14 11:45:14
----
-```
+    ```markdown filename="masonry/index.md"
+    ---
+    title: 自定义页面标题
+    type: masonry
+    date: 2023/5/14 11:45:14
+    ---
+    ```
 
-### 修改配置文件
+    ### 修改配置文件
 
-在 Redefine 主题配置文件 `_config.redefine.yml` 的 `navbar` 配置项里面启用 `links`。
+    在 Redefine 主题配置文件 `_config.redefine.yml` 的 `navbar` 配置项里面启用 `links`。
 
-```yaml filename="_config.redefine.yml" {3-5}
-navbar:
+    ```yaml filename="_config.redefine.yml" {3-5}
+    navbar:
     links:
-        相册: #取名随意
-            icon: fa-solid fa-image #图标
-            path: /masonry/
-```
+    相册: #取名随意
+    icon: fa-solid fa-image #图标
+    path: /masonry/
+    ```
 
-（放在二级菜单也可以）
+    （放在二级菜单也可以）
 
-### 创建相册存放文件
+    ### 创建相册存放文件
 
-在你的 Hexo 项目的 `source` 文件夹里增加 `_data` 文件夹（如果已有则跳过）
+    在你的 Hexo 项目的 `source` 文件夹里增加 `_data` 文件夹（如果已有则跳过）
 
-在 `_data` 文件夹下新增 `masonry.yml` 文件。
+    在 `_data` 文件夹下新增 `masonry.yml` 文件。
 
-在 `masonry.yml` 文件里面按照如下格式配置相册信息：
+    在 `masonry.yml` 文件里面按照如下格式配置相册信息：
 
-```yaml filename="source/_data/masonry.yml"
-- image: 图片 URL
-  title: 图片标题
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
+    ```yaml filename="source/_data/masonry.yml"
+    - image: 图片 URL
+    title: 图片标题
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
 
-- image: https://picsum.photos/id/12/2500/1800
-  title: Lorem ipsum
-  description: Lorem ipsum dolor sit amet
-```
+    - image: https://picsum.photos/id/12/2500/1800
+    title: Lorem ipsum
+    description: Lorem ipsum dolor sit amet
+    ```
 
-### 创建完成
+    ### 创建完成
 
-现在就可以访问你创建的页面查看效果了。
+    现在就可以访问你创建的页面查看效果了。
 
 </Steps>

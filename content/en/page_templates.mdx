@@ -2,6 +2,17 @@
 asIndexPage: true
 ---
 
+import { Users, Tag, FolderTree, Grid } from "lucide-react";
+
 # Page Templates
 
-This theme has been specially optimized for the friend links, tags, categories, and archives pages.
+The theme includes specially optimized pages for friends links, tags, categories, and masonry gallery.
+
+import { Cards } from "nextra/components";
+
+<Cards>
+  <Cards.Card title="Friends Links" href="/page_templates/friends" icon={<Users />} />
+  <Cards.Card title="Tags" href="/page_templates/tags" icon={<Tag />} />
+  <Cards.Card title="Categories" href="/page_templates/categories" icon={<FolderTree />} />
+  <Cards.Card title="Masonry Gallery" href="/page_templates/masonry" icon={<Grid />} />
+</Cards>
