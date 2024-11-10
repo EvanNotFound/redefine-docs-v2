@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aafa2410-0ded-4c10-aaa3-a3bcae56cc27" name="Changes" comment="feat: Enhance documentation with visual aids and navigation&#10;&#10;- Add images to various sections for better visual explanation&#10;- Implement Cards component for easier navigation between sections&#10;- Update content structure for improved readability&#10;- Add icons to Cards for better visual cues&#10;- Improve formatting and layout of code examples and tables" />
+    <list default="true" id="aafa2410-0ded-4c10-aaa3-a3bcae56cc27" name="Changes" comment="style: Improve formatting and readability of getting-started.mdx&#10;&#10;- Remove unnecessary newlines and adjust indentation&#10;- Simplify Callout component usage&#10;- Standardize YAML example formatting&#10;- Enhance overall document structure for better readability" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,25 +39,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/evanluo/Documents/projects/redefine/redefine-docs-v2/content/zh",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev.executor": "Run",
-    "prettierjs.PrettierConfiguration.Package": "/Users/evanluo/Documents/projects/redefine/redefine-docs-v2/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/evanluo/Documents/projects/redefine/redefine-docs-v2/content/zh&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/evanluo/Documents/projects/redefine/redefine-docs-v2/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -151,6 +151,7 @@
       <workItem from="1730998098553" duration="117000" />
       <workItem from="1730998226753" duration="16391000" />
       <workItem from="1731036736870" duration="4862000" />
+      <workItem from="1731083284961" duration="319000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <option name="closed" value="true" />
@@ -360,14 +361,21 @@
       <option name="project" value="LOCAL" />
       <updated>1731083008972</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="style: Improve formatting and readability of getting-started.mdx&#10;&#10;- Remove unnecessary newlines and adjust indentation&#10;- Simplify Callout component usage&#10;- Standardize YAML example formatting&#10;- Enhance overall document structure for better readability">
+      <option name="closed" value="true" />
+      <created>1731083322394</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1731083322394</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix" />
     <MESSAGE value="bg" />
     <MESSAGE value="language" />
     <MESSAGE value="copyright" />
@@ -392,6 +400,7 @@
     <MESSAGE value="refactor: Improve middleware and locale handling&#10;&#10;- Enhance type safety in getLocale function&#10;- Adjust matcher to exclude sitemap from middleware processing&#10;- Format code for better readability" />
     <MESSAGE value="style: Update favicon and app icons&#10;&#10;- Replace safari-pinned-tab.svg with a simplified version&#10;- Update favicon.ico and apple-icon.png with new designs&#10;- Refresh Android Chrome icons for better visual consistency" />
     <MESSAGE value="feat: Enhance documentation with visual aids and navigation&#10;&#10;- Add images to various sections for better visual explanation&#10;- Implement Cards component for easier navigation between sections&#10;- Update content structure for improved readability&#10;- Add icons to Cards for better visual cues&#10;- Improve formatting and layout of code examples and tables" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Enhance documentation with visual aids and navigation&#10;&#10;- Add images to various sections for better visual explanation&#10;- Implement Cards component for easier navigation between sections&#10;- Update content structure for improved readability&#10;- Add icons to Cards for better visual cues&#10;- Improve formatting and layout of code examples and tables" />
+    <MESSAGE value="style: Improve formatting and readability of getting-started.mdx&#10;&#10;- Remove unnecessary newlines and adjust indentation&#10;- Simplify Callout component usage&#10;- Standardize YAML example formatting&#10;- Enhance overall document structure for better readability" />
+    <option name="LAST_COMMIT_MESSAGE" value="style: Improve formatting and readability of getting-started.mdx&#10;&#10;- Remove unnecessary newlines and adjust indentation&#10;- Simplify Callout component usage&#10;- Standardize YAML example formatting&#10;- Enhance overall document structure for better readability" />
   </component>
 </project>

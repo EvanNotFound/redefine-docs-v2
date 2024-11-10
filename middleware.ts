@@ -27,14 +27,30 @@ function getLocale(request: NextRequest): string {
   let languages = new Negotiator({ headers: negotiatorHeaders }).languages();
   logger.debug("Detected browser languages", languages);
 
-  // @ts-ignore locales are readonly
-  const locales: string[] = i18n.locales;
+  // Validate and log locales
+  const locales: string[] = i18n.locales.filter(locale => {
+    const isValid = /^[a-zA-Z]{2,3}(-[a-zA-Z]{2,3})?$/.test(locale);
+    if (!isValid) {
+      logger.error(`Invalid locale detected in i18n.locales: ${locale}`);
+    }
+    return isValid;
+  });
   logger.debug("Available locales", locales);
 
-  const matchedLocale = match(languages, locales, i18n.defaultLocale);
-  logger.debug("Matched locale", matchedLocale);
+  // Ensure defaultLocale is valid
+  if (!locales.includes(i18n.defaultLocale)) {
+    logger.error(`Default locale '${i18n.defaultLocale}' is not included in i18n.locales.`);
+    throw new RangeError("Default locale is invalid or missing from i18n.locales.");
+  }
 
-  return matchedLocale;
+  try {
+    const matchedLocale = match(languages, locales, i18n.defaultLocale);
+    logger.debug("Matched locale", matchedLocale);
+    return matchedLocale;
+  } catch (error) {
+    logger.error("Error matching locale:", error);
+    return i18n.defaultLocale; // Fallback to default locale
+  }
 }
 
 export function middleware(request: NextRequest) {
@@ -55,7 +71,7 @@ export function middleware(request: NextRequest) {
     logger.debug("Selected locale for redirect", locale);
 
     // e.g. incoming request is /products
-    // The new URL is now /zh/products
+    // The new URL is now /en/products
     const redirectUrl = new URL(`/${locale}${pathname}`, request.url);
     logger.debug("Redirecting to", redirectUrl.toString());
 
