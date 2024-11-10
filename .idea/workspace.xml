@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aafa2410-0ded-4c10-aaa3-a3bcae56cc27" name="Changes" comment="style: Improve formatting and readability of getting-started.mdx&#10;&#10;- Remove unnecessary newlines and adjust indentation&#10;- Simplify Callout component usage&#10;- Standardize YAML example formatting&#10;- Enhance overall document structure for better readability" />
+    <list default="true" id="aafa2410-0ded-4c10-aaa3-a3bcae56cc27" name="Changes" comment="refactor: Enhance locale handling and error management in middleware&#10;&#10;- Add validation for locales and default locale&#10;- Implement error handling for locale matching&#10;- Improve logging for better debugging&#10;- Ensure fallback to default locale on error&#10;- Update redirect example comment for clarity" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -152,6 +152,7 @@
       <workItem from="1730998226753" duration="16391000" />
       <workItem from="1731036736870" duration="4862000" />
       <workItem from="1731083284961" duration="319000" />
+      <workItem from="1731218630285" duration="869000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <option name="closed" value="true" />
@@ -369,14 +370,21 @@
       <option name="project" value="LOCAL" />
       <updated>1731083322394</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="refactor: Enhance locale handling and error management in middleware&#10;&#10;- Add validation for locales and default locale&#10;- Implement error handling for locale matching&#10;- Improve logging for better debugging&#10;- Ensure fallback to default locale on error&#10;- Update redirect example comment for clarity">
+      <option name="closed" value="true" />
+      <created>1731218850712</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1731218850712</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="bg" />
     <MESSAGE value="language" />
     <MESSAGE value="copyright" />
     <MESSAGE value="cover" />
@@ -401,6 +409,7 @@
     <MESSAGE value="style: Update favicon and app icons&#10;&#10;- Replace safari-pinned-tab.svg with a simplified version&#10;- Update favicon.ico and apple-icon.png with new designs&#10;- Refresh Android Chrome icons for better visual consistency" />
     <MESSAGE value="feat: Enhance documentation with visual aids and navigation&#10;&#10;- Add images to various sections for better visual explanation&#10;- Implement Cards component for easier navigation between sections&#10;- Update content structure for improved readability&#10;- Add icons to Cards for better visual cues&#10;- Improve formatting and layout of code examples and tables" />
     <MESSAGE value="style: Improve formatting and readability of getting-started.mdx&#10;&#10;- Remove unnecessary newlines and adjust indentation&#10;- Simplify Callout component usage&#10;- Standardize YAML example formatting&#10;- Enhance overall document structure for better readability" />
-    <option name="LAST_COMMIT_MESSAGE" value="style: Improve formatting and readability of getting-started.mdx&#10;&#10;- Remove unnecessary newlines and adjust indentation&#10;- Simplify Callout component usage&#10;- Standardize YAML example formatting&#10;- Enhance overall document structure for better readability" />
+    <MESSAGE value="refactor: Enhance locale handling and error management in middleware&#10;&#10;- Add validation for locales and default locale&#10;- Implement error handling for locale matching&#10;- Improve logging for better debugging&#10;- Ensure fallback to default locale on error&#10;- Update redirect example comment for clarity" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: Enhance locale handling and error management in middleware&#10;&#10;- Add validation for locales and default locale&#10;- Implement error handling for locale matching&#10;- Improve logging for better debugging&#10;- Ensure fallback to default locale on error&#10;- Update redirect example comment for clarity" />
   </component>
 </project>
