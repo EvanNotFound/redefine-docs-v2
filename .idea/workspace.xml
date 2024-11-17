@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aafa2410-0ded-4c10-aaa3-a3bcae56cc27" name="Changes" comment="refactor: Enhance locale handling and error management in middleware&#10;&#10;- Add validation for locales and default locale&#10;- Implement error handling for locale matching&#10;- Improve logging for better debugging&#10;- Ensure fallback to default locale on error&#10;- Update redirect example comment for clarity" />
+    <list default="true" id="aafa2410-0ded-4c10-aaa3-a3bcae56cc27" name="Changes" comment="feat: Add analytics script to layout&#10;&#10;- Integrate analytics script using Next.js Script component&#10;- Set script to load deferred for improved performance&#10;- Include website ID for tracking purposes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -153,6 +153,7 @@
       <workItem from="1731036736870" duration="4862000" />
       <workItem from="1731083284961" duration="319000" />
       <workItem from="1731218630285" duration="869000" />
+      <workItem from="1731251200468" duration="2882000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <option name="closed" value="true" />
@@ -378,15 +379,29 @@
       <option name="project" value="LOCAL" />
       <updated>1731218850712</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="chore: Remove next-sitemap from postbuild script&#10;&#10;- Simplify postbuild process by removing next-sitemap execution&#10;- Retain pagefind functionality for site search capabilities&#10;- Update package.json to reflect the streamlined build process">
+      <option name="closed" value="true" />
+      <created>1731252556929</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1731252556929</updated>
+    </task>
+    <task id="LOCAL-00030" summary="feat: Add analytics script to layout&#10;&#10;- Integrate analytics script using Next.js Script component&#10;- Set script to load deferred for improved performance&#10;- Include website ID for tracking purposes">
+      <option name="closed" value="true" />
+      <created>1731254015762</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1731254015762</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="language" />
-    <MESSAGE value="copyright" />
     <MESSAGE value="cover" />
     <MESSAGE value="image" />
     <MESSAGE value="feat: Update image imports in index pages (main)&#10;&#10;- Update image imports in pages/index.en.mdx and pages/index.zh.mdx&#10;- Replace the previous image paths with the new image paths&#10;- Use the new image files: docs-light.webp and docs-dark.webp&#10;- This commit is part of the main branch." />
@@ -410,6 +425,8 @@
     <MESSAGE value="feat: Enhance documentation with visual aids and navigation&#10;&#10;- Add images to various sections for better visual explanation&#10;- Implement Cards component for easier navigation between sections&#10;- Update content structure for improved readability&#10;- Add icons to Cards for better visual cues&#10;- Improve formatting and layout of code examples and tables" />
     <MESSAGE value="style: Improve formatting and readability of getting-started.mdx&#10;&#10;- Remove unnecessary newlines and adjust indentation&#10;- Simplify Callout component usage&#10;- Standardize YAML example formatting&#10;- Enhance overall document structure for better readability" />
     <MESSAGE value="refactor: Enhance locale handling and error management in middleware&#10;&#10;- Add validation for locales and default locale&#10;- Implement error handling for locale matching&#10;- Improve logging for better debugging&#10;- Ensure fallback to default locale on error&#10;- Update redirect example comment for clarity" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: Enhance locale handling and error management in middleware&#10;&#10;- Add validation for locales and default locale&#10;- Implement error handling for locale matching&#10;- Improve logging for better debugging&#10;- Ensure fallback to default locale on error&#10;- Update redirect example comment for clarity" />
+    <MESSAGE value="chore: Remove next-sitemap from postbuild script&#10;&#10;- Simplify postbuild process by removing next-sitemap execution&#10;- Retain pagefind functionality for site search capabilities&#10;- Update package.json to reflect the streamlined build process" />
+    <MESSAGE value="feat: Add analytics script to layout&#10;&#10;- Integrate analytics script using Next.js Script component&#10;- Set script to load deferred for improved performance&#10;- Include website ID for tracking purposes" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Add analytics script to layout&#10;&#10;- Integrate analytics script using Next.js Script component&#10;- Set script to load deferred for improved performance&#10;- Include website ID for tracking purposes" />
   </component>
 </project>
