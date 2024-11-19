@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/image";
 
 # 书签 / 工具页面
 
@@ -6,10 +6,17 @@ import Image from "next/image"
 
 ## 效果
 
+站点演示：[Redefine Demo #Bookmarks](https://redefine.ohevan.com/bookmarks)
+
 <Image
-  src="https://assets.ohevan.com/img/00c70e5f9d2b975f5d132841f6d41583.webp" alt="image" width={5088} height={3328} className="my-2" style={{
+  src="https://assets.ohevan.com/img/00c70e5f9d2b975f5d132841f6d41583.webp"
+  alt="image"
+  width={5088}
+  height={3328}
+  className="my-2"
+  style={{
     maxHeight: "500px",
-    objectFit: "contain"
+    objectFit: "contain",
   }}
 />
 
@@ -45,10 +52,10 @@ template: bookmarks
 
 ```yaml filename="_config.redefine.yml" {3-5}
 navbar:
-    links:
-        Bookmarks: #取名随意
-            icon: fa-solid fa-bookmark #图标
-            path: /bookmarks/
+  links:
+    Bookmarks: #取名随意
+      icon: fa-solid fa-bookmark #图标
+      path: /bookmarks/
 ```
 
 （放在二级菜单也可以）
@@ -81,7 +88,6 @@ navbar:
       link: https://www.anthropic.com/
       description: Anthropic 的 AI 对话助手
       image: https://www.anthropic.com/favicon.ico
-
 ```
 
 </Steps>
@@ -98,5 +104,5 @@ page_templates:
 ```
 
 | 类型 | 可选值 | 默认值 |
-| :--: | :----: | :----: |
-| 数字 | `2 | 3` |   3   |
+| :--: | :----: | :----: | --- |
+| 数字 |   `2   |   3`   | 3   |
