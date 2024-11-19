@@ -6,7 +6,7 @@
 
 ## Configuration Tutorial
 
-Starting from version v2.1.4, Redefine supports the Masonry photo gallery page. Here's how to use it:
+Starting from version 2.1.4, Redefine supports the Masonry photo gallery page. Here's how to use it:
 
 import {Steps} from 'nextra/components'
 
@@ -14,31 +14,19 @@ import {Steps} from 'nextra/components'
 
 ### Create a Photo Gallery Page
 
-Execute the following command in the root directory of your Hexo project to automatically create a photo gallery/wall page.
+Execute the following command in the root directory of your Hexo project to create a photo gallery/wall page.
 
 ```shell
 $ hexo new page masonry
 ```
 
-Note:
-The photo gallery page is matched by default based on `title: masonry`, `title: gallery`, or `title: photos`.
+Then, open the Markdown file of this page ( `source/masonry/index.md` ), edit the Front Matter, add `template: masonry`, and you can create a photo gallery/wall page.
 
-If you need to customize the page title, you need to add `type: masonry` or `type: gallery` in the Front Matter of the `index.md` page to customize the page title.
-
-Here are two correct configuration examples:
-
-```markdown filename="masonry/index.md"
+```markdown filename="source/masonry/index.md" {4}
 ---
-title: Gallery
+title: Masonry (Your custom title)
 date: 2023/5/14 11:45:14
----
-```
-
-```markdown filename="masonry/index.md"
----
-title: 自定义页面标题
-type: masonry
-date: 2023/5/14 11:45:14
+template: masonry
 ---
 ```
 
@@ -66,8 +54,8 @@ Configure the album information in the `masonry.yml` file in the following forma
 
 ```yaml filename="source/_data/masonry.yml"
 
-- image: 图片 URL
-  title: 图片标题
+- image: Image URL
+  title: Image Title
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
 
 - image: https://picsum.photos/id/12/2500/1800

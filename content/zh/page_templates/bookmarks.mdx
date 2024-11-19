@@ -1,0 +1,93 @@
+
+# 书签 / 工具页面
+
+本页面模版从 Redefine `v2.8.0` 版本开始支持。
+
+## 效果
+
+![](https://assets.ohevan.com/img/00c70e5f9d2b975f5d132841f6d41583.webp)
+
+## 配置教程
+
+import { Steps } from "nextra/components";
+
+<Steps>
+
+### 创建书签页面
+
+在你的 Hexo 项目根目录下执行如下命令创建书签页面：
+
+```bash
+$ hexo new page bookmarks
+```
+
+然后，打开这个页面的 Markdown 文件（`source/bookmarks/index.md`），编辑 Front Matter，添加 `template: bookmarks`，即可。
+
+```markdown filename="source/bookmarks/index.md" {4}
+---
+title: 书签（你自定义的标题）
+date: 2023/5/14 11:45:14
+template: bookmarks
+---
+```
+
+### 修改配置文件
+
+在 Redefine 主题配置文件 `_config.redefine.yml` 的 `navbar.links` 导航栏配置项里面添加书签页面。
+
+```yaml filename="_config.redefine.yml" {3-5}
+navbar:
+    links:
+        Bookmarks: #取名随意
+            icon: fa-solid fa-bookmark #图标
+            path: /bookmarks/
+```
+
+（放在二级菜单也可以）
+
+### 创建书签存放文件
+
+在你的 Hexo 项目的 `source` 文件夹里增加 `_data` 文件夹（如果已有则跳过）。
+
+在 `_data` 文件夹下新增 `bookmarks.yml` 文件。
+
+在 `bookmarks.yml` 文件里面按照如下格式配置书签信息：
+
+```yaml filename="source/_data/bookmarks.yml"
+- category: 分类名称
+  description: 分类描述（可选）
+  items:
+    - name: 书签名称
+      url: 链接地址
+      description: 书签描述
+      icon: 图标链接（可选）
+    - name: 示例网站
+      url: https://example.com
+      description: 这是一个示例网站
+      icon: https://example.com/favicon.ico
+
+- category: 工具
+  description: 常用的在线工具
+  items:
+    - name: ChatGPT
+      url: https://chat.openai.com
+      description: AI 对话助手
+      icon: https://chat.openai.com/favicon.ico
+```
+
+</Steps>
+
+## 更改列数
+
+在 Redefine 主题配置文件 `_config.redefine.yml` 的 `page_templates` 配置项里面修改 `bookmarks_column`。
+
+**配置项名称：`page_templates.bookmarks_column`**
+
+```yaml filename="_config.redefine.yml"
+page_templates:
+  bookmarks_column: 3
+```
+
+| 类型 | 可选值 | 默认值 |
+| :--: | :----: | :----: |
+| 数字 | `2 | 3` |   3   |

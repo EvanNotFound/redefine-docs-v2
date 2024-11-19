@@ -19,10 +19,20 @@ import {Steps} from 'nextra/components';
 
 ### Create Tags Page
 
-Execute the following command in the Hexo root directory:
+Execute the following command in the Hexo root directory to create a Tags page.
 
 ```bash
 hexo new page tags
+```
+
+Then, open the Markdown file of this page ( `source/tags/index.md` ), edit the Front Matter, add `template: tags`, and you can create a Tags page.
+
+```markdown filename="source/tags/index.md" {4}
+---
+title: Tags (Your custom title)
+date: 2023/5/14 11:45:14
+template: tags
+---
 ```
 
 ### Add Tags Page to Navigation Bar
@@ -38,12 +48,6 @@ navbar:
 ```
 
 (It can also be placed in a sub-menu)
-
-### Modify Title (Optional)
-
-The Tags page is matched based on the default `title: tags`.
-
-If you need to customize the page title, add `type: tags` in the Front Matter to customize the page title.
 
 </Steps>
 

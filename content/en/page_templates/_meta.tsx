@@ -3,4 +3,5 @@ export default {
   tags: "Tags",
   categories: "Categories",
   masonry: "Masonry Gallery",
+  bookmarks: "Bookmarks",
 };

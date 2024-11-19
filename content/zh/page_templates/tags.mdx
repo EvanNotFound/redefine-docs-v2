@@ -24,13 +24,23 @@ import { Steps } from "nextra/components";
 hexo new page tags
 ```
 
+然后，打开这个页面的 Markdown 文件（`source/tags/index.md`），编辑 Front Matter，添加 `template: tags`，即可。
+
+```markdown filename="source/tags/index.md" {4}
+---
+title: 标签（你自定义的标题）
+date: 2023/5/14 11:45:14
+template: tags
+---
+```
+
 ### 导航栏添加标签页面
 
-在 Redefine 主题配置文件 `_config.redefine.yml` 的 `navbar` 配置项里面启用 `tags`。
+在 Redefine 主题配置文件 `_config.redefine.yml` 的 `navbar.links` 导航栏配置项里面添加标签页面。
 
 ```yaml filename="_config.redefine.yml" {3-5}
 navbar:
-    tags:
+    links:
         Tags: #取名随意
             icon: fa-solid fa-tags #图标
             path: /tags/ #链接

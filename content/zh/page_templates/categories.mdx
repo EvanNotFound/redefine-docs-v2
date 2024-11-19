@@ -30,9 +30,19 @@ import { Steps } from "nextra/components";
     hexo new page categories
     ```
 
+    然后，打开这个页面的 Markdown 文件（`source/categories/index.md`），编辑 Front Matter，添加 `template: categories`，即可。
+
+    ```markdown filename="source/categories/index.md" {4}
+    ---
+    title: 分类（你自定义的标题）
+    date: 2023/5/14 11:45:14
+    template: categories
+    ---
+    ``` 
+
     ### 导航栏添加分类页面
 
-    在 Redefine 主题配置文件 `_config.redefine.yml` 的 `navbar` 配置项里面启用 `categories`。
+    在 Redefine 主题配置文件 `_config.redefine.yml` 的 `navbar.links` 导航栏配置项里面添加分类页面。
 
     ```yaml filename="_config.redefine.yml" {3-5}
     navbar:
@@ -43,11 +53,5 @@ import { Steps } from "nextra/components";
     ```
 
     （放在二级菜单也可以）
-
-    ### 修改标题（可选）
-
-    Categories 分类页默认根据 `title: categories` 来匹配。
-
-    如果需要自定义页面的标题，需要在 Front Matter 里面添加 `type: categories`，即可自定义页面标题。
 
 </Steps>
