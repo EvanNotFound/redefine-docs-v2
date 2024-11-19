@@ -58,21 +58,26 @@ You can also add it to a submenu if you prefer!
 3. Add your bookmarks using this format:
 
 ```yaml filename="source/_data/bookmarks.yml"
-- category: My Favorite Sites
-  description: Websites I visit daily
+- category: Category Name
+  icon: fa-folder # Category icon, using FontAwesome icons
   items:
-    - name: Example Blog
-      url: https://example.com
-      description: A great tech blog
-      icon: https://example.com/favicon.ico
+    - name: Bookmark Name
+      link: bookmark-url # Changed from 'url' to 'link'
+      description: Bookmark description
+      image: icon-url # Changed from 'icon' to 'image', used for website icon
 
-- category: Dev Tools
-  description: Tools that make coding easier
+- category: Tools
+  icon: fa-tools # Tools category icon
   items:
     - name: ChatGPT
-      url: https://chat.openai.com
-      description: AI coding assistant
-      icon: https://chat.openai.com/favicon.ico
+      link: https://chat.openai.com # Bookmark URL
+      description: OpenAI's AI chat assistant
+      image: https://chat.openai.com/favicon.ico # Website icon URL
+    - name: Claude
+      link: https://www.anthropic.com/
+      description: Anthropic's AI chat assistant
+      image: https://www.anthropic.com/favicon.ico
+
 ```
 
 </Steps>

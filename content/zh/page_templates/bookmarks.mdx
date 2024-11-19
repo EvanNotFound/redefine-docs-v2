@@ -59,28 +59,29 @@ navbar:
 
 在 `_data` 文件夹下新增 `bookmarks.yml` 文件。
 
-在 `bookmarks.yml` 文件里面按照如下格式配置书签信息：
+在 `bookmarks.yml` 文件里面按照如下格式配置书签信息（以下是一个示例参考）：
 
 ```yaml filename="source/_data/bookmarks.yml"
 - category: 分类名称
-  description: 分类描述（可选）
+  icon: fa-folder # 分类的图标，使用 FontAwesome 图标
   items:
     - name: 书签名称
-      url: 链接地址
+      link: 链接地址 # 从 url 改为 link
       description: 书签描述
-      icon: 图标链接（可选）
-    - name: 示例网站
-      url: https://example.com
-      description: 这是一个示例网站
-      icon: https://example.com/favicon.ico
+      image: 图标链接 # 从 icon 改为 image，用于显示网站图标
 
 - category: 工具
-  description: 常用的在线工具
+  icon: fa-tools # 工具分类的图标
   items:
     - name: ChatGPT
-      url: https://chat.openai.com
-      description: AI 对话助手
-      icon: https://chat.openai.com/favicon.ico
+      link: https://chat.openai.com # 书签链接地址
+      description: OpenAI 的 AI 对话助手
+      image: https://chat.openai.com/favicon.ico # 网站图标地址
+    - name: Claude
+      link: https://www.anthropic.com/
+      description: Anthropic 的 AI 对话助手
+      image: https://www.anthropic.com/favicon.ico
+
 ```
 
 </Steps>
