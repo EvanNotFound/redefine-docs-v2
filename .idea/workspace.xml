@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aafa2410-0ded-4c10-aaa3-a3bcae56cc27" name="Changes" comment="feat: update page templates configuration instructions&#10;&#10;- Add template specification in Front Matter for categories, tags, masonry&#10;- Clarify navbar configuration for adding pages to navigation&#10;- Remove outdated instructions for customizing page titles&#10;- Update examples with consistent formatting across languages&#10;- Simplify and standardize setup steps for all page templates">
-      <change beforePath="$PROJECT_DIR$/content/en/page_templates/categories.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/page_templates/categories.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/en/page_templates/friends.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/page_templates/friends.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/en/page_templates/masonry.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/page_templates/masonry.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/en/page_templates/tags.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/page_templates/tags.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/zh/page_templates/categories.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/page_templates/categories.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/zh/page_templates/friends.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/page_templates/friends.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/zh/page_templates/masonry.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/page_templates/masonry.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/zh/page_templates/tags.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/page_templates/tags.mdx" afterDir="false" />
-    </list>
+    <list default="true" id="aafa2410-0ded-4c10-aaa3-a3bcae56cc27" name="Changes" comment="docs: add demo link for Bookmarks page template&#10;&#10;• Added a site demonstration link for the Bookmarks page template&#10;• Updated the Chinese documentation for better user reference" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -164,6 +155,7 @@
       <workItem from="1731218630285" duration="869000" />
       <workItem from="1731251200468" duration="2882000" />
       <workItem from="1731886473561" duration="2049000" />
+      <workItem from="1731996512730" duration="1450000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <option name="closed" value="true" />
@@ -413,18 +405,53 @@
       <option name="project" value="LOCAL" />
       <updated>1731886609143</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="feat: update page templates and add bookmarks feature&#10;&#10;- Add template specification in Front Matter for categories, tags, masonry&#10;- Clarify navbar configuration for adding pages to navigation&#10;- Remove outdated instructions for customizing page titles&#10;- Update examples with consistent formatting across languages&#10;- Add new bookmarks page template and configuration instructions&#10;- Include bookmarks feature in page templates navigation for both languages">
+      <option name="closed" value="true" />
+      <created>1731996529383</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1731996529383</updated>
+    </task>
+    <task id="LOCAL-00033" summary="feat: enhance image display in bookmarks page templates&#10;&#10;- Add Next.js Image component for optimized image rendering&#10;- Improve image layout and responsiveness in both Chinese and English versions&#10;- Ensure consistent styling and max height for better visual presentation">
+      <option name="closed" value="true" />
+      <created>1731996635664</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1731996635664</updated>
+    </task>
+    <task id="LOCAL-00034" summary="docs: improve bookmarks page template documentation&#10;&#10;- Add clarification on naming the bookmarks page&#10;- Include an example of correct configuration for the bookmarks page">
+      <option name="closed" value="true" />
+      <created>1731996773461</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1731996773461</updated>
+    </task>
+    <task id="LOCAL-00035" summary="refactor: update bookmarks configuration format&#10;&#10;- Change 'url' to 'link' for bookmark URLs&#10;- Replace 'icon' with 'image' for website icons&#10;- Add 'icon' field for category icons using FontAwesome&#10;- Update example bookmarks in both English and Chinese docs">
+      <option name="closed" value="true" />
+      <created>1731997222878</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1731997222878</updated>
+    </task>
+    <task id="LOCAL-00036" summary="docs: add demo link for Bookmarks page template&#10;&#10;• Added a site demonstration link for the Bookmarks page template&#10;• Updated the Chinese documentation for better user reference">
+      <option name="closed" value="true" />
+      <created>1731999173328</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1731999173328</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="image" />
-    <MESSAGE value="feat: Update image imports in index pages (main)&#10;&#10;- Update image imports in pages/index.en.mdx and pages/index.zh.mdx&#10;- Replace the previous image paths with the new image paths&#10;- Use the new image files: docs-light.webp and docs-dark.webp&#10;- This commit is part of the main branch." />
-    <MESSAGE value="feat: Update configurations and dependencies&#10;&#10;- Rearrange 'images' and 'i18n' within 'next.config.js' for better readability&#10;- Remove commented out 'defaultShowCopyCode' and 'baseUrl' from 'next.config.js'&#10;- Fix trailing comma in '_meta.en.json'&#10;- Simplify 'footer' in 'theme.config.tsx' to only include text&#10;- Update '@vercel/analytics', 'framer-motion', 'next', 'nextra', 'nextra-theme-docs', and 'ts-node' versions in 'package.json'&#10;- Update '@types/node', 'autoprefixer', 'postcss', 'tailwindcss', and 'typescript' versions in 'package.json'&#10;- Remove unused 'repository', 'author', 'license', 'bugs', and 'homepage' from 'package.json'" />
-    <MESSAGE value="docs: update license type in acknowledgements page for both English and Chinese versions" />
-    <MESSAGE value="chore: update project dependencies&#10;&#10;This update involves updating the `next` package from version 13.4.19 to 13.5.6, `nextra` from version 2.13.2 to 2.13.3, and `nextra-theme-docs` from version 2.13.2 to 2.13.3 in the project's `package.json` file. The changes also reflect in the `pnpm-lock.yaml` file." />
     <MESSAGE value="feat: add search placeholder to theme configuration" />
     <MESSAGE value="feat: integrate custom analytics script into _app.mdx" />
     <MESSAGE value="fix: Update navbar configuration in documentation&#10;&#10;- Replace 'categories' with 'links' in _config.redefine.yml examples&#10;- Update both Chinese and English versions of the categories page template" />
@@ -445,6 +472,11 @@
     <MESSAGE value="chore: Remove next-sitemap from postbuild script&#10;&#10;- Simplify postbuild process by removing next-sitemap execution&#10;- Retain pagefind functionality for site search capabilities&#10;- Update package.json to reflect the streamlined build process" />
     <MESSAGE value="feat: Add analytics script to layout&#10;&#10;- Integrate analytics script using Next.js Script component&#10;- Set script to load deferred for improved performance&#10;- Include website ID for tracking purposes" />
     <MESSAGE value="feat: Add categories page template and update navbar configuration&#10;&#10;- Create categories page template in Chinese&#10;- Add instructions for enabling categories page in theme configuration&#10;- Update YAML example for navbar configuration with proper indentation&#10;- Improve readability of configuration instructions" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Add categories page template and update navbar configuration&#10;&#10;- Create categories page template in Chinese&#10;- Add instructions for enabling categories page in theme configuration&#10;- Update YAML example for navbar configuration with proper indentation&#10;- Improve readability of configuration instructions" />
+    <MESSAGE value="feat: update page templates and add bookmarks feature&#10;&#10;- Add template specification in Front Matter for categories, tags, masonry&#10;- Clarify navbar configuration for adding pages to navigation&#10;- Remove outdated instructions for customizing page titles&#10;- Update examples with consistent formatting across languages&#10;- Add new bookmarks page template and configuration instructions&#10;- Include bookmarks feature in page templates navigation for both languages" />
+    <MESSAGE value="feat: enhance image display in bookmarks page templates&#10;&#10;- Add Next.js Image component for optimized image rendering&#10;- Improve image layout and responsiveness in both Chinese and English versions&#10;- Ensure consistent styling and max height for better visual presentation" />
+    <MESSAGE value="docs: improve bookmarks page template documentation&#10;&#10;- Add clarification on naming the bookmarks page&#10;- Include an example of correct configuration for the bookmarks page" />
+    <MESSAGE value="refactor: update bookmarks configuration format&#10;&#10;- Change 'url' to 'link' for bookmark URLs&#10;- Replace 'icon' with 'image' for website icons&#10;- Add 'icon' field for category icons using FontAwesome&#10;- Update example bookmarks in both English and Chinese docs" />
+    <MESSAGE value="docs: add demo link for Bookmarks page template&#10;&#10;• Added a site demonstration link for the Bookmarks page template&#10;• Updated the Chinese documentation for better user reference" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: add demo link for Bookmarks page template&#10;&#10;• Added a site demonstration link for the Bookmarks page template&#10;• Updated the Chinese documentation for better user reference" />
   </component>
 </project>
