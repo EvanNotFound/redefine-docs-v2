@@ -32,7 +32,7 @@ export function PromoCard() {
 					className={
 						"border border-zinc-200 dark:border-zinc-800 p-2 rounded-lg w-full my-2 bg-white dark:bg-zinc-900 flex flex-col gap-1  hover:opacity-100 shadow-none transition-all hover:shadow-sm relative group "
 					}
-					href={"https://gpt.oknice.ca"}
+					href={"https://www.gptplus.ca"}
 					onMouseEnter={() => setIsHovered(true)}
 					onMouseLeave={() => setIsHovered(false)}
 				>
