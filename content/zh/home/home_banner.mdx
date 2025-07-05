@@ -182,29 +182,79 @@ API 地址可以指定句子类型，详见[一言 API](https://developer.hitoko
 
 **配置项名称：`home_banner.social_links.links`**
 
-请添加你的社交链接，格式如下，
+社交链接支持三种类型的图标：
 
-如果是 `fa-brands` 图标，可以直接填写 Brands 图标名称，比如 `github`。
+**1. 预定义平台图标**
 
-但是如果用的不是 fa-brands 图标，比如 `fa-solid`，则需要填写全名，比如 `fa-solid fa-wand-magic-sparkles`。
+对于常见平台，可以直接使用平台名称：
 
 ```yaml filename="_config.redefine.yml"
 links:
-    [fontawesome 图标名称(不是 HTML 代码)]: [你的社交链接地址]
+    github: https://github.com/username
+    twitter: https://twitter.com/username
+    facebook: https://facebook.com/username
+    instagram: https://instagram.com/username
+```
+
+**2. FontAwesome 图标**
+
+对于 `fa-brands` 图标，直接输入图标名称。对于其他 FontAwesome 图标，使用全名：
+
+```yaml filename="_config.redefine.yml"
+links:
+    fa-solid fa-wand-magic-sparkles: https://example.com
+    fa-regular fa-music: https://example.com
 ```
 
 可以前往 [Font Awesome](https://fontawesome.com/search) 查看图标名称。
 
-示例配置：
+**3. 本地/外部图片图标**
+
+使用本地图片文件或外部图片链接作为图标：
 
 ```yaml filename="_config.redefine.yml"
 links:
-    github: https://github.com
-    twitter: https://twitter.com
-    facebook: https://facebook.com
-    instagram: https://instagram.com
-    fa-solid fa-wand-magic-sparkles: https://example.com
-    fa-regular fa-music: https://example.com
+    /images/icon/coolapk.png: https://www.coolapk.com/u/123456
+    /images/icon/bilibili.svg: https://space.bilibili.com/123456
+    https://example.com/custom-icon.png: https://example.com
+```
+
+**完整示例：**
+
+```yaml filename="_config.redefine.yml"
+links:
+    github: https://github.com/username
+    twitter: https://twitter.com/username
+    fa-solid fa-music: https://music.example.com
+    /images/icon/coolapk.png: https://www.coolapk.com/u/123456
+    /images/icon/custom-platform.svg: https://custom.example.com
+```
+
+### 本地图标要求
+
+使用本地图片图标时，请遵循以下指南：
+
+- **文件位置**：将图标放在 `source/images/` 目录或子目录中
+- **文件大小**：建议 20×20 像素（图标显示为 20×20px）
+- **文件格式**：支持 PNG、SVG、JPG、WEBP
+- **背景**：使用透明背景以获得最佳效果
+- **文件路径**：必须以 `/` 开头（例如：`/images/icon/example.png`）
+
+### 图标迁移指南
+
+如果您有现有的仅使用 FontAwesome 图标的配置，它们将继续工作。只需在现有配置中添加本地图标：
+
+```yaml filename="_config.redefine.yml"
+# 之前（仍然有效）
+links:
+    github: https://github.com/username
+    fa-solid fa-music: https://music.example.com
+
+# 之后（增强了本地图标）
+links:
+    github: https://github.com/username
+    fa-solid fa-music: https://music.example.com
+    /images/icon/coolapk.png: https://www.coolapk.com/u/123456
 ```
 
 ### 二维码

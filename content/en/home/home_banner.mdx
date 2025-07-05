@@ -177,30 +177,94 @@ Set the text color of the title and subtitle.
 
 **Configuration Key: `home_banner.social_links.links`**
 
-Please add your social links in the following format,
+Social links support three types of icons:
 
-If it is a `fa-brands` icon, you can directly enter the Brands icon name, such as `github`.
+**1. Predefined Platform Icons**
 
-But if you are using a non `fa-brands` icon, such as `fa-solid`, you need to enter the full name, such as `fa-solid fa-wand-magic-sparkles`.
+For popular platforms, you can directly use the platform name:
 
 ```yaml filename="_config.redefine.yml"
 links:
-    [fontawesome icon name (not HTML code)]: [your social link address]
+    github: https://github.com/username
+    twitter: https://twitter.com/username
+    facebook: https://facebook.com/username
+    instagram: https://instagram.com/username
+```
+
+**2. FontAwesome Icons**
+
+For `fa-brands` icons, enter the icon name directly. For other FontAwesome icons, use the full name:
+
+```yaml filename="_config.redefine.yml"
+links:
+    fa-solid fa-wand-magic-sparkles: https://example.com
+    fa-regular fa-music: https://example.com
 ```
 
 You can visit [Font Awesome](https://fontawesome.com/search) to find icon names.
 
-Example configuration:
+**3. Local/External Image Icons**
+
+Use local image files or external image URLs as icons:
 
 ```yaml filename="_config.redefine.yml"
 links:
-    github: https://github.com
-    twitter: https://twitter.com
-    facebook: https://facebook.com
-    instagram: https://instagram.com
-    fa-solid fa-wand-magic-sparkles: https://example.com
-    fa-regular fa-music: https://example.com
+    /images/icon/coolapk.png: https://www.coolapk.com/u/123456
+    /images/icon/bilibili.svg: https://space.bilibili.com/123456
+    https://example.com/custom-icon.png: https://example.com
 ```
+
+**Complete Example:**
+
+```yaml filename="_config.redefine.yml"
+links:
+    github: https://github.com/username
+    twitter: https://twitter.com/username
+    fa-solid fa-music: https://music.example.com
+    /images/icon/coolapk.png: https://www.coolapk.com/u/123456
+    /images/icon/custom-platform.svg: https://custom.example.com
+```
+
+### Local Icon Requirements
+
+For local image icons, please follow these guidelines:
+
+- **File Location**: Place icons in the `source/images/` directory or subdirectories
+- **File Size**: Recommended 20×20 pixels (icons are displayed at 20×20px)
+- **File Format**: Supports PNG, SVG, JPG, WEBP
+- **Background**: Use transparent backgrounds for best appearance
+- **File Path**: Must start with `/` (e.g., `/images/icon/example.png`)
+
+### Icon Migration Guide
+
+If you have existing configurations using only FontAwesome icons, they will continue to work. Simply add local icons alongside your existing configuration:
+
+```yaml filename="_config.redefine.yml"
+# Before (still works)
+links:
+    github: https://github.com/username
+    fa-solid fa-music: https://music.example.com
+
+# After (enhanced with local icons)
+links:
+    github: https://github.com/username
+    fa-solid fa-music: https://music.example.com
+    /images/icon/coolapk.png: https://www.coolapk.com/u/123456
+```
+
+### Troubleshooting
+
+**Icon not displaying**
+- Check if the file path starts with `/` (e.g., `/images/icon/example.png`)
+- Verify the file exists in the correct location
+- Make sure the file format is supported (PNG, SVG, JPG, WEBP)
+
+**Icon appears too large/small**
+- Icons are automatically resized to 20×20 pixels
+- For best results, prepare icons at 20×20 pixels with transparent backgrounds
+
+**Icon not updating after changes**
+- Clear your browser cache and regenerate the site with `hexo clean && hexo generate`
 
 ### QR code
 
