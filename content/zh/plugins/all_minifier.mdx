@@ -28,4 +28,26 @@ all_minifier: true
 ```
 
 </Steps>
-如果你使用插件时遇到了问题或者想进行更详细的设置，请查看插件的[文档](https://github.com/chenzhutian/hexo-all-minifier/blob/master/README.md)。
+
+## 常见问题
+
+### 使用 hexo-all-minifier 出现 Tailwind CSS 相关错误
+
+执行 `hexo generate` 会出现如下错误：
+
+```shell
+ERROR Ignoring local @import of "tailwindcss" as resource is missing.
+<project_root>\node_modules\hexo-theme-redefine\source\css\tailwind.source.css
+```
+
+该错误通常出现在启用了 hexo-all-minifier 插件后，css_minifier 试图处理 `tailwind.source.css` 文件，但该文件仅用于开发阶段 Tailwind CSS 构建 CSS 的过程，实际并不充当 CSS 资源。
+
+为避免该错误，请在 Hexo 站点配置文件 `_config.yml` 文件中，添加以下配置项：
+
+```yaml filename="_config.yml"
+css_minifier:
+  exclude:
+    - "tailwind.source.css"
+```
+
+如果你使用插件时还遇到了其它问题或者想进行更详细的设置，请查看插件的[文档](https://github.com/chenzhutian/hexo-all-minifier/blob/master/README.md)。

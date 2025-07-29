@@ -1,6 +1,6 @@
 # Resource Compression
 
-In the theme code of %%%%%, HTML, CSS, JavaScript, and image files are not packaged and compressed.
+In the theme code of Redefine, HTML, CSS, JavaScript, and image files are not packaged and compressed.
 
 If you want to package and compress these files, you can use the plugin [hexo-all-minifier](https://github.com/chenzhutian/hexo-all-minifier) to solve this issue, which can effectively reduce the website's loading time.
 
@@ -27,4 +27,26 @@ In the Hexo site configuration file `_config.yml`, add the following configurati
 all_minifier: true
 ```
 </Steps>
-If you encounter any issues or want to perform more detailed settings when using the plugin, please refer to the plugin's [documentation](https://github.com/chenzhutian/hexo-all-minifier/blob/master/README.md).
+
+## FAQ
+
+### Error related to Tailwind CSS when using hexo-all-minifier
+
+When running `hexo generate` , you may encounter the following error:
+
+```shell
+ERROR Ignoring local @import of "tailwindcss" as resource is missing.
+<project_root>\node_modules\hexo-theme-redefine\source\css\tailwind.source.css
+```
+
+This error usually occurs after enabling the `hexo-all-minifier` plugin, when `css_minifier` attempts to process the `tailwind.source.css` file. However, this file is only used during the development phase for Tailwind CSS to build CSS, and is not actually used as a CSS resource.
+
+To avoid this error, in the Hexo site configuration file `_config.yml`, add the following configuration item:
+
+```yaml filename="_config.yml"
+css_minifier:
+  exclude:
+    - "tailwind.source.css"
+```
+
+If you encounter other issues or want to perform more detailed settings when using the plugin, please refer to the plugin's [documentation](https://github.com/chenzhutian/hexo-all-minifier/blob/master/README.md).
