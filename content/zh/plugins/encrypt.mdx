@@ -14,6 +14,8 @@ npm uninstall hexo-blog-encrypt
 
 在文章的 `Front-matter` 中添加 `password` 字段，值为密码。
 
+{% note default %} 若密码包含前导零，如：0429，请使用双引号包裹，例："0429" {% endnote %}
+
 ```yaml
 ---
 title: 文章标题
