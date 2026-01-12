@@ -45,7 +45,7 @@ export function PromoCard() {
 
 					<Image
 						src={
-							"https://assets.ohevan.com/img/b208f36da990318f67fc125beb069dde.jpg"
+							"https://assets.ohevan.com/img/73e2fb96efbbfaf1a69bd2a54495ea99.jpg"
 						}
 						alt={"GPT Plus 共享"}
 						className={"rounded-sm dark:brightness-75"}
@@ -79,8 +79,8 @@ export function PromoCard() {
 								{isHovered ? (
 									<>
 										<p>
-											国内镜像直连，官方一致，支持 GPT-4o 以及 o1 最新模型，由
-											Evan 本人搭建，目前已稳定运行两年。
+											国内镜像直连，官方一致，支持 GPT-5 以及 Sora 等最新模型，由
+											Evan 本人搭建，目前已稳定运行三年+
 										</p>
 										<p>
 											优惠码 <code>REDEFINE24</code> 立减 3 元，折后仅需 24.99
@@ -88,7 +88,7 @@ export function PromoCard() {
 										</p>
 									</>
 								) : (
-									<p>国内镜像直连，官方一致，支持 GPT-4o 以及 o1 最新模型</p>
+									<p>国内镜像直连，官方一致，支持 GPT-5 以及 Sora 等最新模型</p>
 								)}
 							</motion.div>
 						</AnimatePresence>
