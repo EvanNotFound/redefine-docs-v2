@@ -10,28 +10,17 @@ v1 版本已经不再维护，而且 v2 版本对代码进行了重构，不再�
 
 ## 迁移步骤
 
-import { Tabs, Steps } from "nextra/components";
+import { Steps } from "nextra/components";
 
 <Steps>
 
     ### 更新主题
 
-    <Tabs items={['npm', 'git']}>
-        <Tabs.Tab>
-            执行以下命令更新主题：
+    执行以下命令更新主题：
 
-            ```bash filename="终端"
-            npm install hexo-theme-redefine@latest
-            ```
-        </Tabs.Tab>
-        <Tabs.Tab>
-            首先删除 `themes/redefine` 文件夹，然后执行以下命令更新主题：
-
-            ```bash filename="终端"
-            git clone https://github.com/EvanNotFound/hexo-theme-redefine.git themes/redefine
-            ```
-        </Tabs.Tab>
-    </Tabs>
+    ```bash filename="终端"
+    npm install hexo-theme-redefine@latest
+    ```
 
     ### 备份 v1 配置文件
 
