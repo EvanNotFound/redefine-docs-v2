@@ -1,4 +1,4 @@
-import { Callout, Tabs, Steps } from "nextra/components";
+import { Callout, Steps } from "nextra/components";
 
 # 快速开始
 
@@ -12,21 +12,12 @@ import { Callout, Tabs, Steps } from "nextra/components";
 
     ### 安装主题
 
-    在 Hexo 根目录执行以下命令安装主题，有两种方式：
+    在 Hexo 根目录执行以下命令安装主题：
 
 
-    <Tabs items={['npm', 'git']}>
-        <Tabs.Tab>
-            ```bash filename="终端"
-            npm install hexo-theme-redefine@latest
-            ```
-        </Tabs.Tab>
-        <Tabs.Tab>
-            ```bash filename="终端"
-            git clone https://github.com/EvanNotFound/hexo-theme-redefine.git themes/redefine
-            ```
-        </Tabs.Tab>
-    </Tabs>
+    ```bash filename="终端"
+    npm install hexo-theme-redefine@latest
+    ```
 
     ### 启用主题
 
@@ -85,18 +76,9 @@ import { Callout, Tabs, Steps } from "nextra/components";
 
     在 Hexo 根目录执行和安装时同样的命令更新主题：
 
-    <Tabs items={['npm', 'git']}>
-        <Tabs.Tab>
-            ```bash filename="终端"
-            npm install hexo-theme-redefine@latest
-            ```
-        </Tabs.Tab>
-        <Tabs.Tab>
-            ```bash filename="终端"
-            git clone https://github.com/EvanNotFound/hexo-theme-redefine.git themes/redefine
-            ```
-        </Tabs.Tab>
-    </Tabs>
+    ```bash filename="终端"
+    npm install hexo-theme-redefine@latest
+    ```
 
     ### 迁移配置
 
@@ -104,27 +86,12 @@ import { Callout, Tabs, Steps } from "nextra/components";
 
     可以使用 VS Code 等编辑器的 `文件比对` 功能，将新旧配置文件进行对比，然后将新的配置项添加到你的配置文件中。
 
-    例如，以下分别是两个不同安装方法的 VS Code 文件对比教程：
+    例如，在 VS Code 中，按住 `Ctrl`(windows) 或者 `Command`(macos) 键，
 
-    <Tabs items={['npm', 'git']}>
-        <Tabs.Tab>
-            在 VS Code 中，按住 `Ctrl`(windows) 或者 `Command`(macos) 键，
+    选中旧配置文件(`_config.redefine.yml`)，
 
-            选中旧配置文件(`_config.redefine.yml`)，
+    再选中新配置文件(`node_modules/hexo-theme-redefine/_config.yml`)。
 
-            再选中新配置文件(`node_modules/hexo-theme-redefine/_config.yml`)。
-
-            然后点击 `比较选中的文件` 或者 `Compare Selected` 按钮，即可看到两个文件的对比结果，然后再进行迁移，缩进请严格按照旧配置文件的缩进来进行迁移。
-        </Tabs.Tab>
-        <Tabs.Tab>
-            在 VS Code 中，按住 `Ctrl`(windows) 或者 `Command`(macos) 键，
-
-            选中旧配置文件(`_config.redefine.yml`)，
-
-            再选中新配置文件(`themes/redefine/_config.yml`)。
-
-            然后点击 `比较选中的文件` 或者 `Compare Selected` 按钮，即可看到两个文件的对比结果，然后再进行迁移，缩进请严格按照旧配置文件的缩进来进行迁移。
-        </Tabs.Tab>
-    </Tabs>
+    然后点击 `比较选中的文件` 或者 `Compare Selected` 按钮，即可看到两个文件的对比结果，然后再进行迁移，缩进请严格按照旧配置文件的缩进来进行迁移。
 
 </Steps>

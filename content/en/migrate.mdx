@@ -10,30 +10,17 @@ If you still need to read the documentation for the v1 version, you can visit th
 
 ## Migration Steps
 
-import { Tabs, Steps } from "nextra/components";
+import { Steps } from "nextra/components";
 
 <Steps>
 
 ### Update the theme
 
-<Tabs items={["npm", "git"]}>
-  <Tabs.Tab>
-    Execute the following command to update the theme:
+Execute the following command to update the theme:
 
-    ```bash filename="Terminal"
-    npm install hexo-theme-redefine@latest
-    ```
-
-  </Tabs.Tab>
-  <Tabs.Tab>
-    First, delete the `themes/redefine` folder, and then execute the following command to update the theme:
-
-    ```bash filename="Terminal"
-    git clone https://github.com/EvanNotFound/hexo-theme-redefine.git themes/redefine
-    ```
-
-  </Tabs.Tab>
-</Tabs>
+```bash filename="Terminal"
+npm install hexo-theme-redefine@latest
+```
 
 ### Backup v1 configuration file
 

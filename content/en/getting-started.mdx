@@ -1,4 +1,4 @@
-import { Callout, Tabs, Steps } from "nextra/components";
+import { Callout, Steps } from "nextra/components";
 
 # Quick Start
 
@@ -12,20 +12,11 @@ Get started with the Redefine theme.
 
 ### Install the theme
 
-Execute the following command in the Hexo root directory to install the theme. There are two ways to do it:
+Execute the following command in the Hexo root directory to install the theme:
 
-<Tabs items={["NPM", "Git"]}>
-	<Tabs.Tab>
-		```bash filename="Terminal"
-        npm install hexo-theme-redefine@latest
-        ```
-	</Tabs.Tab>
-	<Tabs.Tab>
-		```bash filename="Terminal"
-        git clone https://github.com/EvanNotFound/hexo-theme-redefine.git themes/redefine
-		```
-	</Tabs.Tab>
-</Tabs>
+```bash filename="Terminal"
+npm install hexo-theme-redefine@latest
+```
 
 ### Enable the theme
 
@@ -84,18 +75,9 @@ All modifications should be made in the `_config.redefine.yml` file. It is not r
 
 Execute the same command as installation in the Hexo root directory to update the theme:
 
-<Tabs items={["NPM", "Git"]}>
-	<Tabs.Tab>
-		```bash filename="Terminal"
-        npm install hexo-theme-redefine@latest
-        ```
-	</Tabs.Tab>
-	<Tabs.Tab>
-		```bash filename="Terminal"
-        git clone https://github.com/EvanNotFound/hexo-theme-redefine.git themes/redefine
-		```
-	</Tabs.Tab>
-</Tabs>
+```bash filename="Terminal"
+npm install hexo-theme-redefine@latest
+```
 
 ### Migrate Configuration
 
@@ -103,28 +85,12 @@ Sometimes, after updating the theme, your configuration file may have new config
 
 You can use the `File Compare` feature of editors like VS Code to compare the old and new configuration files, and then add the new configuration items to your configuration file.
 
-For example, here are the instructions for comparing files in VS Code for two different installation methods:
+For example, in VS Code, hold down the `Ctrl` (Windows) or `Command` (macOS) key,
 
-<Tabs items={["NPM", "Git"]}>
-    <Tabs.Tab>
-        In VS Code, hold down the `Ctrl` (Windows) or `Command` (macOS) key,
+select the old configuration file (`_config.redefine.yml`),
 
-        select the old configuration file (`_config.redefine.yml`),
+then select the new configuration file (`node_modules/hexo-theme-redefine/_config.yml`).
 
-        then select the new configuration file (`node_modules/hexo-theme-redefine/_config.yml`).
-
-        Click the `Compare Selected` button to see the comparison result of the two files, and then proceed with the migration. Please strictly follow the indentation of the old configuration file during the migration.
-    </Tabs.Tab>
-    <Tabs.Tab>
-        In VS Code, hold down the `Ctrl` (Windows) or `Command` (macOS) key,
-
-        select the old configuration file (`_config.redefine.yml`),
-
-        then select the new configuration file (`themes/redefine/_config.yml`).
-
-        Click the `Compare Selected` button to see the comparison result of the two files, and then proceed with the migration. Please strictly follow the indentation of the old configuration file during the migration.
-    </Tabs.Tab>
-
-</Tabs>
+Click the `Compare Selected` button to see the comparison result of the two files, and then proceed with the migration. Please strictly follow the indentation of the old configuration file during the migration.
 
 </Steps>
