@@ -1,5 +1,5 @@
-import { getDictionary } from '@app/_dictionaries/get-dictionary'
-import type { Locale } from '@app/_dictionaries/i18n-config'
+import { getDictionary } from 'obsolete/app/_dictionaries/get-dictionary'
+import type { Locale } from 'obsolete/app/_dictionaries/i18n-config'
 import type { FC } from 'react'
 
 export const TopContent: FC<{

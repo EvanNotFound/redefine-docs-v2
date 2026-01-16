@@ -1,4 +1,4 @@
-import { RedefineIcon } from "@app/_icons";
+import { RedefineIcon } from "obsolete/app/_icons";
 import type { FC, ReactNode } from "react";
 
 export const Separator: FC<{ children: ReactNode }> = ({ children }) => {

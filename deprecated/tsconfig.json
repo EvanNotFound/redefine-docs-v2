@@ -16,9 +16,9 @@
     "moduleResolution": "bundler",
     "baseUrl": "./",
     "paths": {
-      "@app/*": ["./app/*"],
-      "@utils/*": ["./utils/*"],
-      "@components/*": ["./app/_components/*"],
+      "@app/*": ["obsolete/app/*"],
+      "@utilsobsolete/utils/*utils/*"],
+      "@components/*": ["obsolete/app/_components/*"],
     },
     "plugins": [
       {

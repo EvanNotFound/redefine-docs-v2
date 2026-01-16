@@ -2,8 +2,8 @@ import { match } from "@formatjs/intl-localematcher";
 import Negotiator from "negotiator";
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { i18n } from "@app/_dictionaries/i18n-config";
-import logger from "@utils/logger";
+import { i18n } from "obsolete/app/_dictionaries/i18n-config";
+import logger from "obsolete/utils/logger";
 
 function getLocale(request: NextRequest): string {
   // Check for NEXT_LOCALE cookie first

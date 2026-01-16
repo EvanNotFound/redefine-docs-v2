@@ -1,5 +1,5 @@
 /* eslint-env node */
-import { RedefineIcon, VercelIcon } from "@app/_icons";
+import { RedefineIcon, VercelIcon } from "obsolete/app/_icons";
 import type { Metadata } from "next";
 import {
   Footer,
@@ -17,7 +17,7 @@ import { pageMap as graphqlYogaPageMap } from "./remote/graphql-yoga/[[...slug]]
 import "./styles.css";
 import "../_components/features.css";
 import Image from "next/image";
-import { PromoCard } from "@app/_components/promo-card";
+import { PromoCard } from "obsolete/app/_components/promo-card";
 import Script from "next/script";
 
 export const { viewport } = Head;

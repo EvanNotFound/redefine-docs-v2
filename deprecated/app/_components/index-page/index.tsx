@@ -1,5 +1,5 @@
-import EnIndex from "@components/index-page/en-index";
-import ZhIndex from "@components/index-page/zh-index";
+import EnIndex from "obsolete/app/_components/index-page/en-index";
+import ZhIndex from "obsolete/app/_components/index-page/zh-index";
 
 const LANGUAGES = [
   { lang: "en", name: "English" },

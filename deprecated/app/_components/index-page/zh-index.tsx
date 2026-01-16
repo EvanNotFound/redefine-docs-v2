@@ -1,21 +1,30 @@
 "use client";
+import { useState, useEffect } from "react";
 import { Link } from "nextra-theme-docs";
 import styles from "@components/index-page/index.module.css";
-import { Feature, Features } from "@components/index-page/features";
+import { Feature, Features } from "obsolete/app/_components/index-page/features";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect } from "react";
-export default function EhIndex() {
+
+export default function ZhIndex() {
   const [isStylesLoaded, setIsStylesLoaded] = useState(false);
 
   useEffect(() => {
+    // Check if styles are loaded
     const styleSheets = document.styleSheets;
     const checkStyles = () => {
       if (styleSheets.length > 0) {
         setIsStylesLoaded(true);
       }
     };
+
     checkStyles();
+    // Fallback if styles load later
+    window.addEventListener("load", checkStyles);
+
+    return () => {
+      window.removeEventListener("load", checkStyles);
+    };
   }, []);
 
   return (
@@ -30,19 +39,19 @@ export default function EhIndex() {
         >
           <div className="content-container">
             <h1 className="headline">
-              Build Your Perfect Blog <br className="sm:block hidden" />
-              with Hexo & R<span style={{ color: "#A31F34" }}>e</span>
+              打造属于你的完美博客 <br className="sm:block hidden" />
+              Hexo & R<span style={{ color: "#A31F34" }}>e</span>
               define
             </h1>
             <p className="subtitle">
-              A Hexo theme that is <strong>elegant</strong>,{" "}
-              <strong>performant</strong>, and <strong>refined</strong>.
+              一款<strong>优雅</strong>，<strong>高效</strong>，
+              <strong>精致</strong>的 Hexo 主题
               <br className="sm:block hidden" />
-              Minimalist, but <strong>feature-rich</strong>.
+              简约，但<strong>不简单</strong>。
             </p>
             <p className="subtitle">
               <Link className={styles.cta} href="/getting-started">
-                Get Started <span>→</span>
+                快速开始 <span>→</span>
               </Link>
             </p>
           </div>
@@ -315,23 +324,27 @@ export default function EhIndex() {
                   href="/introduction"
                 >
                   <Image
-                    src="https://assets.ohevan.com/img/d30e1ba5c890baccb81abe773a701335.webp"
+                    src={
+                      "https://assets.ohevan.com/img/d30e1ba5c890baccb81abe773a701335.webp"
+                    }
                     alt="Background"
                     loading="eager"
                     width={3240}
                     height={2064}
                   />
                   <Image
-                    src="https://assets.ohevan.com/img/725dd6b1399419307764034c0e2f890e.webp"
+                    src={
+                      "https://assets.ohevan.com/img/725dd6b1399419307764034c0e2f890e.webp"
+                    }
                     alt="Background (Dark)"
                     loading="eager"
                     width={3240}
                     height={2064}
                   />
                   <h3>
-                    Set up your blog in minutes
+                    轻松搭建博客 <span className={"hidden sm:inline"}>，</span>
                     <br className="show-on-mobile" />
-                    with minimal configuration
+                    配置毫不繁琐。
                   </h3>
                 </Feature>
 
@@ -343,25 +356,27 @@ export default function EhIndex() {
                 >
                   <div className="h-full flex flex-col justify-between">
                     <h3>
-                      Resource Compression <br className="show-on-mobile" />
-                      <span style={{ fontWeight: 300 }}>Supported</span>
+                      资源压缩 <br className="show-on-mobile" />
+                      <span style={{ fontWeight: 300 }}>支持</span>
                     </h3>
                     <p className="text-left mb-8">
-                      After installing the
+                      在安装
                       <Link
                         href="https://www.npmjs.com/package/hexo-all-minifier"
                         className="mx-1"
                       >
                         <code>hexo-all-minifier</code>
                       </Link>
-                      plugin, you can significantly speed up page load times,
+                      插件后，有效加快页面访问速度，
                       <br className="show-on-mobile" />
-                      optimizing SEO and user experience.
+                      优化 SEO 以及访问体验。
                     </p>
                     <div>
                       <div className={styles.optimization}>
                         <div
-                          style={{ fontSize: ".9rem" }}
+                          style={{
+                            fontSize: ".9rem",
+                          }}
                           className="leading-8"
                         >
                           <code>5.21mb</code>
@@ -386,7 +401,9 @@ export default function EhIndex() {
                       </div>
                       <div className={styles.optimization}>
                         <div
-                          style={{ fontSize: ".9rem" }}
+                          style={{
+                            fontSize: ".9rem",
+                          }}
                           className="leading-8"
                         >
                           <code>- 3.17mb</code>
@@ -405,24 +422,23 @@ export default function EhIndex() {
                 >
                   <h3>
                     Mermaid JS <br />
-                    Fully Supported
+                    完美支持
                   </h3>
                   <p className="mr-6">
-                    After installing the{" "}
-                    <code>hexo-filter-mermaid-diagrams</code> plugin, Mermaid JS
-                    diagrams are perfectly supported.
+                    安装 <code>hexo-filter-mermaid-diagrams</code>{" "}
+                    插件后，能完美支持 Mermaid JS 流程图显示。
                   </p>
                 </Feature>
 
                 <Feature index={3} href="/introduction">
                   <h3>
-                    Built-in SEO optimization,
+                    内置 SEO 优化，
                     <br className="show-on-mobile" />
-                    no extra work needed
+                    请坐和放宽。
                   </h3>
                   <p className="mb-4 mr-6">
-                    Redefine comes with optimized SEO settings to help your site
-                    rank better. Everything works out of the box.
+                    Redefine 主题经过许多 SEO
+                    优化，让你的网站更快被搜索引擎收录。 无需繁琐配置。
                   </p>
                 </Feature>
 
@@ -469,9 +485,9 @@ export default function EhIndex() {
                       textShadow: "0 2px 4px rgb(0 0 0 / 20%)",
                     }}
                   >
-                    Custom-designed Markdown styling
+                    经过特别设计的 Markdown 文章内容样式，
                     <br className="hide-medium" />
-                    for enhanced readability
+                    让阅读变得，简单明了。
                   </p>
                 </Feature>
 
@@ -543,9 +559,9 @@ export default function EhIndex() {
                       mixBlendMode: "difference",
                     }}
                   >
-                    Dark <br />
-                    mode <br />
-                    included
+                    夜间 <br />
+                    模式 <br />
+                    支持
                   </motion.h3>
                 </Feature>
 
@@ -566,25 +582,25 @@ export default function EhIndex() {
                   href="/modules"
                 >
                   <h3>
-                    Various writing modules
+                    多种写作模块，
                     <br />
-                    to make your articles
+                    让你的文章更加，
                     <br />
-                    more diverse and rich.
+                    丰富多样。
                   </h3>
                 </Feature>
 
                 <Feature index={9} large>
-                  <h3>And there's more</h3>
+                  <h3>以及更多</h3>
                   <p className="mr-6">
-                    SEO / RSS Feed / APlayer / PJAX / Article Cover Images /
-                    Font Awesome 6.2.1 Pro...
+                    SEO / RSS Feed / Aplayer 播放器 / PJAX / 文章头图 / Font
+                    Awesome 6.2.1 Pro...
                     <br />
-                    Discover all the features.
+                    更多功能有待探索。
                   </p>
                   <p className="subtitle">
                     <Link className="!no-underline" href="/getting-started">
-                      Get Started with Redefine →
+                      开始使用 Redefine →
                     </Link>
                   </p>
                 </Feature>
@@ -594,15 +610,14 @@ export default function EhIndex() {
                   href="/posts/articles#%E6%96%87%E7%AB%A0%E6%8E%A8%E8%8D%90"
                 >
                   <h3>
-                    Smart <strong>Article Recommendations</strong>
+                    掌握<strong>文章推荐</strong>
                     <br />
-                    built right in
+                    的魔法。
                   </h3>
                   <p className="mr-6">
-                    Install `nodejieba` to enable intelligent article
-                    recommendations at the end of each post. The system
-                    automatically suggests related content based on keywords,
-                    powered by technology from `hexo-theme-volantis`.
+                    在安装 `nodejieba`
+                    以后，文章底部会出现推荐文章，自动根据每个
+                    文章关键词进行推荐。迁移自 `hexo-theme-volantis`。
                   </p>
                 </Feature>
               </Features>

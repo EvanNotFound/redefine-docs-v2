@@ -1,6 +1,6 @@
 # Theme Redefine Docs
 
-Built with Nextra 4 App Router.
+Built with Fumadocs.
 
 Documentation for the [hexo-theme-redefine](https://github.com/evannotfound/hexo-theme-redefine).
 
