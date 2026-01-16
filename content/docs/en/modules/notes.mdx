@@ -1,0 +1,109 @@
+# Notes Module
+
+
+
+## Large Note Block
+
+Format: (`notel` stands for `note large`, easy to remember, can also be written as `note-large`)
+
+```markdown
+{% notel [颜色] [可选: 自定义图标] [标题] %}
+内容
+支持换行
+{% endnotel %}
+```
+
+| Parameter | Description | Optional Values |
+| :---: | :---: | :---: |
+| Color | Style or color of the note block | `blue` `red` `cyan` `purple` `orange` `yellow` `green` and other colors |
+| Custom Icon | Custom icon, optional | The second part of the icon name from [Fontawesome](https://fontawesome.com/search), for example, `fa-image` |
+
+For example:
+
+```markdown
+{% notel default fa-info 信息 %}
+换行测试
+换行测试
+换行测试
+{% endnotel %}
+
+{% notel blue 提示 %}
+换行测试
+换行测试
+换行测试
+{% endnotel %}
+
+{% notel red 自定义标题 %}
+换行测试
+换行测试
+换行测试
+{% endnotel %}
+```
+
+Result:
+
+![Screenshot 2023-01-20 at 8.37.59 PM](https://evan.beee.top/img/2023/01/20/c1395f65bfa84fe07886245c92d18f49.png)
+
+
+
+## Small Note Block
+
+Format:
+
+```markdown
+{% note [样式/颜色] [可选: 自定义图标] %}
+笔记内容
+{% endnote %}
+```
+
+| Parameter | Description | Optional Values |
+| :---: | :---: | :---: |
+| Style/Color | Style or color of the note block | `success` `default` `primary` `info` `warning` `danger` `tip` `question` and `blue` `red` `cyan` `purple` `orange` `yellow` `green` and other colors |
+| Custom Icon | Custom icon, optional | The second part of the icon name from [Fontawesome](https://fontawesome.com/search), for example, `fa-image` |
+
+
+Specific example:
+
+```html
+{% note  %}
+默认 提示块标签
+{% endnote %}
+
+{% note default  %}
+default 提示块标签
+{% endnote %}
+
+{% note primary  %}
+primary 提示块标签
+{% endnote %}
+
+{% note success  %}
+success 提示块标签
+{% endnote %}
+
+{% note info  %}
+info 提示块标签
+{% endnote %}
+
+{% note warning  %}
+warning 提示块标签
+{% endnote %}
+
+{% note danger  %}
+danger 提示块标签
+{% endnote %}
+
+{% note red fa-bolt%}
+自定义提示块标签
+{% endnote %}
+```
+
+Result:
+
+
+
+![Screenshot 2023-01-20 at 7.51.43 PM](https://evan.beee.top/img/2023/01/20/d97817b2d310e0f13852afa05cc222fd.png)
+
+## More
+
+For actual experience, please visit the [Redefine Demo Site](https://redefine.ohevan.com/2022/10/02/theme-demo/)
