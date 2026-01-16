@@ -1,15 +1,13 @@
+---
+title: 写作模块
+description: 一些写作的模块，比如笔记模块，标签页模块，折叠模块等。
+---
 
 import { StickyNote, MousePointerClick, FoldHorizontal, LayoutGrid } from "lucide-react";
 
-# 写作模块
-
-一些写作的模块，比如笔记模块，标签页模块，折叠模块等。
-
-import { Cards } from "nextra/components";
-
 <Cards>
-  <Cards.Card title="笔记" href="/modules/notes" icon={<StickyNote />} />
-  <Cards.Card title="按钮" href="/modules/buttons" icon={<MousePointerClick />} />
-  <Cards.Card title="折叠" href="/modules/folding" icon={<FoldHorizontal />} />
-  <Cards.Card title="选项卡" href="/modules/tabs" icon={<LayoutGrid />} />
+  <Card title="笔记" href="/modules/notes" icon={<StickyNote />} />
+  <Card title="按钮" href="/modules/buttons" icon={<MousePointerClick />} />
+  <Card title="折叠" href="/modules/folding" icon={<FoldHorizontal />} />
+  <Card title="选项卡" href="/modules/tabs" icon={<LayoutGrid />} />
 </Cards>

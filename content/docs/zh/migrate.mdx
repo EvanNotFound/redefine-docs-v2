@@ -1,4 +1,7 @@
-# 从 v1 迁移
+---
+title: 从 v1 迁移
+description: 如果你使用的是 v1.x.x 版本的 Redefine 主题，建议尽快升级到 v2.x.x 版本。
+---
 
 如果你使用的是 v1.x.x 版本的 Redefine 主题，建议尽快升级到 v2.x.x 版本。
 
@@ -10,27 +13,26 @@ v1 版本已经不再维护，而且 v2 版本对代码进行了重构，不再�
 
 ## 迁移步骤
 
-import { Tabs, Steps } from "nextra/components";
 
-<Steps>
+<div className="fd-steps [&_h3]:fd-step">
 
     ### 更新主题
 
     <Tabs items={['npm', 'git']}>
-        <Tabs.Tab>
+        <Tab value="npm">
             执行以下命令更新主题：
 
             ```bash filename="终端"
             npm install hexo-theme-redefine@latest
             ```
-        </Tabs.Tab>
-        <Tabs.Tab>
+        </Tab>
+        <Tab value="git">
             首先删除 `themes/redefine` 文件夹，然后执行以下命令更新主题：
 
             ```bash filename="终端"
             git clone https://github.com/EvanNotFound/hexo-theme-redefine.git themes/redefine
             ```
-        </Tabs.Tab>
+        </Tab>
     </Tabs>
 
     ### 备份 v1 配置文件
@@ -51,6 +53,6 @@ import { Tabs, Steps } from "nextra/components";
 
     在**迁移完成并测试站点未发现问题后**，删除站点根目录下的 `_config.redefine.v1.yml` 文件。
 
-</Steps>
+</div>
 
 对迁移造成的麻烦，我深表歉意。如有任何问题，欢迎在 [GitHub](https://github.com/EvanNotFound/hexo-theme-redefine) 上提 issue，或者邮件联系我 [contact@ohevan.com](mailto:contact@ohevan.com)

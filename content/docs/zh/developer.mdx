@@ -1,12 +1,13 @@
-import {Steps} from "nextra/components";
+---
+title: 主题开发指南
+description: 本主题使用了 [Tailwind CSS](https://tailwindcss.com/) 作为 CSS 框架，如果你想要自定义主题并且使用 Tailwind CSS，请参考本页文档。
+---
 
-# 主题开发指南
 
-本主题使用了 [Tailwind CSS](https://tailwindcss.com/) 作为 CSS 框架，如果你想要自定义主题并且使用 Tailwind CSS，请参考本页文档。
 
 ## 开发准备
 
-<Steps>
+<div className="fd-steps [&_h3]:fd-step">
 
     ### 启用主题开发模式
 
@@ -38,7 +39,7 @@ import {Steps} from "nextra/components";
 
     即可实时编译 Tailwind CSS，编译后的 CSS 文件位于 `source/build/css/styles.css`。
 
-</Steps>
+</div>
 
 ## 自定义主题
 
@@ -54,6 +55,3 @@ import {Steps} from "nextra/components";
 ### 自定义主题样式
 
 如果你不想使用 Tailwind CSS，而是想要自定义主题样式，请修改主题文件夹下的 `source/css/` 目录中的对应样式文件 `.styl`，并在 `ejs` 文件中引入你创建的 CSS class。
-
-
-

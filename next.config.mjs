@@ -13,6 +13,21 @@ const config = {
       },
     ];
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "evan.beee.top",
+        pathname: "/img/**",
+      },
+      {
+        protocol: "https",
+        hostname: "assets.ohevan.com",
+        pathname: "/**",
+      },
+    ],
+    unoptimized: true,
+  },
 };
 
 export default withMDX(config);

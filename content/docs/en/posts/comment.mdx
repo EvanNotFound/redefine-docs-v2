@@ -1,8 +1,7 @@
-import { Callout, Steps } from 'nextra/components'
-
-# Comment System `comment`
-
-The theme supports four comment systems: `waline`, `twikoo`, `gitalk`, and `giscus`. You can choose one according to your preference.
+---
+title: Comment System (comment)
+description: The theme supports four comment systems `waline`, `twikoo`, `gitalk`, and `giscus`. You can choose one according to your preference.
+---
 
 <Callout type="info">
   If you want to disable comments for **articles** individually, add `comment: false` to the `front-matter` of the article.
@@ -33,7 +32,7 @@ Enable or disable comments.
 **Configuration: `comment.config.waline`**
 
 
-<Steps>
+<div className="fd-steps [&_h3]:fd-step">
 
 ### Server
 
@@ -52,7 +51,7 @@ comment:
       serverUrl: https://example.example.com #你拿到的 serverUrl
 ```
 
-</Steps>
+</div>
 
 For more information about the Waline comment system, please visit the [Waline Official Website](https://waline.js.org/).
 
@@ -64,7 +63,7 @@ For more information about the Gitalk comment system, please visit the [Gitalk O
 
 **Configuration: `comment.config.gitalk`**
 
-<Steps>
+<div className="fd-steps [&_h3]:fd-step">
 
 ### Get GitHub OAuth App
 
@@ -107,7 +106,7 @@ comment:
 ### Result
 
 ![Screenshot 2023-03-22 at 7.42.52 PM](https://evan.beee.top/img/2023/03/22/c1b47887f3629035c3831b50f9393d30.png)
-</Steps>
+</div>
 
 ## Twikoo Configuration
 
@@ -115,7 +114,7 @@ For more information about the Twikoo commenting system, please visit the [Twiko
 
 **Configuration item name: `comment.config.twikoo`**
 
-<Steps>
+<div className="fd-steps [&_h3]:fd-step">
 
 ### Server-side
 
@@ -135,7 +134,7 @@ comment:
       region: #你的 region（可选）
 ```
 
-</Steps>
+</div>
 
 ## Giscus Configuration
 

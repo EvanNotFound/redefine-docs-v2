@@ -1,23 +1,27 @@
-import Image from "next/image"
+---
+title: Bookmarks Page
+description: Available in Redefine v2.8.0 and later
+---
 
-# Bookmarks Page
-
-> Available in Redefine v2.8.0 and later
+import Image from "next/image";
 
 The bookmarks page lets you create a beautiful collection of your favorite links and tools, organized by category. Here's what it looks like:
 
 <Image
-  src="https://assets.ohevan.com/img/00c70e5f9d2b975f5d132841f6d41583.webp" alt="Bookmarks page preview" width={5088} height={3328} className="my-2" style={{
+  src="https://assets.ohevan.com/img/00c70e5f9d2b975f5d132841f6d41583.webp"
+  alt="Bookmarks page preview"
+  width={5088}
+  height={3328}
+  className="my-2"
+  style={{
     maxHeight: "500px",
-    objectFit: "contain"
+    objectFit: "contain",
   }}
 />
 
 ## Setting Up Your Bookmarks Page
 
-import { Steps } from "nextra/components";
-
-<Steps>
+<div className="fd-steps [&_h3]:fd-step">
 
 ### 1. Create the Page
 
@@ -43,10 +47,10 @@ Add the bookmarks page to your navigation bar in `_config.redefine.yml`:
 
 ```yaml filename="_config.redefine.yml"
 navbar:
-    links:
-        Bookmarks:
-            icon: fa-solid fa-bookmark
-            path: /bookmarks/
+  links:
+    Bookmarks:
+      icon: fa-solid fa-bookmark
+      path: /bookmarks/
 ```
 
 You can also add it to a submenu if you prefer!
@@ -77,10 +81,9 @@ You can also add it to a submenu if you prefer!
       link: https://www.anthropic.com/
       description: Anthropic's AI chat assistant
       image: https://www.anthropic.com/favicon.ico
-
 ```
 
-</Steps>
+</div>
 
 ## Customizing the Layout
 
@@ -88,9 +91,9 @@ Want to change how many columns your bookmarks display in? You can set it to eit
 
 ```yaml filename="_config.redefine.yml"
 page_templates:
-  bookmarks_column: 3  # Choose either 2 or 3
+  bookmarks_column: 3 # Choose either 2 or 3
 ```
 
-| Type | Optional Values | Default Value |
-| :--: | :------------: | :-----------: |
-| Number | `2 \| 3` | 3 |
+|  Type  | Optional Values | Default Value |
+| :----: | :-------------: | :-----------: |
+| Number |    `2 \| 3`     |       3       |

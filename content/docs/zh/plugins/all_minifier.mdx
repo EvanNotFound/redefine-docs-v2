@@ -1,4 +1,7 @@
-# 资源压缩
+---
+title: 资源压缩
+description: Redefine 主题代码中，HTML、CSS、JavaScript、图片等代码文件都是没有打包压缩的。
+---
 
 Redefine 主题代码中，HTML、CSS、JavaScript、图片等代码文件都是没有打包压缩的。
 
@@ -8,9 +11,8 @@ Redefine 主题代码中，HTML、CSS、JavaScript、图片等代码文件都是
 
 ## 配置
 
-import { Steps } from "nextra/components";
 
-<Steps>
+<div className="fd-steps [&_h3]:fd-step">
 ### 安装插件
 
 在 Hexo 项目根目录下安装 **hexo-all-minifier**，执行以下命令：
@@ -27,5 +29,5 @@ npm install hexo-all-minifier
 all_minifier: true
 ```
 
-</Steps>
+</div>
 如果你使用插件时遇到了问题或者想进行更详细的设置，请查看插件的[文档](https://github.com/chenzhutian/hexo-all-minifier/blob/master/README.md)。

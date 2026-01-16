@@ -1,15 +1,13 @@
+---
+title: Writing Modules
+description: Various writing modules such as notes, tabs, folding sections, and more to enhance your articles.
+---
 
 import { StickyNote, MousePointerClick, FoldHorizontal, LayoutGrid } from "lucide-react";
 
-# Writing Modules
-
-Various writing modules such as notes, tabs, folding sections, and more to enhance your articles.
-
-import { Cards } from "nextra/components";
-
 <Cards>
-  <Cards.Card title="Notes" href="/modules/notes" icon={<StickyNote />} />
-  <Cards.Card title="Buttons" href="/modules/buttons" icon={<MousePointerClick />} />
-  <Cards.Card title="Folding" href="/modules/folding" icon={<FoldHorizontal />} />
-  <Cards.Card title="Tabs" href="/modules/tabs" icon={<LayoutGrid />} />
+  <Card title="Notes" href="/modules/notes" icon={<StickyNote />} />
+  <Card title="Buttons" href="/modules/buttons" icon={<MousePointerClick />} />
+  <Card title="Folding" href="/modules/folding" icon={<FoldHorizontal />} />
+  <Card title="Tabs" href="/modules/tabs" icon={<LayoutGrid />} />
 </Cards>

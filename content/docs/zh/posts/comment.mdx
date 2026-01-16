@@ -1,8 +1,9 @@
-import { Callout, Steps } from "nextra/components";
+---
+title: 评论系统 (comment)
+description: Redefine 主题支持 `waline` `twikoo` `gitalk` `giscus` 四种评论系统，你可以根据自己的喜好选择一种。
+---
 
-# 评论系统 `comment`
 
-Redefine 主题支持 `waline` `twikoo` `gitalk` `giscus` 四种评论系统，你可以根据自己的喜好选择一种。
 
 <Callout type="info">
   如果你想对**文章**单独关闭评论，请在文章的 `front-matter` 中加入 `comment: false`。
@@ -33,7 +34,7 @@ Redefine 主题支持 `waline` `twikoo` `gitalk` `giscus` 四种评论系统，�
 **配置项名称：`comment.config.waline`**
 
 
-<Steps>
+<div className="fd-steps [&_h3]:fd-step">
 
 ### 服务端
 
@@ -52,7 +53,7 @@ comment:
       serverUrl: https://example.example.com #你拿到的 serverUrl
 ```
 
-</Steps>
+</div>
 
 更多关于 Waline 评论系统的信息，请访问 [Waline 官网](https://waline.js.org/)。
 
@@ -64,7 +65,7 @@ comment:
 
 **配置项名称：`comment.config.gitalk`**
 
-<Steps>
+<div className="fd-steps [&_h3]:fd-step">
 
 ### 获取 GitHub OAuth App
 
@@ -107,7 +108,7 @@ comment:
 ### 效果
 
 ![Screenshot 2023-03-22 at 7.42.52 PM](https://evan.beee.top/img/2023/03/22/c1b47887f3629035c3831b50f9393d30.png)
-</Steps>
+</div>
 
 ## Twikoo 配置
 
@@ -115,7 +116,7 @@ comment:
 
 **配置项名称：`comment.config.twikoo`**
 
-<Steps>
+<div className="fd-steps [&_h3]:fd-step">
 
 ### 服务端
 
@@ -135,7 +136,7 @@ comment:
       region: #你的 region（可选）
 ```
 
-</Steps>
+</div>
 
 ## Giscus 配置
 
