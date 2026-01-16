@@ -3,15 +3,15 @@
     "introduction",
     "getting-started",
     "---Configuration---",
-    "basic",
-    "home",
+    "basic/index",
+    "home/index",
     "posts",
     "footer",
     "---Usage---",
-    "page_templates",
-    "modules",
-    "plugins",
-    "shuoshuo",
+    "page_templates/index",
+    "modules/index",
+    "plugins/index",
+    "shuoshuo/index",
     "article_customize",
     "inject",
     "cdn",
@@ -23,5 +23,6 @@
     "migrate",
     "[Blog](https://ohevan.com)",
     "[Demo Site](https://redefine.ohevan.com/)"
-  ]
+  ],
+  "title": "Hexo Theme Redefine Docs"
 }

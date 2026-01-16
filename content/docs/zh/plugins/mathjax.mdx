@@ -1,10 +1,9 @@
 ---
 title: Mathjax 数学公式
-description: 使用插件 **[hexo-filter-mathjax](https://github.com/next-theme/hexo-filter-mathjax/)** 可以在文章中使用 LaTeX 语法书写数学公式。
+description: 使用 hexo-filter-mathjax 插件可以在文章中使用 LaTeX 语法书写数学公式。
 ---
 
 使用插件 **[hexo-filter-mathjax](https://github.com/next-theme/hexo-filter-mathjax/)** 可以在文章中使用 LaTeX 语法书写数学公式。
-
 
 ## 效果
 
@@ -28,12 +27,12 @@ npm install hexo-filter-mathjax
 
 ```yaml filename="_config.yml"
 mathjax:
-    tags: none # or 'ams' or 'all'
-    single_dollars: true # enable single dollar signs as in-line math delimiters
-    cjk_width: 0.9 # relative CJK char width
-    normal_width: 0.6 # relative normal (monospace) width
-    append_css: true # add CSS to every page
-    every_page: false # if true, every page will be rendered by mathjax regardless the `mathjax` setting in Front-matter of each article
+  tags: none # or 'ams' or 'all'
+  single_dollars: true # enable single dollar signs as in-line math delimiters
+  cjk_width: 0.9 # relative CJK char width
+  normal_width: 0.6 # relative normal (monospace) width
+  append_css: true # add CSS to every page
+  every_page: false # if true, every page will be rendered by mathjax regardless the `mathjax` setting in Front-matter of each article
 ```
 
 ### 在文章中使用

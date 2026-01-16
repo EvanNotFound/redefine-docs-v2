@@ -3,6 +3,6 @@
   "pages": [
     "home_banner",
     "navbar",
-    "home"
+    "home/index"
   ]
 }
