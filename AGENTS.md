@@ -133,7 +133,8 @@ Use these notes when making changes in this repo.
 
 ## Cursor/Copilot rules
 
-- No `.cursor/rules`, `.cursorrules`, or `.github/copilot-instructions.md` found.
+- Copilot path-specific instructions: `.github/instructions/docs-bilingual.instructions.md`.
+- Copilot custom agent profile: `.github/agents/docs-maintainer.agent.md`.
 - If new rules are added, update this file accordingly.
 
 ## How to add new docs
