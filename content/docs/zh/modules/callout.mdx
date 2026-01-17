@@ -20,14 +20,14 @@ description: v2.9.0 起使用 callout 取代 notes 写法。
 **带标题的提示块**（使用 `::` 分隔标题）：
 
 ```markdown
-{% callout type [fa-style] [fa-icon] [extra-classes...]::这里是标题 %}
+{% callout [type] [fa-style] [fa-icon] [extra-classes...]::这里是标题 %}
 内容写这里。
 {% endcallout %}
 ```
 
-### 类型
+### type
 
-- 第一个参数始终是 callout 的类型，缺省为 `default`。
+- 第一个参数始终是 callout 的 type，缺省为 `default`。
 - 示例：`default`、`success`、`warning`、`danger`、`info`、`primary`、`red`、`blue`、`green` 等。
 
 ### 图标（Font Awesome）
@@ -48,10 +48,10 @@ description: v2.9.0 起使用 callout 取代 notes 写法。
 {% endcallout %}
 ```
 
-### 额外类名
+### 额外的 class
 
-- 类型之后的非图标参数会作为额外类名加到外层。
-- 带标题的写法同样可以在 `::` 前放置额外类名。
+- type 之后的非图标参数会作为额外 class 加到外层。
+- 带标题的写法同样可以在 `::` 前放置额外 class。
 
 示例：
 
