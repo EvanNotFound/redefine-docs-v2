@@ -1,110 +1,77 @@
 ---
-title: Notes Module
+title: Callout Module
+description: Callouts replace the old note module starting from v2.9.0.
 ---
 
+Starting with v2.9.0, the callout module replaces the previous `note`/`notel` syntax. Legacy tags are still rendered for compatibility, but they are deprecated—use `callout` going forward.
 
+## Basic syntax
 
-## Large Note Block
-
-Format: (`notel` stands for `note large`, easy to remember, can also be written as `note-large`)
-
-```markdown
-{% notel [颜色] [可选: 自定义图标] [标题] %}
-内容
-支持换行
-{% endnotel %}
-```
-
-| Parameter | Description | Optional Values |
-| :---: | :---: | :---: |
-| Color | Style or color of the note block | `blue` `red` `cyan` `purple` `orange` `yellow` `green` and other colors |
-| Custom Icon | Custom icon, optional | The second part of the icon name from [Fontawesome](https://fontawesome.com/search), for example, `fa-image` |
-
-For example:
+**Simple callout**
 
 ```markdown
-{% notel default fa-info 信息 %}
-换行测试
-换行测试
-换行测试
-{% endnotel %}
-
-{% notel blue 提示 %}
-换行测试
-换行测试
-换行测试
-{% endnotel %}
-
-{% notel red 自定义标题 %}
-换行测试
-换行测试
-换行测试
-{% endnotel %}
+{% callout type [fa-style] [fa-icon] [extra-classes...] %}
+Content goes here.
+{% endcallout %}
 ```
 
-Result:
-
-![Screenshot 2023-01-20 at 8.37.59 PM](https://evan.beee.top/img/2023/01/20/c1395f65bfa84fe07886245c92d18f49.png)
-
-
-
-## Small Note Block
-
-Format:
+**Titled callout** (use `::` to separate the title):
 
 ```markdown
-{% note [样式/颜色] [可选: 自定义图标] %}
-笔记内容
-{% endnote %}
+{% callout type [fa-style] [fa-icon] [extra-classes...]::Title goes here %}
+Content goes here.
+{% endcallout %}
 ```
 
-| Parameter | Description | Optional Values |
-| :---: | :---: | :---: |
-| Style/Color | Style or color of the note block | `success` `default` `primary` `info` `warning` `danger` `tip` `question` and `blue` `red` `cyan` `purple` `orange` `yellow` `green` and other colors |
-| Custom Icon | Custom icon, optional | The second part of the icon name from [Fontawesome](https://fontawesome.com/search), for example, `fa-image` |
+### Type
 
+- The first token is always the callout type and defaults to `default` when omitted.
+- Examples: `default`, `success`, `warning`, `danger`, `info`, `primary`, `red`, `blue`, `green`, etc.
 
-Specific example:
+### Icons (Font Awesome)
 
-```html
-{% note  %}
-默认 提示块标签
-{% endnote %}
+- Icon tokens are any `fa-*` values.
+- If you include a style token (e.g., `fa-solid`, `fa-regular`) plus an icon token, both are used.
+- If you include only an icon token, it defaults to `fa-solid`.
 
-{% note default  %}
-default 提示块标签
-{% endnote %}
+Examples:
 
-{% note primary  %}
-primary 提示块标签
-{% endnote %}
+```markdown
+{% callout warning fa-solid fa-triangle-exclamation %}
+Be careful here.
+{% endcallout %}
 
-{% note success  %}
-success 提示块标签
-{% endnote %}
-
-{% note info  %}
-info 提示块标签
-{% endnote %}
-
-{% note warning  %}
-warning 提示块标签
-{% endnote %}
-
-{% note danger  %}
-danger 提示块标签
-{% endnote %}
-
-{% note red fa-bolt%}
-自定义提示块标签
-{% endnote %}
+{% callout info fa-circle-info %}
+FYI content.
+{% endcallout %}
 ```
 
-Result:
+### Extra classes
 
+- Any non-icon tokens after the type are added as extra classes on the outer wrapper.
+- For titled callouts, extra classes can still be supplied before the `::`.
 
+Example:
 
-![Screenshot 2023-01-20 at 7.51.43 PM](https://evan.beee.top/img/2023/01/20/d97817b2d310e0f13852afa05cc222fd.png)
+```markdown
+{% callout success custom-class::Deployment Complete %}
+Everything shipped cleanly.
+{% endcallout %}
+```
+
+## Legacy tags (deprecated)
+
+The previous `note`, `notes`, and `notel` tags still render through the callout module for backward compatibility, but avoid using them in new content.
+
+```markdown
+{% note warning fa-solid fa-bolt %}
+Legacy note still works, but prefer `callout`.
+{% endnote %}
+
+{% notel danger fa-solid fa-triangle-exclamation Warning %}
+Legacy titled note still works, but prefer `callout`.
+{% endnotel %}
+```
 
 ## More
 
