@@ -3,7 +3,9 @@ title: Callout Module
 description: Callouts replace the old note module starting from v2.9.0.
 ---
 
+<Callout type="info">
 Starting with v2.9.0, the callout module replaces the previous `note`/`notel` syntax. Legacy tags are still rendered for compatibility, but they are deprecated—use `callout` going forward.
+</Callout>
 
 ## Basic syntax
 
@@ -71,16 +73,6 @@ Legacy note still works, but prefer `callout`.
 {% notel danger fa-solid fa-triangle-exclamation Warning %}
 Legacy titled note still works, but prefer `callout`.
 {% endnotel %}
-```
-
-## React component usage
-
-You can also render callouts directly in MDX via the component:
-
-```jsx
-<Callout type="success" icon="fa-circle-check">
-Deployment succeeded.
-</Callout>
 ```
 
 ## More

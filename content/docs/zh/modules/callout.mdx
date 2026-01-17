@@ -3,7 +3,9 @@ title: Callout 提示模块
 description: v2.9.0 起使用 callout 取代 notes 写法。
 ---
 
+<Callout type="info">
 从 v2.9.0 开始，callout 模块取代了之前的 `note`/`notel` 写法。旧标签仍会自动映射，但已不再推荐，请尽量使用 `callout`。
+</Callout>
 
 ## 基本语法
 
@@ -71,16 +73,6 @@ description: v2.9.0 起使用 callout 取代 notes 写法。
 {% notel danger fa-solid fa-triangle-exclamation 警告 %}
 旧的 notel 语法仍然可用，但建议改用 `callout`。
 {% endnotel %}
-```
-
-## 直接在 MDX 中使用组件
-
-也可以通过组件直接渲染 callout：
-
-```jsx
-<Callout type="success" icon="fa-circle-check">
-部署成功。
-</Callout>
 ```
 
 ## 更多
