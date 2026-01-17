@@ -136,7 +136,7 @@ export const legacyRedirects = [
   { source: "/en/inject", destination: "/en/docs/inject", permanent: true },
   {
     source: "/en/introduction",
-    destination: "/en/docs/introduction",
+    destination: "/en/docs",
     permanent: true,
   },
   { source: "/en/language", destination: "/en/docs/language", permanent: true },
@@ -262,7 +262,7 @@ export const legacyRedirects = [
   { source: "/inject", destination: "/zh/docs/inject", permanent: true },
   {
     source: "/introduction",
-    destination: "/zh/docs/introduction",
+    destination: "/zh/docs",
     permanent: true,
   },
   { source: "/language", destination: "/zh/docs/language", permanent: true },
