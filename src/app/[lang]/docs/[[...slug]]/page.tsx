@@ -38,7 +38,8 @@ export default async function Page({
       {
         footer: <PromoCard />
       }
-    }>
+    }
+    >
       <DocsTitle>{page.data.title}</DocsTitle>
       <DocsDescription className="mb-0">
         {page.data.description}
