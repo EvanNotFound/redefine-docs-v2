@@ -5,7 +5,10 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
 import { useState, useEffect } from "react";
 import { Feature, Features } from "@/app/[lang]/(home)/features";
-export default function EhIndex() {
+import { cn } from "@/lib/cn";
+import { ArrowRight } from "lucide-react";
+
+export default function EnIndex() {
   const [isStylesLoaded, setIsStylesLoaded] = useState(false);
 
   useEffect(() => {
@@ -41,8 +44,8 @@ export default function EhIndex() {
               Minimalist, but <strong>feature-rich</strong>.
             </p>
             <p className="subtitle">
-              <Link className={styles.cta} href="/getting-started">
-                Get Started <span>→</span>
+              <Link className={cn("flex flex-row items-center gap-1 rounded-full px-6 py-4 bg-fd-primary text-white w-fit shadow-md shadow-fd-primary/20 hover:shadow-lg hover:shadow-fd-primary/30 group transition-all duration-300")} href="/getting-started" >
+                <span>Get Started</span> <ArrowRight className="w-5 h-5 group-hover:translate-x-0.5 transition-all duration-300" />
               </Link>
             </p>
           </div>

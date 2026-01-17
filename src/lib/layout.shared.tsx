@@ -14,6 +14,11 @@ export function baseOptions(locale: string): BaseLayoutProps {
         Redefine Docs
       </>,
     },
-    links: [{ type: 'icon', url: 'https://github.com/evannotfound/hexo-theme-redefine', icon: <SiGithub />, text: 'GitHub' }],
+    links: [{
+      type: 'icon',
+      url: 'https://github.com/evannotfound/hexo-theme-redefine',
+      icon: <SiGithub />,
+      text: 'GitHub'
+    }],
   };
 }

@@ -5,6 +5,8 @@ import styles from "./home.module.css";
 import { Feature, Features } from "@/app/[lang]/(home)/features";
 import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
+import { ArrowRight } from "lucide-react";
+import { cn } from "@/lib/cn";
 
 export default function ZhIndex() {
   const [isStylesLoaded, setIsStylesLoaded] = useState(false);
@@ -49,8 +51,8 @@ export default function ZhIndex() {
               简约，但<strong>不简单</strong>。
             </p>
             <p className="subtitle">
-              <Link className={styles.cta} href="/getting-started">
-                快速开始 <span>→</span>
+              <Link className={cn("flex flex-row items-center gap-1 rounded-full px-6 py-4 bg-fd-primary text-white w-fit shadow-md shadow-fd-primary/20 hover:shadow-lg hover:shadow-fd-primary/30 group transition-all duration-300")} href="/getting-started" >
+                <span>快速开始</span> <ArrowRight className="w-5 h-5 group-hover:translate-x-0.5 transition-all duration-300" />
               </Link>
             </p>
           </div>

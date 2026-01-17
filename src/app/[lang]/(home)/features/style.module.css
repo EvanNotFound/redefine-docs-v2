@@ -131,6 +131,6 @@
         text-align: center;
     }
     .feature :global(.show-on-mobile) {
-        display: block;
+        display: inline;
     }
 }
