@@ -9,5 +9,5 @@ export default async function Layout({
   children: ReactNode;
 }) {
   const { lang } = await params;
-  return <HomeLayout {...baseOptions(lang)}>{children}</HomeLayout>;
+  return <HomeLayout {...baseOptions(lang)} links={[{ url: '/docs', text: 'Documentation' }]}>{children}</HomeLayout>;
 }
