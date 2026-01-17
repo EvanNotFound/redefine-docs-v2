@@ -10,6 +10,8 @@ import { getMDXComponents } from "@/mdx-components";
 import type { Metadata } from "next";
 import { createRelativeLink } from "fumadocs-ui/mdx";
 import { LLMCopyButton, ViewOptions } from "@/components/ai/page-actions";
+import { PromoCard } from "@/components/promo-card";
+
 
 export default async function Page({
   params,
@@ -28,7 +30,11 @@ export default async function Page({
   };
 
   return (
-    <DocsPage toc={page.data.toc} full={page.data.full}>
+    <DocsPage toc={page.data.toc} full={page.data.full} tableOfContent={
+      {
+        footer: <PromoCard />
+      }
+    }>
       <DocsTitle>{page.data.title}</DocsTitle>
       <DocsDescription className="mb-0">
         {page.data.description}
