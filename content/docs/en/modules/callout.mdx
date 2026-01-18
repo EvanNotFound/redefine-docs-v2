@@ -1,0 +1,80 @@
+---
+title: Callout Module
+description: Callouts replace the old note module starting from v2.9.0.
+---
+
+<Callout type="info">
+Starting with v2.9.0, the callout module replaces the previous `note`/`notel` syntax. Legacy tags are still rendered for compatibility, but they are deprecated—use `callout` going forward.
+</Callout>
+
+## Basic syntax
+
+**Simple callout**
+
+```markdown
+{% callout [type] [fa-style] [fa-icon] [extra-classes...] %}
+Content goes here.
+{% endcallout %}
+```
+
+**Titled callout** (use `::` to separate the title):
+
+```markdown
+{% callout [type] [fa-style] [fa-icon] [extra-classes...]::Title goes here %}
+Content goes here.
+{% endcallout %}
+```
+
+### Type
+
+- The first token is always the callout type and defaults to `default` when omitted.
+- Examples: `default`, `success`, `warning`, `danger`, `info`, `primary`, `red`, `blue`, `green`, etc.
+
+### Icons (Font Awesome)
+
+- Icon tokens are any `fa-*` values.
+- If you include a style token (e.g., `fa-solid`, `fa-regular`) plus an icon token, both are used.
+- If you include only an icon token, it defaults to `fa-solid`.
+
+Examples:
+
+```markdown
+{% callout warning fa-solid fa-triangle-exclamation %}
+Be careful here.
+{% endcallout %}
+
+{% callout info fa-circle-info %}
+FYI content.
+{% endcallout %}
+```
+
+### Extra classes
+
+- Any non-icon tokens after the type are added as extra classes on the outer wrapper.
+- For titled callouts, extra classes can still be supplied before the `::`.
+
+Example:
+
+```markdown
+{% callout success custom-class::Deployment Complete %}
+Everything shipped cleanly.
+{% endcallout %}
+```
+
+## Legacy tags (deprecated)
+
+The previous `note`, `notes`, and `notel` tags still render through the callout module for backward compatibility, but avoid using them in new content.
+
+```markdown
+{% note warning fa-solid fa-bolt %}
+Legacy note still works, but prefer `callout`.
+{% endnote %}
+
+{% notel danger fa-solid fa-triangle-exclamation Warning %}
+Legacy titled note still works, but prefer `callout`.
+{% endnotel %}
+```
+
+## More
+
+For actual experience, please visit the [Redefine Demo Site](https://redefine.ohevan.com/2022/10/02/theme-demo/)

@@ -1,0 +1,80 @@
+---
+title: Callout 提示模块
+description: v2.9.0 起使用 callout 取代 notes 写法。
+---
+
+<Callout type="info">
+从 v2.9.0 开始，callout 模块取代了之前的 `note`/`notel` 写法。旧标签仍会自动映射，但已不再推荐，请尽量使用 `callout`。
+</Callout>
+
+## 基本语法
+
+**普通提示块**
+
+```markdown
+{% callout type [fa-style] [fa-icon] [extra-classes...] %}
+内容写这里。
+{% endcallout %}
+```
+
+**带标题的提示块**（使用 `::` 分隔标题）：
+
+```markdown
+{% callout [type] [fa-style] [fa-icon] [extra-classes...]::这里是标题 %}
+内容写这里。
+{% endcallout %}
+```
+
+### type
+
+- 第一个参数始终是 callout 的 type，缺省为 `default`。
+- 示例：`default`、`success`、`warning`、`danger`、`info`、`primary`、`red`、`blue`、`green` 等。
+
+### 图标（Font Awesome）
+
+- 图标参数为任意 `fa-*` 值。
+- 同时提供风格（如 `fa-solid`、`fa-regular`）和图标时都会生效。
+- 只提供图标参数时，风格默认为 `fa-solid`。
+
+示例：
+
+```markdown
+{% callout warning fa-solid fa-triangle-exclamation %}
+注意安全。
+{% endcallout %}
+
+{% callout info fa-circle-info %}
+这里是一些提示信息。
+{% endcallout %}
+```
+
+### 额外的 class
+
+- type 之后的非图标参数会作为额外 class 加到外层。
+- 带标题的写法同样可以在 `::` 前放置额外 class。
+
+示例：
+
+```markdown
+{% callout success custom-class::部署完成 %}
+一切正常发布。
+{% endcallout %}
+```
+
+## 兼容的旧标签（已废弃）
+
+`note`、`notes`、`subnote`、`notel` 等旧标签仍会自动映射到 callout 模块，但请避免在新内容中继续使用。
+
+```markdown
+{% note warning fa-solid fa-bolt %}
+旧的 note 语法仍然可用，但建议改用 `callout`。
+{% endnote %}
+
+{% notel danger fa-solid fa-triangle-exclamation 警告 %}
+旧的 notel 语法仍然可用，但建议改用 `callout`。
+{% endnotel %}
+```
+
+## 更多
+
+实际体验欢迎前往 [Redefine 演示站点](https://redefine.ohevan.com/2022/10/02/theme-demo/)
