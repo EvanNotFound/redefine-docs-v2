@@ -41,6 +41,15 @@ description: This theme utilizes [Tailwind CSS](https://tailwindcss.com/) as its
 
 </div>
 
+## Frontend runtime and Swup events
+
+- Frontend scripts now boot from a single `source/js/main.js` entry and are split into feature modules with lifecycle-driven init.
+- Lifecycle utilities fire on DOM ready and after Swup navigations so SPA page switches re-mount modules.
+- The Swup instance is exposed as `window.swup`; when it is ready a `redefine:swup:ready` event is dispatched so you can grab the instance and register navigation callbacks.
+- Comment providers (Giscus/Gitalk/Twikoo/Waline) follow the same SPA flow with reload/retry handling.
+- Mermaid ships light/dark theme config and applies the current mode at runtime.
+- A new Hexo Callout tag plus CSS-variable-based callout styles replace the legacy note styles; override the variables to customize.
+
 ## Customizing Your Theme
 
 ### Tailoring Tailwind CSS

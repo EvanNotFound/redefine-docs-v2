@@ -41,6 +41,15 @@ description: 本主题使用了 [Tailwind CSS](https://tailwindcss.com/) 作为 
 
 </div>
 
+## 前端运行时与 Swup 事件
+
+- 前端脚本集中在单一入口 `source/js/main.js`，并按功能拆分模块，生命周期驱动初始化。
+- 生命周期工具会在 DOM 准备就绪和 Swup 导航后触发，保证 SPA 页面切换时重新挂载模块。
+- Swup 实例暴露为 `window.swup`，准备就绪时会派发自定义事件 `redefine:swup:ready`，可在事件监听中获取实例并注册导航回调。
+- 评论提供商（Giscus/Gitalk/Twikoo/Waline）遵循同样的 SPA 流程，支持重载与重试。
+- Mermaid 支持亮/暗色主题配置，运行时根据当前模式应用。
+- 新增 Hexo Callout 标签与基于 CSS 变量的提示样式，替换旧的 note 样式；覆盖变量即可定制。
+
 ## 自定义主题
 
 ### 自定义 Tailwind CSS
