@@ -23,60 +23,60 @@ Redefine v2.1.4 版本开始支持瀑布流相册页面，使用方法如下：
 
 <div className="fd-steps [&_h3]:fd-step">
 
-    ### 创建相册页面
+### 创建相册页面
 
-    在你的 Hexo 项目根目录下执行如下命令即可创建 相册 / 照片墙 页面，名字可以按照你自己的喜好来命名，这边我创建了一个名为 `masonry` 的页面。
+在你的 Hexo 项目根目录下执行如下命令即可创建 相册 / 照片墙 页面，名字可以按照你自己的喜好来命名，这边我创建了一个名为 `masonry` 的页面。
 
-    ```shell
-    $ hexo new page masonry
-    ```
+```shell
+$ hexo new page masonry
+```
 
-    然后，打开这个页面的 Markdown 文件（`source/masonry/index.md`），编辑 Front Matter，添加 `template: masonry`，即可。
+然后，打开这个页面的 Markdown 文件（`source/masonry/index.md`），编辑 Front Matter，添加 `template: masonry`，即可。
 
-    以下是一个正确的配置示例参考：
+以下是一个正确的配置示例参考：
 
-    ```markdown filename="masonry/index.md" {4}
-    ---
-    title: 相册
-    date: 2023/5/14 11:45:14
-    template: masonry
-    ---
-    ```
+```markdown filename="masonry/index.md" {4}
+---
+title: 相册
+date: 2023/5/14 11:45:14
+template: masonry
+---
+```
 
-    ### 修改配置文件
+### 修改配置文件
 
-    在 Redefine 主题配置文件 `_config.redefine.yml` 的 `navbar.links` 导航栏配置项里面添加相册页面。
+在 Redefine 主题配置文件 `_config.redefine.yml` 的 `navbar.links` 导航栏配置项里面添加相册页面。
 
-    ```yaml filename="_config.redefine.yml" {3-5}
-    navbar:
-        links:
-            相册: #取名随意
-                icon: fa-solid fa-image #图标
-                path: /masonry/ 
-    ```
+```yaml filename="_config.redefine.yml" {3-5}
+navbar:
+    links:
+        相册: #取名随意
+            icon: fa-solid fa-image #图标
+            path: /masonry/ 
+```
 
-    （放在二级菜单也可以）
+（放在二级菜单也可以）
 
-    ### 创建相册存放文件
+### 创建相册存放文件
 
-    在你的 Hexo 项目的 `source` 文件夹里增加 `_data` 文件夹（如果已有则跳过）
+在你的 Hexo 项目的 `source` 文件夹里增加 `_data` 文件夹（如果已有则跳过）
 
-    在 `_data` 文件夹下新增 `masonry.yml` 文件。
+在 `_data` 文件夹下新增 `masonry.yml` 文件。
 
-    在 `masonry.yml` 文件里面按照如下格式配置相册信息：
+在 `masonry.yml` 文件里面按照如下格式配置相册信息：
 
-    ```yaml filename="source/_data/masonry.yml"
-    - image: 图片 URL
-    title: 图片标题
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
+```yaml filename="source/_data/masonry.yml"
+- image: 图片 URL
+  title: 图片标题
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
 
-    - image: https://picsum.photos/id/12/2500/1800
-    title: Lorem ipsum
-    description: Lorem ipsum dolor sit amet
-    ```
+- image: https://picsum.photos/id/12/2500/1800
+  title: Lorem ipsum
+  description: Lorem ipsum dolor sit amet
+```
 
-    ### 创建完成
+### 创建完成
 
-    现在就可以访问你创建的页面查看效果了。
+现在就可以访问你创建的页面查看效果了。
 
 </div>
