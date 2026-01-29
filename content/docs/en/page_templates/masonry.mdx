@@ -52,16 +52,20 @@ Create a `masonry.yml` file in the `_data` folder.
 
 Configure the album information in the `masonry.yml` file in the following format:
 
-```yaml filename="source/_data/masonry.yml"
+Starting from Redefine `v2.9.0`, it is recommended to set `width` and `height` (original pixel dimensions) for each image in `masonry.yml` to reserve space and reduce layout shift (CLS).
 
+```yaml filename="source/_data/masonry.yml"
 - image: Image URL
+  width: 1920
+  height: 1080
   title: Image Title
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
 
-- image: https://picsum.photos/id/12/2500/1800
+- image: https://picsum.photos/id/848/2000/1333
+  width: 2000
+  height: 1333
   title: Lorem ipsum
   description: Lorem ipsum dolor sit amet
-
 ```
 
 ### Creation Complete

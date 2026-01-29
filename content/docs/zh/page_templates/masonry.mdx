@@ -20,7 +20,6 @@ import Image from "next/image";
 
 Redefine v2.1.4 版本开始支持瀑布流相册页面，使用方法如下：
 
-
 <div className="fd-steps [&_h3]:fd-step">
 
 ### 创建相册页面
@@ -49,10 +48,10 @@ template: masonry
 
 ```yaml filename="_config.redefine.yml" {3-5}
 navbar:
-    links:
-        相册: #取名随意
-            icon: fa-solid fa-image #图标
-            path: /masonry/ 
+  links:
+    相册: #取名随意
+      icon: fa-solid fa-image #图标
+      path: /masonry/
 ```
 
 （放在二级菜单也可以）
@@ -65,12 +64,18 @@ navbar:
 
 在 `masonry.yml` 文件里面按照如下格式配置相册信息：
 
+从 Redefine `v2.9.0` 版本开始，建议在 `masonry.yml` 为每张图片填写 `width` 和 `height`（图片原始像素尺寸），用于提前预留布局空间，减少页面加载时的布局偏移（CLS）。
+
 ```yaml filename="source/_data/masonry.yml"
 - image: 图片 URL
+  width: 1920
+  height: 1080
   title: 图片标题
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
 
-- image: https://picsum.photos/id/12/2500/1800
+- image: https://picsum.photos/id/848/2000/1333
+  width: 2000
+  height: 1333
   title: Lorem ipsum
   description: Lorem ipsum dolor sit amet
 ```
