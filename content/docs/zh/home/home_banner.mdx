@@ -2,12 +2,12 @@
 title: 第一屏 (home_banner)
 ---
 
-## 开关 
+## 开关
 
 **配置项名称：`home_banner.enable`**
 
-| 类型 | 可选值 | 默认值 |
-| :---: | :---: | :---: |
+|  类型  |     可选值      | 默认值 |
+| :----: | :-------------: | :----: |
 | 布尔值 | `true \| false` | `true` |
 
 ## 背景图片样式
@@ -16,25 +16,27 @@ title: 第一屏 (home_banner)
 
 本配置项用于设置第一屏的背景图片样式，分为 `static` 和 `fixed` 两种。
 
-| 类型 | 可选值 | 默认值 |
-| :---: | :---: | :---: |
+|  类型  |      可选值       |  默认值  |
+| :----: | :---------------: | :------: |
 | 字符串 | `static \| fixed` | `static` |
 
 ### `static` 样式
 
 `static` 样式为静态样式，即第一屏的背景图片会随着首页滚动而滚动。
 
-
-
-<video src="https://evan.beee.top/img/2023/04/29/1160247fd24068c84c7706e44d6457fa.mp4" controls></video>
+<video
+  src="https://evan.beee.top/img/2023/04/29/1160247fd24068c84c7706e44d6457fa.mp4"
+  controls
+></video>
 
 ### `fixed` 样式
 
 `fixed` 样式为固定样式，即第一屏的背景图片会作为背景固定在首页，不会随着首页滚动而滚动。同时本样式会让背景图片向下滑动时自动模糊，推荐使用。
 
-
-
-<video src="https://evan.beee.top/img/2023/04/29/8e5f8359cbe980eb6b3e0a5e0a21a561.mp4" controls></video>
+<video
+  src="https://evan.beee.top/img/2023/04/29/8e5f8359cbe980eb6b3e0a5e0a21a561.mp4"
+  controls
+></video>
 
 ## 背景图片
 
@@ -42,25 +44,25 @@ title: 第一屏 (home_banner)
 
 **配置项名称：`home_banner.image.light`**
 
-| 类型 | 备注 | 示例 |
-| :---: | :---: | :---: |
+|  类型  |         备注          |                 示例                  |
+| :----: | :-------------------: | :-----------------------------------: |
 | 字符串 | 本地相对链接/图片外链 | `/images/wallhaven-wqery6-light.webp` |
 
-### 暗色模式    
+### 暗色模式
 
 **配置项名称：`home_banner.image.dark`**
 
-| 类型 | 备注 | 示例 |
-| :---: | :---: | :---: |
+|  类型  |         备注          |                 示例                 |
+| :----: | :-------------------: | :----------------------------------: |
 | 字符串 | 本地相对链接/图片外链 | `/images/wallhaven-wqery6-dark.webp` |
 
 ## 主标题
 
 **配置项名称：`home_banner.title`**
 
-| 类型 | 备注 | 示例 |
-| :---: | :---: | :---: |
-| 字符串 | 无 | `Theme Redefine` |
+|  类型  | 备注 |       示例       |
+| :----: | :--: | :--------------: |
+| 字符串 |  无  | `Theme Redefine` |
 
 ## 副标题
 
@@ -72,22 +74,21 @@ title: 第一屏 (home_banner)
 
 **如果需要开启一言，请先在本项随便写入一些内容。**
 
-| 类型 | 备注 | 示例 |
-| :---: | :---: | :---: |
+| 类型 |       备注       |                                 示例                                 |
+| :--: | :--------------: | :------------------------------------------------------------------: |
 | 数组 | 请用英文逗号分隔 | `["This is the first message", "This is the second message", "etc"]` |
 
 ### 一言
 
 副标题自动获取一言，详见[一言](https://hitokoto.cn/)。
 
-**如果需要本项开启，请先在 `home_banner.subtitle.text` 中随便写入一些内容，防止因为网络问题导致的无法显示问题。** 比如可以在  `home_banner.subtitle.text` 中写入 `['Loading...']`
+**如果需要本项开启，请先在 `home_banner.subtitle.text` 中随便写入一些内容，防止因为网络问题导致的无法显示问题。** 比如可以在 `home_banner.subtitle.text` 中写入 `['Loading...']`
 
 - `home_banner.subtitle.hitokoto.enable`：开关
 - `home_banner.subtitle.hitokoto.api`：一言 API 地址
 - `home_banner.subtitle.hitokoto.show_author`：是否显示作者
 
 API 地址可以指定句子类型，详见[一言 API](https://developer.hitokoto.cn/sentence/#%E5%8F%A5%E5%AD%90%E7%B1%BB%E5%9E%8B-%E5%8F%82%E6%95%B0)。
-
 
 ### 高级：打字动画设置
 
@@ -106,16 +107,16 @@ API 地址可以指定句子类型，详见[一言 API](https://developer.hitoko
 
 **配置项名称：`home_banner.text_color.light`**
 
-| 类型 | 备注 | 示例 |
-| :---: | :---: | :---: |
+|  类型  |      备注       |  示例  |
+| :----: | :-------------: | :----: |
 | 字符串 | 请填写 Hex 色值 | `#fff` |
 
 ### 暗色模式
 
 **配置项名称：`home_banner.text_color.dark`**
 
-| 类型 | 备注 | 示例 |
-| :---: | :---: | :---: |
+|  类型  |      备注       |   示例    |
+| :----: | :-------------: | :-------: |
 | 字符串 | 请填写 Hex 色值 | `#d1d1b6` |
 
 ## 文字样式
@@ -124,24 +125,24 @@ API 地址可以指定句子类型，详见[一言 API](https://developer.hitoko
 
 **配置项名称：`home_banner.text_style.title_size`**
 
-| 类型 | 备注 | 示例 |
-| :---: | :---: | :---: |
+|  类型  |           备注            |   示例   |
+| :----: | :-----------------------: | :------: |
 | 字符串 | 请填写 CSS 支持的字体大小 | `2.8rem` |
 
 ### 副标题字体大小
 
 **配置项名称：`home_banner.text_style.subtitle_size`**
 
-| 类型 | 备注 | 示例 |
-| :---: | :---: | :---: |
+|  类型  |           备注            |   示例   |
+| :----: | :-----------------------: | :------: |
 | 字符串 | 请填写 CSS 支持的字体大小 | `1.5rem` |
 
 ### 标题与副标题行高
 
 **配置项名称：`home_banner.text_style.line_height`**
 
-| 类型 | 备注 | 示例 |
-| :---: | :---: | :---: |
+|  类型  |         备注          | 示例  |
+| :----: | :-------------------: | :---: |
 | 字符串 | 请填写 CSS 支持的行高 | `1.2` |
 
 ## 自定义字体
@@ -150,24 +151,24 @@ API 地址可以指定句子类型，详见[一言 API](https://developer.hitoko
 
 **配置项名称：`home_banner.custom_font.enable`**
 
-| 类型 | 可选值 | 默认值 |
-| :---: | :---: | :---: |
+|  类型  |     可选值      | 默认值  |
+| :----: | :-------------: | :-----: |
 | 布尔值 | `true \| false` | `false` |
 
 ### 字体名称
 
 **配置项名称：`home_banner.custom_font.family`**
 
-| 类型 | 备注 | 示例 |
-| :---: | :---: | :---: |
+|  类型  |           备注           |      示例      |
+| :----: | :----------------------: | :------------: |
 | 字符串 | 会作用在主标题和副标题上 | `Noto Sans SC` |
 
 ### 字体 CSS 文件链接
 
 **配置项名称：`home_banner.custom_font.url`**
 
-| 类型 | 备注 | 示例 |
-| :---: | :---: | :---: |
+|  类型  |          备注           |                                         示例                                          |
+| :----: | :---------------------: | :-----------------------------------------------------------------------------------: |
 | 字符串 | 字体样式文件地址（CSS） | `https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap` |
 
 ## 社交链接
@@ -176,13 +177,20 @@ API 地址可以指定句子类型，详见[一言 API](https://developer.hitoko
 
 **配置项名称：`home_banner.social_links.enable`**
 
-| 类型 | 可选值 | 默认值 |
-| :---: | :---: | :---: |
+|  类型  |     可选值      | 默认值  |
+| :----: | :-------------: | :-----: |
 | 布尔值 | `true \| false` | `false` |
 
 ### 链接
 
 **配置项名称：`home_banner.social_links.links`**
+
+<Callout type="info">
+  v2.9.0 起，`home_banner.social_links.links` 与 `home_banner.social_links.qrs`
+  改为数组格式以保证顺序稳定，旧对象映射格式已弃用。
+</Callout>
+
+`links` 为数组，顺序即展示顺序。每一项包含 `icon` 与 `url`。
 
 社交链接支持三种类型的图标：
 
@@ -192,10 +200,14 @@ API 地址可以指定句子类型，详见[一言 API](https://developer.hitoko
 
 ```yaml filename="_config.redefine.yml"
 links:
-    github: https://github.com/username
-    twitter: https://twitter.com/username
-    facebook: https://facebook.com/username
-    instagram: https://instagram.com/username
+  - icon: github
+    url: https://github.com/username
+  - icon: twitter
+    url: https://twitter.com/username
+  - icon: facebook
+    url: https://facebook.com/username
+  - icon: instagram
+    url: https://instagram.com/username
 ```
 
 **2. FontAwesome 图标**
@@ -204,8 +216,10 @@ links:
 
 ```yaml filename="_config.redefine.yml"
 links:
-    fa-solid fa-wand-magic-sparkles: https://example.com
-    fa-regular fa-music: https://example.com
+  - icon: fa-solid fa-wand-magic-sparkles
+    url: https://example.com
+  - icon: fa-regular fa-music
+    url: https://example.com
 ```
 
 可以前往 [Font Awesome](https://fontawesome.com/search) 查看图标名称。
@@ -216,21 +230,33 @@ links:
 
 ```yaml filename="_config.redefine.yml"
 links:
-    /images/icon/coolapk.png: https://www.coolapk.com/u/123456
-    /images/icon/bilibili.svg: https://space.bilibili.com/123456
-    https://example.com/custom-icon.png: https://example.com
+  - icon: /images/icon/coolapk.png
+    url: https://www.coolapk.com/u/123456
+  - icon: /images/icon/bilibili.svg
+    url: https://space.bilibili.com/123456
+  - icon: https://example.com/custom-icon.png
+    url: https://example.com
 ```
 
 **完整示例：**
 
 ```yaml filename="_config.redefine.yml"
 links:
-    github: https://github.com/username
-    twitter: https://twitter.com/username
-    fa-solid fa-music: https://music.example.com
-    /images/icon/coolapk.png: https://www.coolapk.com/u/123456
-    /images/icon/custom-platform.svg: https://custom.example.com
+  - icon: github
+    url: https://github.com/username
+  - icon: twitter
+    url: https://twitter.com/username
+  - icon: fa-solid fa-music
+    url: https://music.example.com
+  - icon: /images/icon/coolapk.png
+    url: https://www.coolapk.com/u/123456
+  - icon: /images/icon/custom-platform.svg
+    url: https://custom.example.com
+  - icon: email
+    url: you@example.com
 ```
+
+当 `icon` 为 `email` 时会使用 `@` 图标，`url` 未以 `mailto:` 开头将自动补齐。
 
 ### 本地图标要求
 
@@ -242,41 +268,34 @@ links:
 - **背景**：使用透明背景以获得最佳效果
 - **文件路径**：必须以 `/` 开头（例如：`/images/icon/example.png`）
 
-### 图标迁移指南
+### 旧格式迁移（已弃用）
 
-如果您有现有的仅使用 FontAwesome 图标的配置，它们将继续工作。只需在现有配置中添加本地图标：
+旧版使用对象映射（键为图标，值为链接）。由于 Hexo 合并配置会导致顺序不稳定，该格式已弃用并将在下一个大版本移除，`qrs` 同理。
 
 ```yaml filename="_config.redefine.yml"
-# 之前（仍然有效）
+# 旧格式（已弃用）
 links:
-    github: https://github.com/username
-    fa-solid fa-music: https://music.example.com
+  github: https://github.com/username
+  twitter: https://twitter.com/username
 
-# 之后（增强了本地图标）
+# 新格式（推荐）
 links:
-    github: https://github.com/username
-    fa-solid fa-music: https://music.example.com
-    /images/icon/coolapk.png: https://www.coolapk.com/u/123456
+  - icon: github
+    url: https://github.com/username
+  - icon: twitter
+    url: https://twitter.com/username
 ```
 
 ### 二维码
 
 **配置项名称：`home_banner.social_links.qrs`**
 
-可选，可添加你的二维码，格式如下，
-
-如果是 `fa-brands` 图标，可以直接填写 Brands 图标名称，比如 `weixin`。
-
-但是如果用的不是 fa-brands 图标，比如 `fa-solid`，则需要填写全名，比如 `fa-solid fa-wand-magic-sparkles`。
+可选，可添加你的二维码。`qrs` 为数组，顺序即展示顺序。每一项包含 `icon` 与 `qr`，填写规则与 `links` 相同。
 
 ```yaml filename="_config.redefine.yml"
 qrs:
-    [fontawesome 图标名称(不是 HTML 代码)]: [二维码图片地址]
-```
-
-示例配置：
-
-```yaml filename="_config.redefine.yml"
-qrs:
-    weixin: https://example.com/weixin.png
+  - icon: weixin
+    qr: https://example.com/weixin.png
+  - icon: /images/icon/custom-platform.svg
+    qr: https://example.com/custom-qr.png
 ```
