@@ -1,13 +1,16 @@
 ---
 title: Comment System (comment)
-description: The theme supports four comment systems `waline`, `twikoo`, `gitalk`, and `giscus`. You can choose one according to your preference.
+description: The theme supports five comment systems `waline`, `twikoo`, `gitalk`, `giscus`, and `utterances`. You can choose one according to your preference.
 ---
 
 <Callout type="info">
-  If you want to disable comments for **articles** individually, add `comment: false` to the `front-matter` of the article.
-  
-  If you want to enable comments for **pages** individually, add `comment: true` to the `front-matter` of the page.
+If you want to disable comments for **articles** individually, add `comment: false` to the `front-matter` of the article.
+
+If you want to enable comments for **pages** individually, add `comment: true` to the `front-matter` of the page.
+
 </Callout>
+
+<Callout type="note">Utterances is supported since Redefine `v2.9.0`.</Callout>
 
 ## Global Switch
 
@@ -15,22 +18,21 @@ description: The theme supports four comment systems `waline`, `twikoo`, `gitalk
 
 Enable or disable comments.
 
-| Type | Possible Values | Default |
-| :---: | :---: | :---: |
-| Boolean | `true \| false` | `true` |
+|  Type   | Possible Values | Default |
+| :-----: | :-------------: | :-----: |
+| Boolean | `true \| false` | `true`  |
 
 ## Comment System Selection
 
 **Configuration: `comment.system`**
 
-| Type | Possible Values | Default |
-| :---: | :---: | :---: |
-| String | `waline \| gitalk \| twikoo \| giscus` | `waline` |
+|  Type  |                   Possible Values                    | Default  |
+| :----: | :--------------------------------------------------: | :------: |
+| String | `waline \| gitalk \| twikoo \| giscus \| utterances` | `waline` |
 
 ## Waline Configuration
 
 **Configuration: `comment.config.waline`**
-
 
 <div className="fd-steps [&_h3]:fd-step">
 
@@ -54,8 +56,6 @@ comment:
 </div>
 
 For more information about the Waline comment system, please visit the [Waline Official Website](https://waline.js.org/).
-
-
 
 ## Gitalk Configuration
 
@@ -106,6 +106,7 @@ comment:
 ### Result
 
 ![Screenshot 2023-03-22 at 7.42.52 PM](https://evan.beee.top/img/2023/03/22/c1b47887f3629035c3831b50f9393d30.png)
+
 </div>
 
 ## Twikoo Configuration
@@ -164,3 +165,37 @@ comment:
       input_position: bottom
       loading: not-lazy
 ```
+
+## Utterances Configuration
+
+For more information about the Utterances commenting system, please visit the [Utterances official website](https://utteranc.es/).
+
+**Configuration item name: `comment.config.utterances`**
+
+<div className="fd-steps [&_h3]:fd-step">
+
+### Bind a GitHub Repository
+
+Prepare a GitHub repository with Issues enabled, then authorize it on the [Utterances official website](https://utteranc.es/).
+
+### Fill in the Configuration
+
+```yaml filename="_config.redefine.yml"
+comment:
+  system: utterances
+  config:
+    utterances:
+      repo: owner/repo # GitHub repository name
+      issue_term: pathname # pathname, url, title, og:title
+      issue_number: # Use a specific issue instead of issue_term (optional)
+      label: # Add a label to created issues (optional)
+      theme_light: github-light # Light theme
+      theme_dark: github-dark # Dark theme
+```
+
+</div>
+
+- `repo` is required and the repository must have Issues enabled.
+- `issue_term` defaults to `pathname`, recommended for single-page mode.
+- Setting `issue_number` will override `issue_term`.
+- `theme_light` and `theme_dark` automatically follow the site light/dark mode.
