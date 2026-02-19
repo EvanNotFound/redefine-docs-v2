@@ -1,9 +1,4 @@
 {
   "title": "Modules",
-  "pages": [
-    "callout",
-    "buttons",
-    "folding",
-    "tabs"
-  ]
+  "pages": ["callout", "buttons", "grid", "folding", "tabs"]
 }

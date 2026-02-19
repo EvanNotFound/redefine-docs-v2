@@ -1,11 +1,11 @@
 ---
 title: Callout 提示模块
-description: v2.9.0 起使用 callout 取代 notes 写法。
+description: 从 v2.9.0 开始，callout 取代旧 note 系列标签。
 ---
 
 <Callout type="info">
-  从 v2.9.0 开始，callout 模块取代了之前的 `note`/`notel`
-  写法。旧标签仍会自动映射，但已不再推荐，请尽量使用 `callout`。
+  从 v2.9.0 开始，callout 模块取代旧的 note 系列标签。旧标签仍可渲染，
+  但已废弃，不建议在新内容中继续使用。
 </Callout>
 
 ## 效果
@@ -20,15 +20,13 @@ description: v2.9.0 起使用 callout 取代 notes 写法。
 
 ## 基本语法
 
-**普通提示块**
-
 ```markdown
 {% callout [type] [fa-style] [fa-icon] [extra-classes...] %}
 内容写这里。
 {% endcallout %}
 ```
 
-**带标题的提示块**（使用 `::` 分隔标题）：
+带标题写法（旧写法仍兼容）：
 
 ```markdown
 {% callout [type] [fa-style] [fa-icon] [extra-classes...]::这里是标题 %}
@@ -36,45 +34,34 @@ description: v2.9.0 起使用 callout 取代 notes 写法。
 {% endcallout %}
 ```
 
-### type
+## 命名参数
 
-- 第一个参数始终是 callout 的 type，缺省为 `default`
-- 示例：`default`、`success`、`warning`、`danger`、`info`、`primary`、`red`、`blue`、`green` 等
+`callout` 现支持命名参数：
 
-### 图标（Font Awesome）
-
-- 图标参数为任意 `fa-*` 值
-- 同时提供风格（如 `fa-solid`、`fa-regular`）和图标时都会生效
-- 只提供图标参数时，风格默认为 `fa-solid`
-
-示例：
+- `type`
+- `title`
+- `icon`
+- `variant`（`simple` 或 `titled`）
+- `class` / `classes`
 
 ```markdown
-{% callout warning fa-solid fa-triangle-exclamation %}
-注意安全。
+{% callout type="warning" icon="fa-solid fa-triangle-exclamation" %}
+上线前请再次检查。
 {% endcallout %}
 
-{% callout info fa-circle-info %}
-这里是一些提示信息。
+{% callout type="info" title="提示" class="custom-class" %}
+命名参数让配置更清晰。
 {% endcallout %}
 ```
 
-### 额外的 class
+当传入 `title` 时会自动渲染为带标题样式，也可通过 `variant="titled"` 强制指定。
 
-- type 之后的非图标参数会作为额外 class 加到外层
-- 带标题的写法同样可以在 `::` 前放置额外 class
+## 旧标签兼容（已废弃）
 
-示例：
+旧标签仍会渲染，但现在会在 Hexo 日志中输出废弃警告。
 
-```markdown
-{% callout success custom-class::部署完成 %}
-一切正常发布。
-{% endcallout %}
-```
-
-## 兼容的旧标签（已废弃）
-
-`note`、`notes`、`subnote`、`notel` 等旧标签仍会自动映射到 callout 模块，但请避免在新内容中继续使用。
+- 简单型：`note`、`notes`、`subnote`
+- 标题型：`noteL`、`notel`、`notelarge`、`notel-large`、`notes-large`、`subwarning`
 
 ```markdown
 {% note warning fa-solid fa-bolt %}
@@ -88,4 +75,4 @@ description: v2.9.0 起使用 callout 取代 notes 写法。
 
 ## 更多
 
-实际体验欢迎前往 [Redefine 演示站点](https://redefine.ohevan.com/2022/10/02/theme-demo/)
+实际体验欢迎前往 [Redefine 演示站点](https://redefine.ohevan.com/2022/10/02/theme-demo/)。

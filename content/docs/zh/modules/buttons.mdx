@@ -1,60 +1,61 @@
 ---
 title: Buttons 按钮模块
-description: 本模块可以添加按钮
+description: 支持段落内按钮和独立按钮，可搭配图标或图片。
 ---
-
-import Image from "next/image";
 
 ## 效果
 
-<Image
-  src="https://evan.beee.top/img/2023/01/26/ff18cf0630939a7212dcf926384e0626.png"
-  alt="Screenshot 2023-01-26 at 10.17.27 PM"
-  width={1890}
-  height={566}
-  className="my-2"
-  style={{
-    maxHeight: "500px",
-    objectFit: "contain",
-  }}
-/>
+![按钮示例](https://evan.beee.top/img/2023/01/26/ff18cf0630939a7212dcf926384e0626.png)
 
-更多效果欢迎前往 [Redefine 演示站点](https://redefine.ohevan.com/2022/10/02/theme-demo/) 查看
+## 推荐写法
 
-## 写法
-
-```
-{% btn [可选大小]::[名称]::[url]::[可选图标] %}
-```
-
-比如上面的例子：
+新内容建议使用 `button` 标签：
 
 ```markdown
-不设置任何参数的 {% btn 按钮:: / %} 适合融入段落中。
-
-regular 按钮适合独立于段落之外：
-
-{% btn regular::示例博客::https://www.ohevan.com::fa-solid fa-play-circle %}
-
-{% btn regular::示例博客::https://www.ohevan.com::fa-solid fa-play-circle %}
-
-large 按钮更具有强调作用，建议搭配 center 使用：
-
-{% btn center large::开始使用::https://redefine-docs.ohevan.com::fa-solid fa-download %}
+{% button text="开始使用" url="https://redefine-docs.ohevan.com" icon="fa-solid fa-download" %}
 ```
 
-## 变量可选值
+## 参数
 
-`[可选大小]` :
+- `text` / `label`：按钮文字
+- `url` / `href`：跳转链接
+- `icon`：图标类名（例如 `fa-solid fa-house`）
+- `image` / `img`：图片地址（会替代图标显示）
+- `size`：`sm`、`md`、`lg`
+- `align`：`inline`、`left`、`center`、`right`
+- `title`：自定义鼠标悬浮提示
+- `target`、`rel`：链接属性
+
+当设置 `target="_blank"` 且未传入 `rel` 时，会自动补上 `rel="noopener noreferrer"`。
+
+## 示例
 
 ```markdown
-center, regular, large, center large, center regular
+段落内按钮：{% button text="文档" url="/" %}
+
+{% button text="示例博客" url="https://www.ohevan.com" icon="fa-solid fa-play-circle" size="md" %}
+
+{% button text="开始使用" url="https://redefine-docs.ohevan.com" icon="fa-solid fa-download" size="lg" align="center" %}
+
+{% button text="新标签页打开" url="https://redefine.ohevan.com" target="_blank" %}
 ```
 
-`[可选图标]` :
+## 旧写法兼容（已废弃）
 
-[Fontawesome](https://fontawesome.com/search) 图标名称，比如 `fa-solid fa-house`
+- `{% btn %}` 仍可用，但已废弃，建议改为 `{% button %}`。
+- `{% cell %}` 已废弃，建议改为 `{% button %}`。
+
+## 多按钮布局
+
+多个按钮排版建议使用 [Grid 网格模块](/modules/grid)。
+
+```markdown
+{% grid cols=2 gap=16 %}
+{% button text="文档" url="https://redefine-docs.ohevan.com" %}
+{% button text="演示" url="https://redefine.ohevan.com" %}
+{% endgrid %}
+```
 
 ## 更多
 
-实际体验欢迎前往 [Redefine 演示站点](https://redefine.ohevan.com/2022/10/02/theme-demo/)
+实际体验欢迎前往 [Redefine 演示站点](https://redefine.ohevan.com/2022/10/02/theme-demo/)。
