@@ -154,7 +154,7 @@ export const legacyRedirects = [
   },
   {
     source: "/en/modules/notes",
-    destination: "/en/docs/modules/notes",
+    destination: "/en/docs/modules/callout",
     permanent: true,
   },
   {
@@ -280,7 +280,7 @@ export const legacyRedirects = [
   },
   {
     source: "/modules/notes",
-    destination: "/zh/docs/modules/notes",
+    destination: "/zh/docs/modules/callout",
     permanent: true,
   },
   {
@@ -467,7 +467,7 @@ export const legacyRedirects = [
   },
   {
     source: "/zh/modules/notes",
-    destination: "/zh/docs/modules/notes",
+    destination: "/zh/docs/modules/callout",
     permanent: true,
   },
   {

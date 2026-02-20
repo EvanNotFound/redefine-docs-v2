@@ -6,9 +6,9 @@ title: Home Banner (home_banner)
 
 **Configuration Item: `home_banner.enable`**
 
-| Type | Optional Values | Default Value |
-| :---: | :---: | :---: |
-| Boolean | `true \| false` | `true` |
+|  Type   | Optional Values | Default Value |
+| :-----: | :-------------: | :-----------: |
+| Boolean | `true \| false` |    `true`     |
 
 ## Background Image Style
 
@@ -16,21 +16,27 @@ title: Home Banner (home_banner)
 
 This configuration item is used to set the background image style of the first screen, which can be either `static` or `fixed`.
 
-| Type | Optional Values | Default Value |
-| :---: | :---: | :---: |
-| String | `static \| fixed` | `static` |
+|  Type  |  Optional Values  | Default Value |
+| :----: | :---------------: | :-----------: |
+| String | `static \| fixed` |   `static`    |
 
 ### `static` Style
 
 The `static` style is a static style, which means that the background image of the first screen will scroll with the homepage.
 
-<video src="https://evan.beee.top/img/2023/04/29/1160247fd24068c84c7706e44d6457fa.mp4" controls></video>
+<video
+  src="https://evan.beee.top/img/2023/04/29/1160247fd24068c84c7706e44d6457fa.mp4"
+  controls
+></video>
 
 ### `fixed` Style
 
 The `fixed` style is a fixed style, which means that the background image of the first screen will be fixed on the homepage and will not scroll with the homepage. This style also automatically blurs the background image when scrolling down, which is recommended.
 
-<video src="https://evan.beee.top/img/2023/04/29/8e5f8359cbe980eb6b3e0a5e0a21a561.mp4" controls></video>
+<video
+  src="https://evan.beee.top/img/2023/04/29/8e5f8359cbe980eb6b3e0a5e0a21a561.mp4"
+  controls
+></video>
 
 ## Background Image
 
@@ -38,24 +44,24 @@ The `fixed` style is a fixed style, which means that the background image of the
 
 **Configuration Item: `home_banner.image.light`**
 
-| Type | Note | Example |
-| :---: | :---: | :---: |
+|  Type  |                   Note                    |                Example                |
+| :----: | :---------------------------------------: | :-----------------------------------: |
 | String | Local relative link / external image link | `/images/wallhaven-wqery6-light.webp` |
 
 ### Dark Mode
 
 **Configuration Item: `home_banner.image.dark`**
 
-| Type | Note | Example |
-| :---: | :---: | :---: |
+|  Type  |                   Note                    |               Example                |
+| :----: | :---------------------------------------: | :----------------------------------: |
 | String | Local relative link / external image link | `/images/wallhaven-wqery6-dark.webp` |
 
 ## Main Title
 
 **Configuration Item: `home_banner.title`**
 
-| Type | Note | Example |
-| :---: | :---: | :---: |
+|  Type  | Note |     Example      |
+| :----: | :--: | :--------------: |
 | String | None | `Theme Redefine` |
 
 ## Subtitle
@@ -68,8 +74,8 @@ There is a typewriter animation effect, and you can configure multiple strings. 
 
 **If you need to enable hitokoto, please first enter some content in this item.**
 
-| Type | Note | Example |
-| :---: | :---: | :---: |
+| Type  |             Note             |                               Example                                |
+| :---: | :--------------------------: | :------------------------------------------------------------------: |
 | Array | Please use comma to separate | `["This is the first message", "This is the second message", "etc"]` |
 
 ### Hitokoto
@@ -101,16 +107,16 @@ Set the text color of the title and subtitle.
 
 **Configuration Item: `home_banner.text_color.light`**
 
-| Type | Note | Example |
-| :---: | :---: | :---: |
-| String | Please enter Hex color value | `#fff` |
+|  Type  |             Note             | Example |
+| :----: | :--------------------------: | :-----: |
+| String | Please enter Hex color value | `#fff`  |
 
 ### Dark Mode
 
 **Configuration Key: `home_banner.text_color.dark`**
 
-| Type | Description | Example |
-| :---: | :---: | :---: |
+|  Type  |          Description           |  Example  |
+| :----: | :----------------------------: | :-------: |
 | String | Please enter a Hex color value | `#d1d1b6` |
 
 ## Text Styles
@@ -119,25 +125,25 @@ Set the text color of the title and subtitle.
 
 **Configuration Key: `home_banner.text_style.title_size`**
 
-| Type | Description | Example |
-| :---: | :---: | :---: |
+|  Type  |                Description                | Example  |
+| :----: | :---------------------------------------: | :------: |
 | String | Please enter a font size supported by CSS | `2.8rem` |
 
 ### Subtitle Font Size
 
 **Configuration Key: `home_banner.text_style.subtitle_size`**
 
-| Type | Description | Example |
-| :---: | :---: | :---: |
+|  Type  |                Description                | Example  |
+| :----: | :---------------------------------------: | :------: |
 | String | Please enter a font size supported by CSS | `1.5rem` |
 
 ### Title and Subtitle Line Height
 
 **Configuration Key: `home_banner.text_style.line_height`**
 
-| Type | Description | Example |
-| :---: | :---: | :---: |
-| String | Please enter a line height supported by CSS | `1.2` |
+|  Type  |                 Description                 | Example |
+| :----: | :-----------------------------------------: | :-----: |
+| String | Please enter a line height supported by CSS |  `1.2`  |
 
 ## Custom Fonts
 
@@ -145,24 +151,24 @@ Set the text color of the title and subtitle.
 
 **Configuration Key: `home_banner.custom_font.enable`**
 
-| Type | Possible Values | Default |
-| :---: | :---: | :---: |
+|  Type   | Possible Values | Default |
+| :-----: | :-------------: | :-----: |
 | Boolean | `true \| false` | `false` |
 
 ### Font Family
 
 **Configuration Key: `home_banner.custom_font.family`**
 
-| Type | Description | Example |
-| :---: | :---: | :---: |
+|  Type  |                  Description                   |    Example     |
+| :----: | :--------------------------------------------: | :------------: |
 | String | Will be applied to the main title and subtitle | `Noto Sans SC` |
 
 ### Font CSS File URL
 
 **Configuration Key: `home_banner.custom_font.url`**
 
-| Type | Description | Example |
-| :---: | :---: | :---: |
+|  Type  |          Description          |                                        Example                                        |
+| :----: | :---------------------------: | :-----------------------------------------------------------------------------------: |
 | String | Font style file address (CSS) | `https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap` |
 
 ## Social Links
@@ -171,13 +177,21 @@ Set the text color of the title and subtitle.
 
 **Configuration Key: `home_banner.social_links.enable`**
 
-| Type | Possible Values | Default |
-| :---: | :---: | :---: |
+|  Type   | Possible Values | Default |
+| :-----: | :-------------: | :-----: |
 | Boolean | `true \| false` | `false` |
 
 ### Links
 
 **Configuration Key: `home_banner.social_links.links`**
+
+<Callout type="info">
+  Starting with v2.9.0, `home_banner.social_links.links` and
+  `home_banner.social_links.qrs` use the ordered array format to preserve
+  display order. The old object-map format is deprecated.
+</Callout>
+
+`links` is an ordered array; the order is the render order. Each item contains `icon` and `url`.
 
 Social links support three types of icons:
 
@@ -187,10 +201,14 @@ For popular platforms, you can directly use the platform name:
 
 ```yaml filename="_config.redefine.yml"
 links:
-    github: https://github.com/username
-    twitter: https://twitter.com/username
-    facebook: https://facebook.com/username
-    instagram: https://instagram.com/username
+  - icon: github
+    url: https://github.com/username
+  - icon: twitter
+    url: https://twitter.com/username
+  - icon: facebook
+    url: https://facebook.com/username
+  - icon: instagram
+    url: https://instagram.com/username
 ```
 
 **2. FontAwesome Icons**
@@ -199,8 +217,10 @@ For `fa-brands` icons, enter the icon name directly. For other FontAwesome icons
 
 ```yaml filename="_config.redefine.yml"
 links:
-    fa-solid fa-wand-magic-sparkles: https://example.com
-    fa-regular fa-music: https://example.com
+  - icon: fa-solid fa-wand-magic-sparkles
+    url: https://example.com
+  - icon: fa-regular fa-music
+    url: https://example.com
 ```
 
 You can visit [Font Awesome](https://fontawesome.com/search) to find icon names.
@@ -211,21 +231,33 @@ Use local image files or external image URLs as icons:
 
 ```yaml filename="_config.redefine.yml"
 links:
-    /images/icon/coolapk.png: https://www.coolapk.com/u/123456
-    /images/icon/bilibili.svg: https://space.bilibili.com/123456
-    https://example.com/custom-icon.png: https://example.com
+  - icon: /images/icon/coolapk.png
+    url: https://www.coolapk.com/u/123456
+  - icon: /images/icon/bilibili.svg
+    url: https://space.bilibili.com/123456
+  - icon: https://example.com/custom-icon.png
+    url: https://example.com
 ```
 
 **Complete Example:**
 
 ```yaml filename="_config.redefine.yml"
 links:
-    github: https://github.com/username
-    twitter: https://twitter.com/username
-    fa-solid fa-music: https://music.example.com
-    /images/icon/coolapk.png: https://www.coolapk.com/u/123456
-    /images/icon/custom-platform.svg: https://custom.example.com
+  - icon: github
+    url: https://github.com/username
+  - icon: twitter
+    url: https://twitter.com/username
+  - icon: fa-solid fa-music
+    url: https://music.example.com
+  - icon: /images/icon/coolapk.png
+    url: https://www.coolapk.com/u/123456
+  - icon: /images/icon/custom-platform.svg
+    url: https://custom.example.com
+  - icon: email
+    url: you@example.com
 ```
+
+When `icon` is `email`, the `@` icon is used and `mailto:` is added if missing.
 
 ### Local Icon Requirements
 
@@ -235,57 +267,53 @@ For local image icons, please follow these guidelines:
 - **File Size**: Recommended 20×20 pixels (icons are displayed at 20×20px)
 - **File Format**: Supports PNG, SVG, JPG, WEBP
 - **Background**: Use transparent backgrounds for best appearance
-- **File Path**: Must start with `/` (e.g., `/images/icon/example.png`)
+- **File Path**: The `icon` value must start with `/` (e.g., `/images/icon/example.png`)
 
-### Icon Migration Guide
+### Deprecated map format
 
-If you have existing configurations using only FontAwesome icons, they will continue to work. Simply add local icons alongside your existing configuration:
+The old object-map format (icon name as the key and link as the value) is deprecated because Hexo config merges can reorder keys. It still works for now but will be removed in the next major release. The same applies to `qrs`.
 
 ```yaml filename="_config.redefine.yml"
-# Before (still works)
+# Deprecated format
 links:
-    github: https://github.com/username
-    fa-solid fa-music: https://music.example.com
+  github: https://github.com/username
+  twitter: https://twitter.com/username
 
-# After (enhanced with local icons)
+# Recommended format
 links:
-    github: https://github.com/username
-    fa-solid fa-music: https://music.example.com
-    /images/icon/coolapk.png: https://www.coolapk.com/u/123456
+  - icon: github
+    url: https://github.com/username
+  - icon: twitter
+    url: https://twitter.com/username
 ```
 
 ### Troubleshooting
 
 **Icon not displaying**
-- Check if the file path starts with `/` (e.g., `/images/icon/example.png`)
+
+- Check if the `icon` path starts with `/` (e.g., `/images/icon/example.png`)
 - Verify the file exists in the correct location
 - Make sure the file format is supported (PNG, SVG, JPG, WEBP)
 
 **Icon appears too large/small**
+
 - Icons are automatically resized to 20×20 pixels
 - For best results, prepare icons at 20×20 pixels with transparent backgrounds
 
 **Icon not updating after changes**
+
 - Clear your browser cache and regenerate the site with `hexo clean && hexo generate`
 
 ### QR code
 
 **Configuration Key: `home_banner.social_links.qrs`**
 
-Optional, you can add your QR code in the following format,
-
-If it is a `fa-brands` icon, you can directly fill in the Brands icon name, such as `weixin`.
-
-But if you are using a non-fa-brands icon, such as `fa-solid`, then you need to fill in the full name, such as `fa-solid fa-wand-magic-sparkles`.
+Optional. `qrs` is an ordered array; each item contains `icon` and `qr`. The `icon` rules are the same as `links`.
 
 ```yaml filename="_config.redefine.yml"
 qrs:
-    [fontawesome icon name (not HTML code)]: [QR code image URL]
-```
-
-Example configuration:
-
-```yaml filename="_config.redefine.yml"
-qrs:
-    weixin: https://example.com/weixin.png
+  - icon: weixin
+    qr: https://example.com/weixin.png
+  - icon: /images/icon/custom-platform.svg
+    qr: https://example.com/custom-qr.png
 ```

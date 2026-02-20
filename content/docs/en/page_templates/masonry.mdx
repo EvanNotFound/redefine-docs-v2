@@ -52,17 +52,28 @@ Create a `masonry.yml` file in the `_data` folder.
 
 Configure the album information in the `masonry.yml` file in the following format:
 
-```yaml filename="source/_data/masonry.yml"
+Starting from Redefine `v2.9.0`, it is recommended to set `width` and `height` (original pixel dimensions) for each image in `masonry.yml` to reserve space and reduce layout shift (CLS).
 
+You can optionally set `exif: true` (default `false`) in `masonry.yml` to show EXIF info in the image viewer. EXIF is automatically detected from the image file metadata, so there is no need to manually enter EXIF fields. If the image is remote, make sure the image URL is CORS-compatible (its response includes `Access-Control-Allow-Origin` for your site or `*`); otherwise the browser cannot read metadata and EXIF will not be shown.
+
+```yaml filename="source/_data/masonry.yml"
 - image: Image URL
+  width: 1920
+  height: 1080
+  exif: true
   title: Image Title
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
 
-- image: https://picsum.photos/id/12/2500/1800
+- image: https://picsum.photos/id/848/2000/1333
+  width: 2000
+  height: 1333
   title: Lorem ipsum
   description: Lorem ipsum dolor sit amet
-
 ```
+
+EXIF Preview:
+
+![EXIF Preview](https://assets.ohevan.com/img/23575a0c28c984a988b5496bda91cdac.png)
 
 ### Creation Complete
 
