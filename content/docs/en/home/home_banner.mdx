@@ -87,6 +87,7 @@ The subtitle automatically fetches a hitokoto, see [Hitokoto](https://hitokoto.c
 - `home_banner.subtitle.hitokoto.enable`: Switch
 - `home_banner.subtitle.hitokoto.api`: Hitokoto API URL
 - `home_banner.subtitle.hitokoto.show_author`: Whether to show the author
+- `home_banner.subtitle.hitokoto.refresh_on_loop`: Whether to fetch a new quote on each loop. Defaults to `false`, so the current quote is reused. This option only takes effect when `home_banner.subtitle.loop` is enabled. If a refresh request fails, the current quote is kept and the next loop retries the request.
 
 The API URL can specify the sentence type, see [Hitokoto API](https://developer.hitokoto.cn/sentence/#%E5%8F%A5%E5%AD%90%E7%B1%BB%E5%9E%8B-%E5%8F%82%E6%95%B0).
 
