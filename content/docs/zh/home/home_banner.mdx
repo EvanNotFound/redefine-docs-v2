@@ -87,6 +87,7 @@ title: 第一屏 (home_banner)
 - `home_banner.subtitle.hitokoto.enable`：开关
 - `home_banner.subtitle.hitokoto.api`：一言 API 地址
 - `home_banner.subtitle.hitokoto.show_author`：是否显示作者
+- `home_banner.subtitle.hitokoto.refresh_on_loop`：是否在每次循环时获取新的一言。默认值为 `false`，因此会重复使用当前的一言。本选项仅在 `home_banner.subtitle.loop` 开启时生效。如果刷新请求失败，会保留当前的一言，并在下一次循环时重试。
 
 API 地址可以指定句子类型，详见[一言 API](https://developer.hitokoto.cn/sentence/#%E5%8F%A5%E5%AD%90%E7%B1%BB%E5%9E%8B-%E5%8F%82%E6%95%B0)。
 
